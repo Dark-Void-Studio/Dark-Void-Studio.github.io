@@ -14,7 +14,7 @@ import Layout from '../layouts/Layout.astro';
         DARK VOID <span>STUDIO</span>
       </a>
       <div class="nav-links">
-        <a href="https://darkvvoidstudios.itch.io/ana" target="_blank" rel="noopener">itch.io</a>
+        <a href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_nav" target="_blank" rel="noopener" data-track="itch_nav">itch.io</a>
         <a href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">Discord</a>
         <a href="https://www.instagram.com/darkvoidgames/" target="_blank" rel="noopener">Instagram</a>
       </div>
@@ -37,7 +37,7 @@ import Layout from '../layouts/Layout.astro';
           atravesando las zonas del conocimiento humano.
         </p>
         <div class="ctas">
-          <a class="btn primary" href="https://darkvvoidstudios.itch.io/ana" target="_blank" rel="noopener">
+          <a class="btn primary" href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_hero" target="_blank" rel="noopener" data-track="itch_hero">
             ▶ JUGAR EN ITCH.IO
           </a>
           <a class="btn ghost" href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">
@@ -80,7 +80,7 @@ import Layout from '../layouts/Layout.astro';
           title="A.N.A. — The Broken Link en itch.io"
           loading="lazy"
         >
-          <a href="https://darkvvoidstudios.itch.io/ana">A.N.A. — The Broken Link by DarkvVoidStudios, PeryLoth</a>
+          <a href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_embed">A.N.A. — The Broken Link by DarkvVoidStudios, PeryLoth</a>
         </iframe>
       </div>
     </div>
@@ -156,7 +156,7 @@ import Layout from '../layouts/Layout.astro';
         <img src="/assets/ana/dF6c7C.png" alt="Dark Void Studio" loading="lazy" class="contain" />
       </div>
       <div class="links-row">
-        <a class="link-card" href="https://darkvvoidstudios.itch.io/ana" target="_blank" rel="noopener">
+        <a class="link-card" href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_gallery" target="_blank" rel="noopener" data-track="itch_gallery">
           <strong>itch.io — Descargar</strong>
           <span>darkvvoidstudios.itch.io/ana</span>
         </a>
@@ -210,11 +210,23 @@ import Layout from '../layouts/Layout.astro';
         <span>2.5D · Beat 'em up narrativo · Windows · In development</span>
       </div>
       <div class="footer-links">
-        <a href="https://darkvvoidstudios.itch.io/">itch.io studio</a>
+        <a href="https://darkvvoidstudios.itch.io/?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_footer" target="_blank" rel="noopener" data-track="itch_footer">itch.io studio</a>
         <a href="https://github.com/Dark-Void-Studio">GitHub</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    // UTM attribution: links already contain utm_source/medium/campaign for itch Analytics
+    // Outbound click tracking — hooks gtag (GA4) or plausible if loaded, otherwise no-op
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href*="itch.io"]');
+      if (!a) return;
+      const label = a.dataset.track || 'itch_click';
+      if (window.gtag) window.gtag('event', 'itch_click', { link_url: a.href, link_label: label, source: 'dark-void-studio.github.io' });
+      if (window.plausible) window.plausible('itch_click', { props: { label } });
+    });
+  </script>
 
   <style>
     .nav {
