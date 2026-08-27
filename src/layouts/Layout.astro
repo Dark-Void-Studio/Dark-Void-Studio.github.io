@@ -1,23 +1,84 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Lato:wght@400;700;900&family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
+    {
+      Astro.props.title ? (
+        <title>{Astro.props.title}</title>
+      ) : (
+        <title>A.N.A. — The Broken Link | Dark Void Studio</title>
+      )
+    }
+    <meta name="description" content={Astro.props.description || "2.5D narrative beat 'em up — inspirado en anime, cyberpunk y estética synthwave. Sincronizate con A.N.A., una IA que despierta en un mundo de lógica perfecta."} />
+    <meta property="og:title" content={Astro.props.title || "A.N.A. — The Broken Link"} />
+    <meta property="og:description" content={Astro.props.description || "2.5D narrative beat 'em up — beat 'em up narrativo donde tu estilo de pelea impacta la consciencia humana."} />
+    <meta property="og:image" content="/assets/ana/Xk_5qt.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#290329" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      :root {
+        --bg: #0f0310;
+        --bg-2: #290329;
+        --bg-3: #401a40;
+        --border: #651265;
+        --cyan: #00b3ff;
+        --cyan-2: #00e5ff;
+        --magenta: #ff2e9a;
+        --violet: #a855f7;
+        --text: #d9f0ff;
+        --muted: #8fb4c8;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 100%;
+        min-height: 100%;
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Lato', system-ui, sans-serif;
+        scroll-behavior: smooth;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        background:
+          radial-gradient(800px 400px at 20% 10%, rgba(255,46,154,0.15), transparent 60%),
+          radial-gradient(900px 500px at 90% 20%, rgba(0,179,255,0.18), transparent 60%),
+          radial-gradient(700px 600px at 50% 100%, rgba(168,85,247,0.12), transparent 60%),
+          linear-gradient(180deg, #1a0520 0%, #0f0310 100%);
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.04;
+        background-image:
+          linear-gradient(var(--border) 1px, transparent 1px),
+          linear-gradient(90deg, var(--border) 1px, transparent 1px);
+        background-size: 40px 40px;
+        pointer-events: none;
+      }
+      a { color: var(--cyan); }
+      ::selection { background: var(--cyan); color: #000; }
+      /* scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: var(--bg-2); }
+      ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: var(--cyan); }
+    </style>
+  </body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
