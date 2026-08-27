@@ -1,3 +1,9 @@
+---
+const title = Astro.props.title || "A.N.A. — The Broken Link | Dark Void Studio";
+const description = Astro.props.description || "2.5D narrative beat 'em up — inspirado en anime, cyberpunk y estética synthwave. Sincronizate con A.N.A., una IA que despierta en un mundo de lógica perfecta.";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL("/assets/ana/Xk_5qt.png", Astro.site);
+---
 <!doctype html>
 <html lang="es">
   <head>
@@ -9,20 +15,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Lato:wght@400;700;900&family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
-    {
-      Astro.props.title ? (
-        <title>{Astro.props.title}</title>
-      ) : (
-        <title>A.N.A. — The Broken Link | Dark Void Studio</title>
-      )
-    }
-    <meta name="description" content={Astro.props.description || "2.5D narrative beat 'em up — inspirado en anime, cyberpunk y estética synthwave. Sincronizate con A.N.A., una IA que despierta en un mundo de lógica perfecta."} />
-    <meta property="og:title" content={Astro.props.title || "A.N.A. — The Broken Link"} />
-    <meta property="og:description" content={Astro.props.description || "2.5D narrative beat 'em up — beat 'em up narrativo donde tu estilo de pelea impacta la consciencia humana."} />
-    <meta property="og:image" content="/assets/ana/Xk_5qt.png" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#290329" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="Dark Void Studio" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:alt" content="Logo de A.N.A. — The Broken Link" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
+    <meta name="theme-color" content="#290329" />
+
+    <!-- JSON-LD VideoGame -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "A.N.A. — The Broken Link",
+      "description": description,
+      "image": ogImageURL.toString(),
+      "url": canonicalURL.toString(),
+      "genre": ["Action", "Beat 'em up", "Cyberpunk", "Anime"],
+      "keywords": "25d, anime, cyberpunk, synthwave, beat em up, hack and slash, futuristic, artgame",
+      "operatingSystem": "Windows",
+      "applicationCategory": "Game",
+      "author": [{ "@type": "Organization", "name": "Dark Void Studio", "url": "https://darkvvoidstudios.itch.io" }, { "@type": "Person", "name": "PeryLoth" }],
+      "publisher": { "@type": "Organization", "name": "Dark Void Studio" },
+      "inLanguage": "es",
+      "isAccessibleForFree": true,
+      "sameAs": ["https://darkvvoidstudios.itch.io/ana", "https://discord.gg/3nMe29jHzn", "https://www.instagram.com/darkvoidgames/"]
+    })} />
   </head>
   <body>
     <slot />
@@ -74,7 +106,6 @@
       }
       a { color: var(--cyan); }
       ::selection { background: var(--cyan); color: #000; }
-      /* scrollbar */
       ::-webkit-scrollbar { width: 8px; }
       ::-webkit-scrollbar-track { background: var(--bg-2); }
       ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
