@@ -66,6 +66,26 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </header>
 
+  <!-- PLAY -->
+  <section class="section play">
+    <div class="container">
+      <h2><span class="prompt">&gt;&gt;</span> JUGAR AHORA</h2>
+      <p class="play-desc">Disponible gratis en itch.io para Windows — probá la build de la jam y deja tu feedback.</p>
+      <div class="itch-wrap">
+        <iframe
+          frameborder="0"
+          src="https://itch.io/embed/4934698?bg_color=290329&fg_color=00b3ff&link_color=00b3ff&border_color=583258"
+          width="552"
+          height="167"
+          title="A.N.A. — The Broken Link en itch.io"
+          loading="lazy"
+        >
+          <a href="https://darkvvoidstudios.itch.io/ana">A.N.A. — The Broken Link by DarkvVoidStudios, PeryLoth</a>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT + ABILITIES -->
   <section class="section">
     <div class="container">
@@ -346,6 +366,17 @@ import Layout from '../layouts/Layout.astro';
     .footer-links { display: flex; gap: 14px; }
     .footer-links a { color: var(--muted); text-decoration: none; }
     .footer-links a:hover { color: var(--cyan); }
+
+    .play { text-align: center; }
+    .play-desc { color: var(--muted); margin: 0 0 18px; }
+    .itch-wrap {
+      display: flex; justify-content: center; align-items: center;
+      padding: 14px; border-radius: 14px;
+      background: rgba(41,3,41,0.5); border: 1px solid rgba(101,18,101,0.7);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      max-width: 600px; margin: 0 auto;
+    }
+    .itch-wrap iframe { max-width: 100%; border-radius: 8px; display: block; }
 
     @media (max-width: 900px) {
       .hero-grid, .split, .cards, .gallery, .team-grid, .links-row { grid-template-columns: 1fr; }
