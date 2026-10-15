@@ -55,7 +55,10 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="hero-visual">
         <div class="logo-card">
-          <img src="/assets/ana/Xk_5qt.png" alt="Logo A.N.A. — The Broken Link" width="412" height="338" loading="eager" />
+          <picture>
+            <source srcset="/assets/ana/Xk_5qt.webp" type="image/webp" />
+            <img src="/assets/ana/Xk_5qt.png" alt="Logo A.N.A. — The Broken Link" width="412" height="338" loading="eager" fetchpriority="high" decoding="async" />
+          </picture>
           <div class="scanline" aria-hidden="true"></div>
         </div>
         <div class="stats">
@@ -140,7 +143,10 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
       <div class="shot">
-        <img src="/assets/ana/LTJtgi.png" alt="Screenshot de A.N.A. en combate" loading="lazy" />
+        <picture>
+          <source srcset="/assets/ana/LTJtgi.webp" type="image/webp" />
+          <img src="/assets/ana/LTJtgi.png" alt="Screenshot de A.N.A. en combate" width="1828" height="1573" loading="lazy" decoding="async" />
+        </picture>
         <p class="caption">Captura in-game · Iluminación neón y VFX del sistema</p>
       </div>
     </div>
@@ -151,10 +157,22 @@ import Layout from '../layouts/Layout.astro';
     <div class="container">
       <h2 id="galeria-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> VISUAL LOG</h2>
       <div class="gallery">
-        <img src="/assets/ana/J4kBC+.png" alt="Arte promocional A.N.A." loading="lazy" />
-        <img src="/assets/ana/8IPPLh.png" alt="Pixel art / detalle" loading="lazy" />
-        <img src="/assets/ana/Xk_5qt.png" alt="Logo alternativo" loading="lazy" class="contain" />
-        <img src="/assets/ana/dF6c7C.png" alt="Dark Void Studio" loading="lazy" class="contain" />
+        <picture>
+          <source srcset="/assets/ana/J4kBC+.webp" type="image/webp" />
+          <img src="/assets/ana/J4kBC+.png" alt="Arte promocional A.N.A." width="1121" height="1028" loading="lazy" decoding="async" />
+        </picture>
+        <picture>
+          <source srcset="/assets/ana/8IPPLh.webp" type="image/webp" />
+          <img src="/assets/ana/8IPPLh.png" alt="Pixel art / detalle" width="347" height="275" loading="lazy" decoding="async" />
+        </picture>
+        <picture>
+          <source srcset="/assets/ana/Xk_5qt.webp" type="image/webp" />
+          <img src="/assets/ana/Xk_5qt.png" alt="Logo alternativo" width="412" height="338" loading="lazy" decoding="async" class="contain" />
+        </picture>
+        <picture>
+          <source srcset="/assets/ana/dF6c7C.webp" type="image/webp" />
+          <img src="/assets/ana/dF6c7C.png" alt="Dark Void Studio" width="401" height="368" loading="lazy" decoding="async" class="contain" />
+        </picture>
       </div>
       <div class="links-row">
         <a class="link-card" href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_gallery" target="_blank" rel="noopener" data-track="itch_gallery">
@@ -302,6 +320,7 @@ import Layout from '../layouts/Layout.astro';
       overflow: hidden;
     }
     .logo-card img { display: block; width: 100%; height: auto; border-radius: 10px; }
+    .logo-card picture, .shot picture, .gallery picture { display: contents; }
     .scanline {
       position: absolute; inset: 0; border-radius: 16px; pointer-events: none;
       background: repeating-linear-gradient(transparent 0 2px, rgba(0,179,255,0.04) 2px 3px);
