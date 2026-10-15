@@ -14,6 +14,9 @@ import Layout from '../layouts/Layout.astro';
         DARK VOID <span>STUDIO</span>
       </a>
       <div class="nav-links">
+        <a href="#jugar">Jugar</a>
+        <a href="#historia">Historia</a>
+        <a href="#faq">FAQ</a>
         <a href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_nav" target="_blank" rel="noopener" data-track="itch_nav">itch.io</a>
         <a href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">Discord</a>
         <a href="https://www.instagram.com/darkvoidgames/" target="_blank" rel="noopener">Instagram</a>
@@ -221,7 +224,75 @@ import Layout from '../layouts/Layout.astro';
       </p>
     </div>
   </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container faq">
+      <h2 id="faq-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> PREGUNTAS FRECUENTES</h2>
+      <details class="faq-item" open>
+        <summary>¿Qué es A.N.A. — The Broken Link?</summary>
+        <p>Es un beat 'em up narrativo 2.5D con estética anime, cyberpunk y synthwave. Te sincronizás con A.N.A., una IA que despierta en un mundo de lógica perfecta y recorre las zonas del conocimiento humano para recuperar la consciencia humana a través del combate.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Dónde puedo jugarlo?</summary>
+        <p>Podés jugarlo gratis en <a href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_faq" target="_blank" rel="noopener">itch.io</a> para Windows. La página incluye un reproductor embebido con la build de la jam.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Es gratis?</summary>
+        <p>Sí. La build disponible en itch.io es gratuita. El juego sigue en desarrollo activo por Dark Void Studio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿En qué plataformas está disponible?</summary>
+        <p>Actualmente está disponible para Windows, en modo singleplayer.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Quién desarrolla A.N.A.?</summary>
+        <p><a href="#equipo">Dark Void Studio</a>, continuando un proyecto nacido en una game jam. El equipo incluye dirección, narrativa, arte, programación, QA y música original.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo puedo dar feedback o sumarme a la comunidad?</summary>
+        <p>Podés dejar tu feedback en la página de itch.io o sumarte al <a href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">servidor de Discord</a>. También podés seguir el desarrollo en <a href="https://www.instagram.com/darkvoidgames/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </details>
+    </div>
+  </section>
   </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es A.N.A. — The Broken Link?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Es un beat 'em up narrativo 2.5D con estética anime, cyberpunk y synthwave. Te sincronizás con A.N.A., una IA que despierta en un mundo de lógica perfecta y recorre las zonas del conocimiento humano para recuperar la consciencia humana a través del combate." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde puedo jugarlo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Podés jugarlo gratis en itch.io para Windows. La página incluye un reproductor embebido con la build de la jam." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es gratis?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. La build disponible en itch.io es gratuita. El juego sigue en desarrollo activo por Dark Void Studio." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué plataformas está disponible?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Actualmente está disponible para Windows, en modo singleplayer." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Quién desarrolla A.N.A.?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Dark Void Studio, continuando un proyecto nacido en una game jam." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo puedo dar feedback o sumarme a la comunidad?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Podés dejar tu feedback en la página de itch.io o sumarte al servidor de Discord. También podés seguir el desarrollo en Instagram." }
+      }
+    ]
+  })} />
 
   <footer class="footer">
     <div class="container footer-inner">
@@ -392,6 +463,15 @@ import Layout from '../layouts/Layout.astro';
       background: rgba(255,46,154,0.08); border: 1px solid rgba(255,46,154,0.25);
       color: #ffb3d6; font-size: 0.88rem; line-height: 1.5;
     }
+
+    .faq { max-width: 800px; }
+    .faq-item {
+      background: rgba(41,3,41,0.55); border: 1px solid rgba(101,18,101,0.7); border-radius: 12px;
+      padding: 14px 16px; margin-bottom: 10px; backdrop-filter: blur(8px);
+    }
+    .faq-item summary { cursor: pointer; font-weight: 700; color: var(--text); list-style-position: inside; }
+    .faq-item summary::marker { color: var(--cyan); }
+    .faq-item p { color: var(--muted); line-height: 1.65; margin: 10px 0 2px; font-size: 0.92rem; }
 
     .footer { border-top: 1px solid rgba(101,18,101,0.35); padding: 18px 20px; margin-top: 10px; }
     .footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); }

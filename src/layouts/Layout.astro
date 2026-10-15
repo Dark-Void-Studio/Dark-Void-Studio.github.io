@@ -47,23 +47,63 @@ const ogImageHeight = 1573;
 
     <meta name="theme-color" content="#290329" />
 
-    <!-- JSON-LD VideoGame -->
+    <!-- Structured data -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "VideoGame",
-      "name": "A.N.A. — The Broken Link",
-      "description": description,
-      "image": ogImageURL.toString(),
-      "url": canonicalURL.toString(),
-      "genre": ["Action", "Beat 'em up", "Cyberpunk", "Anime"],
-      "keywords": "25d, anime, cyberpunk, synthwave, beat em up, hack and slash, futuristic, artgame",
-      "operatingSystem": "Windows",
-      "applicationCategory": "Game",
-      "author": [{ "@type": "Organization", "name": "Dark Void Studio", "url": "https://darkvvoidstudios.itch.io" }, { "@type": "Person", "name": "PeryLoth" }],
-      "publisher": { "@type": "Organization", "name": "Dark Void Studio" },
-      "inLanguage": "es",
-      "isAccessibleForFree": true,
-      "sameAs": ["https://darkvvoidstudios.itch.io/ana", "https://discord.gg/3nMe29jHzn", "https://www.instagram.com/darkvoidgames/"]
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": new URL("/#studio", Astro.site).toString(),
+          "name": "Dark Void Studio",
+          "url": Astro.site?.toString(),
+          "logo": new URL("/assets/ana/Xk_5qt.png", Astro.site).toString(),
+          "sameAs": [
+            "https://darkvvoidstudios.itch.io/",
+            "https://darkvvoidstudios.itch.io/ana",
+            "https://discord.gg/3nMe29jHzn",
+            "https://www.instagram.com/darkvoidgames/",
+            "https://github.com/Dark-Void-Studio"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": new URL("/#website", Astro.site).toString(),
+          "url": Astro.site?.toString(),
+          "name": "Dark Void Studio",
+          "inLanguage": "es",
+          "publisher": { "@id": new URL("/#studio", Astro.site).toString() }
+        },
+        {
+          "@type": "VideoGame",
+          "@id": new URL("/#game", Astro.site).toString(),
+          "name": "A.N.A. — The Broken Link",
+          "description": description,
+          "image": ogImageURL.toString(),
+          "url": canonicalURL.toString(),
+          "genre": ["Action", "Beat 'em up", "Cyberpunk", "Anime"],
+          "keywords": "25d, anime, cyberpunk, synthwave, beat em up, hack and slash, futuristic, artgame",
+          "operatingSystem": "Windows",
+          "applicationCategory": "Game",
+          "playMode": "SinglePlayer",
+          "isAccessibleForFree": true,
+          "datePublished": "2026-08-25",
+          "dateModified": "2026-08-26",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://darkvvoidstudios.itch.io/ana"
+          },
+          "author": [
+            { "@type": "Organization", "name": "Dark Void Studio", "url": "https://darkvvoidstudios.itch.io" },
+            { "@type": "Person", "name": "PeryLoth" }
+          ],
+          "publisher": { "@id": new URL("/#studio", Astro.site).toString() },
+          "inLanguage": "es",
+          "sameAs": ["https://darkvvoidstudios.itch.io/ana"]
+        }
+      ]
     })} />
   </head>
   <body>
