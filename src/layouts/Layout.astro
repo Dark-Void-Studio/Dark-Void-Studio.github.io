@@ -2,7 +2,9 @@
 const title = Astro.props.title || "A.N.A. — The Broken Link | Dark Void Studio";
 const description = Astro.props.description || "2.5D narrative beat 'em up — inspirado en anime, cyberpunk y estética synthwave. Sincronizate con A.N.A., una IA que despierta en un mundo de lógica perfecta.";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImageURL = new URL("/assets/ana/Xk_5qt.png", Astro.site);
+const ogImageURL = new URL("/assets/ana/LTJtgi.png", Astro.site);
+const ogImageWidth = 1828;
+const ogImageHeight = 1573;
 ---
 <!doctype html>
 <html lang="es">
@@ -12,6 +14,10 @@ const ogImageURL = new URL("/assets/ana/Xk_5qt.png", Astro.site);
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="author" content="Dark Void Studio" />
+    <meta name="robots" content="index, follow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Lato:wght@400;700;900&family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
@@ -27,6 +33,9 @@ const ogImageURL = new URL("/assets/ana/Xk_5qt.png", Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content={String(ogImageWidth)} />
+    <meta property="og:image:height" content={String(ogImageHeight)} />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="Logo de A.N.A. — The Broken Link" />
 
     <!-- Twitter -->
@@ -34,6 +43,7 @@ const ogImageURL = new URL("/assets/ana/Xk_5qt.png", Astro.site);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
+    <meta name="twitter:image:alt" content="Logo de A.N.A. — The Broken Link" />
 
     <meta name="theme-color" content="#290329" />
 

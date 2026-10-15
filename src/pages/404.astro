@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="404 — Página no encontrada | Dark Void Studio"
+  description="Esta señal se perdió en el vacío. Volvé al inicio de A.N.A. — The Broken Link."
+>
+  <main class="wrap">
+    <p class="eyebrow">ERROR 404 · SIGNAL LOST_</p>
+    <h1>Esta página se perdió en el vacío</h1>
+    <p>El link que seguiste ya no existe o fue movido.</p>
+    <a class="btn" href="/">← VOLVER AL INICIO</a>
+  </main>
+
+  <style>
+    .wrap { max-width: 640px; margin: 0 auto; padding: 80px 20px; text-align: center; }
+    .eyebrow { font-family: monospace; color: var(--cyan); letter-spacing: 0.12em; }
+    h1 { font-family: 'Orbitron', sans-serif; }
+    p { color: var(--muted); }
+    .btn {
+      display: inline-block; margin-top: 18px; padding: 12px 18px;
+      background: var(--cyan); color: #000; border-radius: 8px;
+      font-family: monospace; font-weight: 700; text-decoration: none;
+    }
+  </style>
+</Layout>

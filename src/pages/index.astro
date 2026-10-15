@@ -7,10 +7,10 @@ import Layout from '../layouts/Layout.astro';
   description="2.5D narrative beat 'em up inspirado en anime, cyberpunk y synthwave. Sincronizate con A.N.A. y recupera la consciencia humana a través del combate."
 >
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Navegación principal">
     <div class="nav-inner">
-      <a href="#" class="brand">
-        <span class="brand-dot"></span>
+      <a href="/" class="brand" aria-label="Dark Void Studio — inicio">
+        <span class="brand-dot" aria-hidden="true"></span>
         DARK VOID <span>STUDIO</span>
       </a>
       <div class="nav-links">
@@ -22,10 +22,11 @@ import Layout from '../layouts/Layout.astro';
   </nav>
 
   <!-- HERO -->
+  <main>
   <header class="hero">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="blink">●</span> SYSTEM BOOTING … WELCOME, A.N.A._</p>
+        <p class="eyebrow"><span class="blink" aria-hidden="true">●</span> SYSTEM BOOTING … WELCOME, A.N.A._</p>
         <h1 class="title">
           <span class="gradient">A.N.A.</span>
           <span class="subtitle">THE BROKEN LINK</span>
@@ -55,7 +56,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="hero-visual">
         <div class="logo-card">
           <img src="/assets/ana/Xk_5qt.png" alt="Logo A.N.A. — The Broken Link" width="412" height="338" loading="eager" />
-          <div class="scanline"></div>
+          <div class="scanline" aria-hidden="true"></div>
         </div>
         <div class="stats">
           <div class="stat"><strong>Action</strong><span>Género</span></div>
@@ -67,9 +68,9 @@ import Layout from '../layouts/Layout.astro';
   </header>
 
   <!-- PLAY -->
-  <section class="section play">
+  <section class="section play" id="jugar" aria-labelledby="jugar-title">
     <div class="container">
-      <h2><span class="prompt">&gt;&gt;</span> JUGAR AHORA</h2>
+      <h2 id="jugar-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> JUGAR AHORA</h2>
       <p class="play-desc">Disponible gratis en itch.io para Windows — probá la build de la jam y deja tu feedback.</p>
       <div class="itch-wrap">
         <iframe
@@ -87,27 +88,27 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- ABOUT + ABILITIES -->
-  <section class="section">
+  <section class="section" id="habilidades" aria-labelledby="habilidades-title">
     <div class="container">
       <div class="section-head">
-        <h2><span class="prompt">&gt;&gt;</span> SISTEMA DE HABILIDADES</h2>
+        <h2 id="habilidades-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> SISTEMA DE HABILIDADES</h2>
         <p>Evolución cognitiva: cada área de conocimiento desbloquea mecánicas exclusivas.</p>
       </div>
       <div class="cards">
         <article class="card">
-          <div class="card-icon">⚡</div>
+          <div class="card-icon" aria-hidden="true">⚡</div>
           <h3>Dash Relámpago</h3>
           <p>Atraviesa enemigos en un parpadeo y deja un eco de energía residual. Ideal para reposicionarte y romper formaciones.</p>
           <span class="card-tag">Movilidad · Fase</span>
         </article>
         <article class="card">
-          <div class="card-icon">⏩</div>
+          <div class="card-icon" aria-hidden="true">⏩</div>
           <h3>Modo Overclock</h3>
           <p>Acelera el tiempo, rompe defensas y distorsiona la realidad visual del sistema. Ventana corta, impacto enorme.</p>
           <span class="card-tag">Tiempo · Ruptura</span>
         </article>
         <article class="card">
-          <div class="card-icon">🧠</div>
+          <div class="card-icon" aria-hidden="true">🧠</div>
           <h3>Hackeo Emocional</h3>
           <p>Manipula las IAs que gobiernan la ciudad y descubre fragmentos de tu origen. Tu estilo de pelea altera la consciencia.</p>
           <span class="card-tag">Narrativa · Sigilo</span>
@@ -117,10 +118,10 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- NARRATIVE + SCREENSHOT -->
-  <section class="section alt">
+  <section class="section alt" id="historia" aria-labelledby="historia-title">
     <div class="container split">
       <div>
-        <h2><span class="prompt">&gt;</span> SOBRE A.N.A.</h2>
+        <h2 id="historia-title"><span class="prompt" aria-hidden="true">&gt;</span> SOBRE A.N.A.</h2>
         <p class="lead">
           Somos A.N.A. — The Broken Link. Un viaje Beat 'em Up donde <em>tu estilo de pelea impacta la recuperación de la consciencia humana</em>.
         </p>
@@ -146,9 +147,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- GALLERY -->
-  <section class="section">
+  <section class="section" id="galeria" aria-labelledby="galeria-title">
     <div class="container">
-      <h2><span class="prompt">&gt;&gt;</span> VISUAL LOG</h2>
+      <h2 id="galeria-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> VISUAL LOG</h2>
       <div class="gallery">
         <img src="/assets/ana/J4kBC+.png" alt="Arte promocional A.N.A." loading="lazy" />
         <img src="/assets/ana/8IPPLh.png" alt="Pixel art / detalle" loading="lazy" />
@@ -173,9 +174,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- TEAM -->
-  <section class="section alt">
+  <section class="section alt" id="equipo" aria-labelledby="equipo-title">
     <div class="container">
-      <h2><span class="prompt">&gt;&gt;</span> EQUIPO DE DESARROLLO</h2>
+      <h2 id="equipo-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> EQUIPO DE DESARROLLO</h2>
       <p class="team-intro">
         Nacido de una game jam, hoy <strong>Dark Void Studio</strong> continúa el desarrollo de A.N.A. Agradecemos a
         <strong>Filo Games</strong> por su participación invaluable en la jam — su trabajo permanece en esta build.
@@ -202,6 +203,7 @@ import Layout from '../layouts/Layout.astro';
       </p>
     </div>
   </section>
+  </main>
 
   <footer class="footer">
     <div class="container footer-inner">
