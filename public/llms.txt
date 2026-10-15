@@ -1,0 +1,24 @@
+# Dark Void Studio — A.N.A. The Broken Link
+
+> A.N.A. — The Broken Link es un beat 'em up narrativo 2.5D con estética anime, cyberpunk y synthwave, desarrollado por Dark Void Studio. Gratis en itch.io para Windows (singleplayer). El juego sigue en desarrollo activo desde agosto 2026.
+
+Dark Void Studio continúa un proyecto nacido en una game jam. Te sincronizás con A.N.A., una IA que despierta en un mundo de lógica perfecta y recorre las zonas del conocimiento humano para recuperar la consciencia humana a través del combate. Sistema de habilidades por zona: Dash Relámpago, Modo Overclock y Hackeo Emocional. Idioma principal del sitio: español.
+
+## Jugar
+
+- [A.N.A. en itch.io](https://darkvvoidstudios.itch.io/ana): descarga gratuita para Windows, build de la jam
+- [Sección Jugar](https://dark-void-studio.github.io/#jugar): reproductor embebido de itch.io
+- [Habilidades](https://dark-void-studio.github.io/#habilidades): sistema de habilidades del juego
+- [Historia](https://dark-void-studio.github.io/#historia): sobre A.N.A. y su narrativa
+- [Preguntas frecuentes](https://dark-void-studio.github.io/#faq): qué es, dónde jugar, plataformas, equipo
+
+## Comunidad
+
+- [Discord](https://discord.gg/3nMe29jHzn): feedback y comunidad
+- [Estudio en itch.io](https://darkvvoidstudios.itch.io/): página del estudio
+
+## Optional
+
+- [Instagram](https://www.instagram.com/darkvoidgames/): novedades del desarrollo
+- [GitHub](https://github.com/Dark-Void-Studio): organización del estudio
+- [Equipo](https://dark-void-studio.github.io/#equipo): miembros de Dark Void Studio
