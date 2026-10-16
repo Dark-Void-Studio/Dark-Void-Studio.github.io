@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Historial del agujero negro | Darkvoid Studios"
+  description="Comparativa interna de las versiones del agujero negro del hero. Página no indexada."
+  robots="noindex, nofollow"
+>
+  <main class="bh-history">
+    <p><a href="/">← Volver al inicio</a></p>
+    <h1>Historial del agujero negro</h1>
+    <p>Página interna para decidir con cuál versión nos quedamos. No indexada, fuera del sitemap.</p>
+    <h2 class="bh-sub">Logo en construcción</h2>
+    <div class="bh-grid">
+      <figure>
+        <canvas id="logo-v1" width="720" height="720"></canvas>
+        <figcaption><strong>Logo v7 — eclipse + anillo Saturno.</strong> Anillo de luz inclinado con Doppler sobre la aureola en degradado, fondo transparente.</figcaption>
+      </figure>
+      <form class="bh-panel" id="logo-panel">
+        <h3>Editar aureola</h3>
+        <label>Alcance <input type="range" name="spread" min="0.05" max="0.30" step="0.01" value="0.3"><span data-val="spread">0.3</span></label>
+        <label>Intensidad <input type="range" name="glow" min="0.2" max="1.5" step="0.05" value="0.3"><span data-val="glow">0.3</span></label>
+        <label>Posición cian <input type="range" name="cyan" min="0.05" max="0.9" step="0.01" value="0.07"><span data-val="cyan">0.07</span></label>
+        <label>Posición violeta <input type="range" name="violet" min="0.1" max="0.95" step="0.01" value="0.2"><span data-val="violet">0.2</span></label>
+        <label>Posición magenta <input type="range" name="magenta" min="0.2" max="1" step="0.01" value="0.51"><span data-val="magenta">0.51</span></label>
+        <p>Valores para pasarme:</p>
+        <code id="logo-values"></code>
+      </form>
+    </div>
+    <h2 class="bh-sub">Historial del hero</h2>
+    <div class="bh-grid">
+      <figure>
+        <canvas id="bh-v1" width="720" height="720"></canvas>
+        <figcaption><strong>v1 — original interactivo.</strong> Disco brillante con Doppler, destellos y nudos de plasma. El que está hoy en el hero.</figcaption>
+      </figure>
+      <figure>
+        <canvas id="bh-v2" width="720" height="720"></canvas>
+        <figcaption><strong>v2 — Gargantua.</strong> Halo lenseado en el plano del disco, borde interno al blanco, disco más abierto.</figcaption>
+      </figure>
+      <figure>
+        <canvas id="bh-v3" width="720" height="720"></canvas>
+        <figcaption><strong>v3 — EHT oscuro.</strong> Halo circular por fuera de la sombra, ambiente atenuado, anillo ceñido.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <script src="/bh.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!window.BlackHole) return;
+      window.BlackHole.mount(document.getElementById('bh-v1'), 'v1', {});
+      window.BlackHole.mount(document.getElementById('bh-v2'), 'v2', {});
+      window.BlackHole.mount(document.getElementById('bh-v3'), 'v3', {});
+      window.BlackHole.logoBase(document.getElementById('logo-v1'));
+      var panel = document.getElementById('logo-panel');
+      var out = document.getElementById('logo-values');
+      function readPanel() {
+        var v = {};
+        ['spread', 'glow', 'cyan', 'violet', 'magenta'].forEach(function (k) {
+          v[k] = Number(panel.elements[k].value);
+          panel.querySelector('[data-val="' + k + '"]').textContent = String(v[k]);
+        });
+        return v;
+      }
+      function refreshLogo() {
+        var v = readPanel();
+        out.textContent = JSON.stringify(v);
+        window.BlackHole.logoBase(document.getElementById('logo-v1'), v);
+      }
+      panel.addEventListener('input', refreshLogo);
+      refreshLogo();
+    });
+  </script>
+
+  <style>
+    .bh-history { max-width: 1280px; margin: 0 auto; padding: 96px 20px 64px; background: #050505; color: #f5f5f7; font-family: "Archivo", system-ui, sans-serif; }
+    .bh-history a { color: #00f0ff; }
+    .bh-history h1 { text-transform: uppercase; letter-spacing: -0.01em; }
+    .bh-sub { margin-top: 40px; text-transform: uppercase; }
+    .bh-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+    .bh-grid figure { margin: 0; background: #0b0b0f; border: 1px solid #262626; border-radius: 8px; padding: 16px; }
+    .bh-grid canvas { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; }
+    .bh-grid figcaption { margin-top: 12px; font-size: 0.9rem; color: #9ca3af; line-height: 1.5; }
+    .bh-grid figcaption strong { color: #f5f5f7; }
+    .bh-panel { background: #0b0b0f; border: 1px solid #262626; border-radius: 8px; padding: 16px; align-self: start; }
+    .bh-panel h3 { margin: 0 0 12px; text-transform: uppercase; font-size: 0.95rem; }
+    .bh-panel label { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin-bottom: 12px; font-size: 0.85rem; color: #9ca3af; }
+    .bh-panel input[type="range"] { grid-column: 1 / -1; width: 100%; accent-color: #00f0ff; }
+    .bh-panel code { display: block; background: #050505; border: 1px solid #262626; border-radius: 6px; padding: 10px; font-size: 0.8rem; color: #00f0ff; overflow-x: auto; white-space: nowrap; }
+    @media (max-width: 900px) { .bh-grid { grid-template-columns: 1fr; } }
+  </style>
+</Layout>
