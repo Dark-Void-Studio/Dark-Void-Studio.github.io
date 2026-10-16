@@ -1,24 +1,27 @@
-# Dark Void Studio — A.N.A. The Broken Link
+# Darkvoid Studios — Estudio indie en Lima, Perú
 
-> A.N.A. — The Broken Link es un beat 'em up narrativo 2.5D con estética anime, cyberpunk y synthwave, desarrollado por Dark Void Studio. Gratis en itch.io para Windows (singleplayer). El juego sigue en desarrollo activo desde agosto 2026.
+> Darkvoid Studios es un estudio indie de videojuegos en Lima, Perú. Creadores de A.N.A. — The Broken Link, 2.º mejor juego de Latinoamérica en GameJamPlus 25/26 (y mejor juego de Perú en la semifinal). Juegos en itch.io, tienda con envíos a todo Perú, equipo de 13 creadores. Contacto: darkvoidstu@gmail.com.
 
-Dark Void Studio continúa un proyecto nacido en una game jam. Te sincronizás con A.N.A., una IA que despierta en un mundo de lógica perfecta y recorre las zonas del conocimiento humano para recuperar la consciencia humana a través del combate. Sistema de habilidades por zona: Dash Relámpago, Modo Overclock y Hackeo Emocional. Idioma principal del sitio: español.
+El estudio cuenta historias mediante videojuegos: mundos oscuros, misteriosos y ricos en narrativa. Juegos lanzados: A.N.A. — The Broken Link (beat 'em up 2.5D), Matchballance (puzle de física) y Egg Dealer. Idioma principal del sitio: español.
 
-## Jugar
+## Juegos
 
-- [A.N.A. en itch.io](https://darkvvoidstudios.itch.io/ana): descarga gratuita para Windows, build de la jam
-- [Sección Jugar](https://dark-void-studio.github.io/#jugar): reproductor embebido de itch.io
-- [Habilidades](https://dark-void-studio.github.io/#habilidades): sistema de habilidades del juego
-- [Historia](https://dark-void-studio.github.io/#historia): sobre A.N.A. y su narrativa
-- [Preguntas frecuentes](https://dark-void-studio.github.io/#faq): qué es, dónde jugar, plataformas, equipo
+- [Juegos](https://dark-void-studio.github.io/#juegos): 3 juegos lanzados, todos en itch.io
+- [A.N.A. en itch.io](https://darkvvoidstudios.itch.io/ana): beat 'em up narrativo 2.5D, gratis para Windows
+- [Estudio en itch.io](https://darkvvoidstudios.itch.io/): todos los juegos del estudio
+
+## Premios
+
+- [Premios](https://dark-void-studio.github.io/#premios): 2.º mejor juego de LATAM y mejor juego de Perú en GameJamPlus 25/26
 
 ## Comunidad
 
 - [Discord](https://discord.gg/3nMe29jHzn): feedback y comunidad
-- [Estudio en itch.io](https://darkvvoidstudios.itch.io/): página del estudio
+- [Contacto](https://dark-void-studio.github.io/#contacto): colaboraciones, prensa y pedidos
 
 ## Optional
 
+- [Tienda](https://dark-void-studio.github.io/#tienda): merch oficial con envíos a todo Perú
+- [Equipo](https://dark-void-studio.github.io/#equipo): 13 creadores del estudio
 - [Instagram](https://www.instagram.com/darkvoidgames/): novedades del desarrollo
 - [GitHub](https://github.com/Dark-Void-Studio): organización del estudio
-- [Equipo](https://dark-void-studio.github.io/#equipo): miembros de Dark Void Studio

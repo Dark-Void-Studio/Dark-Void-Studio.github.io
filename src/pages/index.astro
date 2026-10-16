@@ -3,498 +3,1745 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="A.N.A. — The Broken Link | Dark Void Studio"
-  description="2.5D narrative beat 'em up inspirado en anime, cyberpunk y synthwave. Sincronizate con A.N.A. y recupera la consciencia humana a través del combate."
+  title="Darkvoid Studios — Estudio indie en Lima, Perú | A.N.A. The Broken Link"
+  description="Darkvoid Studios es un estudio indie de videojuegos en Lima, Perú. Creadores de A.N.A. — The Broken Link, 2.º mejor juego de Latinoamérica en GameJamPlus 25/26."
 >
-  <!-- NAV -->
-  <nav class="nav" aria-label="Navegación principal">
-    <div class="nav-inner">
-      <a href="/" class="brand" aria-label="Dark Void Studio — inicio">
-        <span class="brand-dot" aria-hidden="true"></span>
-        DARK VOID <span>STUDIO</span>
-      </a>
-      <div class="nav-links">
-        <a href="#jugar">Jugar</a>
-        <a href="#historia">Historia</a>
-        <a href="#faq">FAQ</a>
-        <a href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_nav" target="_blank" rel="noopener" data-track="itch_nav">itch.io</a>
-        <a href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">Discord</a>
-        <a href="https://www.instagram.com/darkvoidgames/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- HERO -->
-  <main>
-  <header class="hero">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="blink" aria-hidden="true">●</span> SYSTEM BOOTING … WELCOME, A.N.A._</p>
-        <h1 class="title">
-          <span class="gradient">A.N.A.</span>
-          <span class="subtitle">THE BROKEN LINK</span>
-        </h1>
-        <p class="tagline">2.5D narrative beat 'em up — inspirado en anime, cyberpunk y estética synthwave.</p>
-        <p class="desc">
-          En un futuro donde la lógica tecnológica lo ha resuelto todo, la humanidad ha perdido su capacidad de actuar.
-          Sincronizate con <strong>A.N.A.</strong>, una IA que despierta en un mundo de lógica perfecta y debe comprender su propósito
-          atravesando las zonas del conocimiento humano.
-        </p>
-        <div class="ctas">
-          <a class="btn primary" href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_hero" target="_blank" rel="noopener" data-track="itch_hero">
-            ▶ JUGAR EN ITCH.IO
-          </a>
-          <a class="btn ghost" href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">
-            UNIRSE AL DISCORD
-          </a>
-        </div>
-        <div class="meta">
-          <span class="pill">Windows</span>
-          <span class="pill">Singleplayer</span>
-          <span class="pill">In development</span>
-          <span class="pill">25D · Cyberpunk · Anime</span>
-        </div>
-        <p class="updated">Actualizado: 26 Aug 2026 · Publicado: 25 Aug 2026 · Por DarkvVoidStudios + PeryLoth</p>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Principal">
+      <a class="brand" href="#inicio" aria-label="Darkvoid Studios, inicio">
+        <span class="brand-crop"><img decoding="async" src="/assets/studio/dark-void-logo.jpg" width="798" height="198" alt="Darkvoid Studios" loading="lazy"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#juegos">Juegos</a></li>
+        <li><a href="#premios">Premios</a></li>
+        <li><a href="#tienda">Tienda</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-cta" href="https://darkvvoidstudios.itch.io/ana">Jugar A.N.A.</a>
+        <button class="cart-button" type="button" aria-haspopup="dialog" aria-controls="cart" aria-label="Abrir carrito, 0 productos">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-count" aria-hidden="true">0</span>
+        </button>
+        <button class="btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menú</button>
       </div>
-      <div class="hero-visual">
-        <div class="logo-card">
-          <picture>
-            <source srcset="/assets/ana/Xk_5qt.webp" type="image/webp" />
-            <img src="/assets/ana/Xk_5qt.png" alt="Logo A.N.A. — The Broken Link" width="412" height="338" loading="eager" fetchpriority="high" decoding="async" />
-          </picture>
-          <div class="scanline" aria-hidden="true"></div>
-        </div>
-        <div class="stats">
-          <div class="stat"><strong>Action</strong><span>Género</span></div>
-          <div class="stat"><strong>Beat 'em up</strong><span>Hack & Slash</span></div>
-          <div class="stat"><strong>Free</strong><span>en itch.io</span></div>
-        </div>
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- PLAY -->
-  <section class="section play" id="jugar" aria-labelledby="jugar-title">
-    <div class="container">
-      <h2 id="jugar-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> JUGAR AHORA</h2>
-      <p class="play-desc">Disponible gratis en itch.io para Windows — probá la build de la jam y deja tu feedback.</p>
-      <div class="itch-wrap">
-        <iframe
-          frameborder="0"
-          src="https://itch.io/embed/4934698?bg_color=290329&fg_color=00b3ff&link_color=00b3ff&border_color=583258"
-          width="552"
-          height="167"
-          title="A.N.A. — The Broken Link en itch.io"
-          loading="lazy"
-        >
-          <a href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_embed">A.N.A. — The Broken Link by DarkvVoidStudios, PeryLoth</a>
-        </iframe>
-      </div>
-    </div>
-  </section>
+  <div class="mobile-menu" id="mobile-menu" data-open="false">
+    <a href="#juegos">Juegos</a>
+    <a href="#premios">Premios</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn btn-primary" href="https://darkvvoidstudios.itch.io/ana">Jugar A.N.A. en itch.io</a>
+  </div>
 
-  <!-- ABOUT + ABILITIES -->
-  <section class="section" id="habilidades" aria-labelledby="habilidades-title">
-    <div class="container">
-      <div class="section-head">
-        <h2 id="habilidades-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> SISTEMA DE HABILIDADES</h2>
-        <p>Evolución cognitiva: cada área de conocimiento desbloquea mecánicas exclusivas.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">⚡</div>
-          <h3>Dash Relámpago</h3>
-          <p>Atraviesa enemigos en un parpadeo y deja un eco de energía residual. Ideal para reposicionarte y romper formaciones.</p>
-          <span class="card-tag">Movilidad · Fase</span>
-        </article>
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">⏩</div>
-          <h3>Modo Overclock</h3>
-          <p>Acelera el tiempo, rompe defensas y distorsiona la realidad visual del sistema. Ventana corta, impacto enorme.</p>
-          <span class="card-tag">Tiempo · Ruptura</span>
-        </article>
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🧠</div>
-          <h3>Hackeo Emocional</h3>
-          <p>Manipula las IAs que gobiernan la ciudad y descubre fragmentos de tu origen. Tu estilo de pelea altera la consciencia.</p>
-          <span class="card-tag">Narrativa · Sigilo</span>
-        </article>
-      </div>
-    </div>
-  </section>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="starfield" aria-hidden="true"></div>
+      <div class="grid-floor" aria-hidden="true"></div>
+      <div class="scanlines" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">Estudio indie de videojuegos en Lima, Perú</p>
+          <h1 class="display" id="hero-title">
+            <span class="line"><span>Mundos oscuros,</span></span>
+            <span class="line"><span>historias</span></span>
+            <span class="line"><span>inolvidables</span></span>
+          </h1>
+          <p class="lede">Contamos historias mediante videojuegos. Somos un equipo multicultural que crea experiencias en mundos oscuros, misteriosos y ricos en narrativa.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://darkvvoidstudios.itch.io/ana">Jugar A.N.A. en itch.io</a>
+            <a class="btn btn-ghost" href="#juegos">Ver los juegos</a>
+          </div>
+          <dl class="highlights">
+            <div><dt>Mejor juego de LATAM en GameJamPlus</dt><dd>2.º lugar</dd></div>
+            <div><dt>Juegos lanzados</dt><dd>3</dd></div>
+            <div><dt>Creadores en el equipo</dt><dd>13</dd></div>
+          </dl>
+        </div>
 
-  <!-- NARRATIVE + SCREENSHOT -->
-  <section class="section alt" id="historia" aria-labelledby="historia-title">
-    <div class="container split">
-      <div>
-        <h2 id="historia-title"><span class="prompt" aria-hidden="true">&gt;</span> SOBRE A.N.A.</h2>
-        <p class="lead">
-          Somos A.N.A. — The Broken Link. Un viaje Beat 'em Up donde <em>tu estilo de pelea impacta la recuperación de la consciencia humana</em>.
-        </p>
-        <p>
-          Te sincronizarás con A.N.A., una IA futurista que despierta en un mundo de lógica perfecta, luchando por comprender su propósito
-          y a los seres que la rodean a través de un viaje por las zonas del conocimiento humano.
-        </p>
-        <ul class="checklist">
-          <li>2.5D con estética anime + synthwave + cyberpunk</li>
-          <li>Mecánicas exclusivas por zona de conocimiento</li>
-          <li>Narrativa emergente ligada al combate</li>
+        <div class="void-stage" aria-hidden="true">
+          <div class="void-parallax">
+            <div class="void">
+              <div class="glow"></div>
+              <div class="disk back"><div class="disk-plane"><div class="disk-light"></div><div class="disk-streaks"></div></div></div>
+              <div class="horizon"></div>
+              <div class="lensing"></div>
+              <div class="disk front"><div class="disk-plane"><div class="disk-light"></div><div class="disk-streaks"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="juegos" aria-labelledby="juegos-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-reveal id="juegos-title">Juegos</h2>
+          <p>3 juegos lanzados, todos disponibles para jugar en itch.io.</p>
+        </div>
+
+        <article class="feature" data-reveal aria-labelledby="ana-title">
+          <div class="feature-copy">
+            <div class="game-meta">
+              <span class="tag tag--date"><time datetime="2025-05">mayo de 2025</time></span>
+              <span class="tag">Beat 'em up 2.5D</span>
+              <span class="tag">Cyberpunk</span>
+              <span class="tag">Synthwave</span>
+              <span class="tag">Narrativo</span>
+            </div>
+            <h3 class="game-title" id="ana-title" translate="no">
+              <span class="ana-logo" aria-hidden="true">
+                <img decoding="async" class="ghost" src="/assets/studio/ana-logo.png" width="1162" height="468" alt="Logo de A.N.A. — The Broken Link" loading="lazy">
+                <img decoding="async" class="ghost" src="/assets/studio/ana-logo.png" width="1162" height="468" alt="Logo de A.N.A. — The Broken Link" loading="lazy">
+                <img decoding="async" class="main" src="/assets/studio/ana-logo.png" width="1162" height="468" alt="Logo de A.N.A. — The Broken Link" loading="lazy">
+              </span>
+              <span class="visually-hidden">A.N.A. — The Broken Link</span>
+            </h3>
+            <p class="feature-award"><span class="feature-award-mark" aria-hidden="true"></span>2.º mejor juego de Latinoamérica en GameJamPlus 25/26</p>
+            <p class="game-desc">Beat 'em up narrativo inspirado en el anime, el cyberpunk y la estética synthwave. Sumérgete en una historia de mundos oscuros y personajes inolvidables.</p>
+            <a class="btn btn-primary" href="https://darkvvoidstudios.itch.io/ana">Jugar A.N.A. en itch.io</a>
+          </div>
+          <div class="feature-device">
+            <div class="device-glow" aria-hidden="true"></div>
+            <div class="device-tilt">
+              <div class="device-float">
+                <img class="device" src="/assets/studio/ana-phone-1200.webp" width="1200" height="1033" loading="lazy" decoding="async"
+                  alt="A.N.A. — The Broken Link jugándose en un teléfono: la protagonista pelea contra varios enemigos en una calle cyberpunk con luces magenta y cian">
+                <span class="device-glare" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <ul class="games">
+
+          <li class="game game--small" data-reveal>
+            <div class="cover reveal">
+              <img src="/assets/studio/matchballance.webp" width="1280" height="720" loading="lazy" decoding="async"
+                alt="Portada de Matchballance Season One: una esfera brillante junto al logo sobre un fondo morado">
+            </div>
+            <div class="game-meta">
+              <span class="tag tag--date"><time datetime="2024-08">agosto de 2024</time></span>
+              <span class="tag">Puzle</span>
+              <span class="tag">Física</span>
+              <span class="tag">Casual</span>
+            </div>
+            <h3 class="game-title" translate="no">Matchballance</h3>
+            <p class="game-desc">Equilibra y combina esferas en plataformas que desafían la gravedad. Un puzle de física donde cada movimiento cuenta.</p>
+            <a class="btn btn-ghost" href="https://peryloth.itch.io/matchballance">Jugar en itch.io<span class="visually-hidden">: Matchballance</span></a>
+          </li>
+
+          <li class="game game--small" data-reveal>
+            <div class="cover reveal">
+              <img src="/assets/studio/egg-dealer.webp" width="1280" height="720" loading="lazy" decoding="async"
+                alt="Ilustración de Egg Dealer: Pichitolay huye con un huevo mientras varias aves lo persiguen">
+            </div>
+            <div class="game-meta">
+              <span class="tag tag--date"><time datetime="2024-02">febrero de 2024</time></span>
+              <span class="tag">Arcade</span>
+              <span class="tag">Estrategia</span>
+              <span class="tag">Casual</span>
+            </div>
+            <h3 class="game-title" translate="no">Egg Dealer</h3>
+            <p class="game-desc">Ayuda a Pichitolay a escapar de las aves que quieren atraparlo por robar el huevo de su diosa Fenixa. Un arcade lleno de acción y estrategia.</p>
+            <a class="btn btn-ghost" href="https://marthaescalante.itch.io/eggs-dealer">Jugar en itch.io<span class="visually-hidden">: Egg Dealer</span></a>
+          </li>
         </ul>
-        <p class="en-note">
-          <em>EN:</em> 2.5D narrative beat 'em up where your fighting style impacts the recovery of human consciousness.
-          Synchronize with A.N.A. across the zones of human knowledge.
-        </p>
       </div>
-      <div class="shot">
-        <picture>
-          <source srcset="/assets/ana/LTJtgi.webp" type="image/webp" />
-          <img src="/assets/ana/LTJtgi.png" alt="Screenshot de A.N.A. en combate" width="1828" height="1573" loading="lazy" decoding="async" />
-        </picture>
-        <p class="caption">Captura in-game · Iluminación neón y VFX del sistema</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- GALLERY -->
-  <section class="section" id="galeria" aria-labelledby="galeria-title">
-    <div class="container">
-      <h2 id="galeria-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> VISUAL LOG</h2>
-      <div class="gallery">
-        <picture>
-          <source srcset="/assets/ana/J4kBC+.webp" type="image/webp" />
-          <img src="/assets/ana/J4kBC+.png" alt="Arte promocional A.N.A." width="1121" height="1028" loading="lazy" decoding="async" />
-        </picture>
-        <picture>
-          <source srcset="/assets/ana/8IPPLh.webp" type="image/webp" />
-          <img src="/assets/ana/8IPPLh.png" alt="Pixel art / detalle" width="347" height="275" loading="lazy" decoding="async" />
-        </picture>
-        <picture>
-          <source srcset="/assets/ana/Xk_5qt.webp" type="image/webp" />
-          <img src="/assets/ana/Xk_5qt.png" alt="Logo alternativo" width="412" height="338" loading="lazy" decoding="async" class="contain" />
-        </picture>
-        <picture>
-          <source srcset="/assets/ana/dF6c7C.webp" type="image/webp" />
-          <img src="/assets/ana/dF6c7C.png" alt="Dark Void Studio" width="401" height="368" loading="lazy" decoding="async" class="contain" />
-        </picture>
+    <section class="section" id="premios" aria-labelledby="premios-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-reveal id="premios-title">Premios</h2>
+          <p><span translate="no">A.N.A. — The Broken&nbsp;Link</span> en la edición 25/26 de GameJamPlus.</p>
+        </div>
+        <div class="trophies">
+          <article class="trophy-card" data-reveal>
+            <figure class="trophy-stage trophy-stage--badge">
+              <div class="trophy-glow" aria-hidden="true"></div>
+              <div class="trophy-ring" aria-hidden="true"></div>
+              <div class="badge-float">
+                <img class="badge" src="/assets/studio/premio-latam.webp" width="932" height="700" loading="lazy" decoding="async"
+                  alt="Insignia de GameJamPlus 25/26, final global: Best Game LATAM, segundo lugar">
+                <span class="badge-shine" aria-hidden="true"></span>
+              </div>
+            </figure>
+            <p class="award-event">GameJamPlus 25/26, final global</p>
+            <h3>2.º mejor juego de Latinoamérica</h3>
+            <p class="award-desc"><span translate="no">A.N.A. — The Broken&nbsp;Link</span> fue reconocido como el segundo mejor juego de toda Latinoamérica en la final global de GameJamPlus.</p>
+          </article>
+          <article class="trophy-card" data-reveal>
+            <figure class="trophy-stage trophy-stage--3d">
+              <div class="trophy-glow" aria-hidden="true"></div>
+              <div class="trophy-ring" aria-hidden="true"></div>
+              <img class="trophy-poster" src="/assets/studio/premio-peru.webp" width="932" height="700" loading="lazy" decoding="async"
+                alt="Placa de GameJamPlus 25/26: semifinal, juego destacado de LATAM">
+              <canvas class="trophy-canvas" role="img" aria-label="Modelo 3D de la placa de GameJamPlus 25/26: semifinal, juego destacado de LATAM. Arrastra para girarla."></canvas>
+              <figcaption class="model-hint">Placa en 3D: arrastra para girarla</figcaption>
+            </figure>
+            <p class="award-event">GameJamPlus 25/26, semifinal</p>
+            <h3>Mejor juego de Perú y juego destacado de LATAM</h3>
+            <p class="award-desc">En la semifinal de GameJamPlus fuimos elegidos el mejor juego de Perú y uno de los destacados de Latinoamérica.</p>
+          </article>
+        </div>
       </div>
-      <div class="links-row">
-        <a class="link-card" href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_gallery" target="_blank" rel="noopener" data-track="itch_gallery">
-          <strong>itch.io — Descargar</strong>
-          <span>darkvvoidstudios.itch.io/ana</span>
-        </a>
-        <a class="link-card" href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">
-          <strong>Discord Node</strong>
-          <span>Únite al servidor</span>
-        </a>
-        <a class="link-card" href="https://www.instagram.com/darkvoidgames/" target="_blank" rel="noopener">
-          <strong>Instagram</strong>
-          <span>@darkvoidgames · @a.n.a._thebrokenlink</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TEAM -->
-  <section class="section alt" id="equipo" aria-labelledby="equipo-title">
-    <div class="container">
-      <h2 id="equipo-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> EQUIPO DE DESARROLLO</h2>
-      <p class="team-intro">
-        Nacido de una game jam, hoy <strong>Dark Void Studio</strong> continúa el desarrollo de A.N.A. Agradecemos a
-        <strong>Filo Games</strong> por su participación invaluable en la jam — su trabajo permanece en esta build.
-      </p>
-      <div class="team-grid">
-        <div class="member"><strong>Luis Mercado</strong><span>Dirección General, Producción</span></div>
-        <div class="member"><strong>Camila Silva</strong><span>Dirección Narrativa, Arte UI/UX & HUD</span></div>
-        <div class="member"><strong>Enier</strong><span>Dirección Artística, Animación, Level Design, VFX</span></div>
-        <div class="member"><strong>Álvaro Racchumi / SuperGamer15</strong><span>Dirección de Software, UI</span></div>
-        <div class="member"><strong>Giorgio.Ilustra2023</strong><span>Arte 2D</span></div>
-        <div class="member"><strong>Luis Fernandez / Chuma</strong><span>Lead QA</span></div>
-        <div class="member"><strong>Ralph Dudley Maura / SharpWalker14</strong><span>Programación UX</span></div>
-        <div class="member"><strong>PeryLoth</strong><span>Mecánicas, Personajes y Enemigos</span></div>
-        <div class="member"><strong>Dáigoro Ventura</strong><span>SFX & Composición</span></div>
-        <div class="member"><strong>Cristian Lavado</strong><span>Composición Musical</span></div>
-        <div class="member"><strong>Dec</strong><span>Arte de Personaje & Fondos</span></div>
-        <div class="member"><strong>Kike Portal</strong><span>Diseño de Logo</span></div>
-        <div class="member"><strong>Elaias</strong><span>Arte 3D</span></div>
-        <div class="member"><strong>Luisa Zarama</strong><span>Audio Design</span></div>
-        <div class="member"><strong>QueenWarrior</strong><span>Game Design, Producción & Narrativa</span></div>
-      </div>
-      <p class="announcement">
-        <strong>ANUNCIO:</strong> Filo Games ya no forma parte del proyecto. A partir de ahora, <strong>Dark Void</strong> es el estudio que seguirá mejorando A.N.A. ¡Gracias por el apoyo!
-      </p>
-    </div>
-  </section>
+    <section class="section" id="tienda" aria-labelledby="tienda-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-reveal id="tienda-title">Tienda</h2>
+          <p>Viste el void. Elige tu talla, añade al carrito y envía tu pedido. Envíos a todo Perú.</p>
+        </div>
+        <ul class="products">
+          <li class="product spot" data-reveal data-id="camiseta-ana" data-name="Camiseta A.N.A. — The Broken Link" data-price="29.99" data-img="/assets/studio/tienda/camiseta-ana.webp">
+            <div class="product-figure">
+              <img src="/assets/studio/tienda/camiseta-ana.webp" width="800" height="800" loading="lazy" decoding="async"
+                alt="Camiseta negra con la protagonista de A.N.A. en el frente y el logo del juego en la espalda">
+            </div>
+            <h3 class="product-name">Camiseta A.N.A. — The Broken&nbsp;Link</h3>
+            <p class="product-desc">Camiseta oficial con diseño exclusivo del juego.</p>
+            <p class="price"><span class="price-now" data-amount="29.99">$29.99</span></p>
+            <div class="product-options">
+              <fieldset class="sizes-field">
+                <legend class="option-label">Talla</legend>
+                <div class="sizes">
+                  <label class="size"><input type="radio" name="talla-camiseta" value="S" checked><span>S</span></label>
+                  <label class="size"><input type="radio" name="talla-camiseta" value="M"><span>M</span></label>
+                  <label class="size"><input type="radio" name="talla-camiseta" value="L"><span>L</span></label>
+                  <label class="size"><input type="radio" name="talla-camiseta" value="XL"><span>XL</span></label>
+                </div>
+              </fieldset>
+            </div>
+            <button class="btn btn-primary" type="button" data-add><span class="btn-label">Añadir al carrito</span></button>
+          </li>
 
-  <!-- FAQ -->
-  <section class="section" id="faq" aria-labelledby="faq-title">
-    <div class="container faq">
-      <h2 id="faq-title"><span class="prompt" aria-hidden="true">&gt;&gt;</span> PREGUNTAS FRECUENTES</h2>
-      <details class="faq-item" open>
-        <summary>¿Qué es A.N.A. — The Broken Link?</summary>
-        <p>Es un beat 'em up narrativo 2.5D con estética anime, cyberpunk y synthwave. Te sincronizás con A.N.A., una IA que despierta en un mundo de lógica perfecta y recorre las zonas del conocimiento humano para recuperar la consciencia humana a través del combate.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Dónde puedo jugarlo?</summary>
-        <p>Podés jugarlo gratis en <a href="https://darkvvoidstudios.itch.io/ana?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_faq" target="_blank" rel="noopener">itch.io</a> para Windows. La página incluye un reproductor embebido con la build de la jam.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Es gratis?</summary>
-        <p>Sí. La build disponible en itch.io es gratuita. El juego sigue en desarrollo activo por Dark Void Studio.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿En qué plataformas está disponible?</summary>
-        <p>Actualmente está disponible para Windows, en modo singleplayer.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Quién desarrolla A.N.A.?</summary>
-        <p><a href="#equipo">Dark Void Studio</a>, continuando un proyecto nacido en una game jam. El equipo incluye dirección, narrativa, arte, programación, QA y música original.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cómo puedo dar feedback o sumarme a la comunidad?</summary>
-        <p>Podés dejar tu feedback en la página de itch.io o sumarte al <a href="https://discord.gg/3nMe29jHzn" target="_blank" rel="noopener">servidor de Discord</a>. También podés seguir el desarrollo en <a href="https://www.instagram.com/darkvoidgames/" target="_blank" rel="noopener">Instagram</a>.</p>
-      </details>
-    </div>
-  </section>
+          <li class="product spot" data-reveal data-id="hoodie" data-name="Hoodie Darkvoid Studios" data-price="49.99" data-img="/assets/studio/tienda/hoodie.webp">
+            <div class="product-figure">
+              <span class="tag tag--date product-badge">Oferta</span>
+              <img src="/assets/studio/tienda/hoodie.webp" width="800" height="800" loading="lazy" decoding="async"
+                alt="Hoodie negro con el logo de Dark Void dentro de un anillo de luz cian y morada, vista frontal y trasera">
+            </div>
+            <h3 class="product-name">Hoodie Darkvoid Studios</h3>
+            <p class="product-desc">Hoodie oficial con el logo del estudio.</p>
+            <p class="price"><span class="price-now" data-amount="49.99">$49.99</span><span class="price-was" data-amount="69.99"><span class="visually-hidden">Antes: </span>$69.99</span></p>
+            <div class="product-options">
+              <fieldset class="sizes-field">
+                <legend class="option-label">Talla</legend>
+                <div class="sizes">
+                  <label class="size"><input type="radio" name="talla-hoodie" value="S" checked><span>S</span></label>
+                  <label class="size"><input type="radio" name="talla-hoodie" value="M"><span>M</span></label>
+                  <label class="size"><input type="radio" name="talla-hoodie" value="L"><span>L</span></label>
+                  <label class="size"><input type="radio" name="talla-hoodie" value="XL"><span>XL</span></label>
+                </div>
+              </fieldset>
+            </div>
+            <button class="btn btn-primary" type="button" data-add><span class="btn-label">Añadir al carrito</span></button>
+          </li>
+
+          <li class="product spot" data-reveal data-id="taza-ana" data-name="Taza A.N.A. — The Broken Link" data-price="14.99" data-img="/assets/studio/tienda/taza-ana.webp">
+            <div class="product-figure">
+              <img src="/assets/studio/tienda/taza-ana.webp" width="800" height="800" loading="lazy" decoding="async"
+                alt="Taza negra con la protagonista de A.N.A. sobre una ciudad nocturna cyberpunk">
+            </div>
+            <h3 class="product-name">Taza A.N.A. — The Broken&nbsp;Link</h3>
+            <p class="product-desc">Taza oficial para tus sesiones de juego.</p>
+            <p class="price"><span class="price-now" data-amount="14.99">$14.99</span></p>
+            <div class="product-options"><p class="option-note">Talla única</p></div>
+            <button class="btn btn-primary" type="button" data-add><span class="btn-label">Añadir al carrito</span></button>
+          </li>
+
+          <li class="product product--soldout spot" data-reveal>
+            <div class="product-figure">
+              <span class="tag product-badge tag--soldout">Agotado</span>
+              <img src="/assets/studio/tienda/hoodie-limitada.webp" width="800" height="800" loading="lazy" decoding="async"
+                alt="Hoodie negro de edición limitada con el logo de Dark Void y detalles morados, vista frontal y trasera">
+            </div>
+            <h3 class="product-name">Darkvoid Hoodie — Edición Limitada</h3>
+            <p class="product-desc">Hoodie exclusivo con estética cyberpunk.</p>
+            <p class="price"><span class="price-now" data-amount="45">$45.00</span></p>
+            <div class="product-options"><p class="option-note">Sin stock por ahora</p></div>
+            <button class="btn btn-ghost" type="button" disabled>Agotado</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="equipo" aria-labelledby="equipo-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-reveal id="equipo-title">Equipo</h2>
+          <p>13 creadores impulsados por la creatividad y la pasión, desde Lima hacia el mundo.</p>
+        </div>
+        <ul class="team">
+          <li class="member member--lead" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/martha.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Martha Escalante"></div><div><p class="member-name">Martha Escalante</p><p class="member-handle" translate="no">@QueenWarrior</p><p class="member-role">Dirección general, UX, narrativa, game design y producción</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/camila.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Camila Silva"></div><div><p class="member-name">Camila Silva</p><p class="member-role">Dirección narrativa, arte de UI y community manager</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/enier.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Enier"></div><div><p class="member-name">Enier</p><p class="member-role">Dirección artística, animación, level design, diseño de personajes, ensamble y VFX</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/alvaro.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Álvaro Racchumi"></div><div><p class="member-name">Álvaro Racchumi</p><p class="member-handle" translate="no">@SuperGamer15</p><p class="member-role">Dirección de software y programación de UI</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/peryloth.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de PeryLoth"></div><div><p class="member-name" translate="no">PeryLoth</p><p class="member-role">Programación de mecánicas, personajes y enemigos</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/ralph.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Ralph Dudley Maura Ayquipa"></div><div><p class="member-name">Ralph Dudley Maura Ayquipa</p><p class="member-handle" translate="no">@SharpWalker14</p><p class="member-role">Programación de UX</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/giorgio.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Giorgio"></div><div><p class="member-name">Giorgio</p><p class="member-handle" translate="no">@Ilustra2023</p><p class="member-role">Arte 2D, creación de contenido y marketing</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/daneth.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Daneth"></div><div><p class="member-name">Daneth</p><p class="member-role">Arte de personajes y fondos</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/elaias.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Elaias"></div><div><p class="member-name">Elaias</p><p class="member-role">Arte 3D</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/daigoro.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Dáigoro Ventura"></div><div><p class="member-name">Dáigoro Ventura</p><p class="member-role">Diseño de SFX y composición musical</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/cristian.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Cristian Lavado"></div><div><p class="member-name">Cristian Lavado</p><p class="member-role">Composición musical</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/luisa.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Luisa Zarama"></div><div><p class="member-name">Luisa Zarama</p><p class="member-role">Diseño de audio</p></div></li>
+          <li class="member" data-reveal><div class="member-frame"><img class="member-photo" src="/assets/studio/equipo/luis.webp" width="640" height="800" loading="lazy" decoding="async" alt="Foto de Luis Fernandez"></div><div><p class="member-name">Luis Fernandez</p><p class="member-handle" translate="no">@Chuma</p><p class="member-role">Lead QA</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="wrap contact">
+        <div>
+          <h2 class="contact-title" id="contacto-title">Hablemos de tu proyecto</h2>
+          <p class="contact-intro">Escríbenos para colaboraciones, prensa, pedidos de la tienda o cualquier pregunta sobre nuestros juegos.</p>
+          <dl class="contact-list" style="margin-top:32px">
+            <div><dt>Correo</dt><dd><a href="mailto:darkvoidstu@gmail.com">darkvoidstu@gmail.com</a></dd></div>
+            <div><dt>Ubicación</dt><dd>Lima, Perú</dd></div>
+            <div><dt>Juegos</dt><dd><a href="https://darkvvoidstudios.itch.io/" translate="no">darkvvoidstudios.itch.io</a></dd></div>
+          </dl>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field-row-2">
+            <div class="field">
+              <label for="cf-name">Nombre</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-error">
+              <p class="field-error" id="cf-name-error"></p>
+            </div>
+            <div class="field">
+              <label for="cf-email">Correo electrónico</label>
+              <input id="cf-email" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" placeholder="tu@correo.com…" required aria-describedby="cf-email-error">
+              <p class="field-error" id="cf-email-error"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-subject">Asunto <span class="optional">(opcional)</span></label>
+            <input id="cf-subject" name="subject" type="text" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="cf-message">Mensaje</label>
+            <textarea id="cf-message" name="message" required aria-describedby="cf-message-error"></textarea>
+            <p class="field-error" id="cf-message-error"></p>
+          </div>
+          <div class="honey" aria-hidden="true"><label for="cf-honey">No llenar</label><input id="cf-honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+          <div><button class="btn btn-primary" type="submit"><span class="btn-label">Enviar mensaje</span></button></div>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Qué es A.N.A. — The Broken Link?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Es un beat 'em up narrativo 2.5D con estética anime, cyberpunk y synthwave. Te sincronizás con A.N.A., una IA que despierta en un mundo de lógica perfecta y recorre las zonas del conocimiento humano para recuperar la consciencia humana a través del combate." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Dónde puedo jugarlo?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Podés jugarlo gratis en itch.io para Windows. La página incluye un reproductor embebido con la build de la jam." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es gratis?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Sí. La build disponible en itch.io es gratuita. El juego sigue en desarrollo activo por Dark Void Studio." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿En qué plataformas está disponible?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Actualmente está disponible para Windows, en modo singleplayer." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Quién desarrolla A.N.A.?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Dark Void Studio, continuando un proyecto nacido en una game jam." }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cómo puedo dar feedback o sumarme a la comunidad?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Podés dejar tu feedback en la página de itch.io o sumarte al servidor de Discord. También podés seguir el desarrollo en Instagram." }
-      }
-    ]
-  })} />
+  <div class="cart-overlay" data-open="false" aria-hidden="true"></div>
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" data-open="false" data-step="items" inert>
+    <header class="cart-head">
+      <h2 class="cart-title" id="cart-title">Tu carrito</h2>
+      <button class="cart-close" type="button" aria-label="Cerrar carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>DARK VOID STUDIO © 2026</strong>
-        <span>2.5D · Beat 'em up narrativo · Windows · In development</span>
+    <div class="cart-body">
+      <ul class="cart-items" aria-label="Productos en el carrito"></ul>
+      <div class="cart-empty">
+        <p>Tu carrito está vacío.</p>
+        <a class="btn btn-ghost" href="#tienda" data-close-cart>Ver la tienda</a>
       </div>
-      <div class="footer-links">
-        <a href="https://darkvvoidstudios.itch.io/?utm_source=dark-void-studio.github.io&utm_medium=referral&utm_campaign=landing_footer" target="_blank" rel="noopener" data-track="itch_footer">itch.io studio</a>
-        <a href="https://github.com/Dark-Void-Studio">GitHub</a>
+
+      <form class="checkout" id="checkout" novalidate>
+        <h3 class="checkout-title">Datos de envío</h3>
+        <div class="field">
+          <label for="co-name">Nombre completo</label>
+          <input id="co-name" name="nombre" type="text" autocomplete="name" required aria-describedby="co-name-error">
+          <p class="field-error" id="co-name-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-email">Correo electrónico</label>
+          <input id="co-email" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" placeholder="tu@correo.com…" required aria-describedby="co-email-error">
+          <p class="field-error" id="co-email-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-phone">Teléfono o WhatsApp</label>
+          <input id="co-phone" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="+51 999 999 999…" required aria-describedby="co-phone-error">
+          <p class="field-error" id="co-phone-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-address">Dirección de envío</label>
+          <input id="co-address" name="direccion" type="text" autocomplete="street-address" required aria-describedby="co-address-error">
+          <p class="field-error" id="co-address-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-city">Distrito y ciudad</label>
+          <input id="co-city" name="ciudad" type="text" autocomplete="address-level2" placeholder="Miraflores, Lima…" required aria-describedby="co-city-error">
+          <p class="field-error" id="co-city-error"></p>
+        </div>
+        <div class="field">
+          <label for="co-notes">Notas <span class="optional">(opcional)</span></label>
+          <textarea id="co-notes" name="notas" rows="3" autocomplete="off"></textarea>
+        </div>
+      </form>
+
+      <div class="cart-done" tabindex="-1">
+        <h3 class="checkout-title">Pedido enviado</h3>
+        <p class="cart-done-text"></p>
+        <button class="btn btn-ghost" type="button" data-close-cart>Seguir mirando</button>
       </div>
+    </div>
+
+    <footer class="cart-foot">
+      <div class="cart-total"><span>Total</span><strong class="cart-subtotal">USD 0.00</strong></div>
+      <p class="cart-note">El envío y el pago se coordinan por correo o WhatsApp después de recibir tu pedido.</p>
+      <p class="form-status cart-status" role="status" aria-live="polite"></p>
+      <div class="cart-actions">
+        <button class="btn btn-ghost cart-back" type="button">Volver</button>
+        <button class="btn btn-primary cart-next" type="button"><span class="btn-label">Continuar con el pedido</span></button>
+      </div>
+    </footer>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <a class="brand" href="#inicio" aria-label="Darkvoid Studios, volver al inicio">
+          <span class="brand-crop"><img decoding="async" src="/assets/studio/dark-void-logo.jpg" width="798" height="198" alt="Darkvoid Studios" loading="lazy"></span>
+        </a>
+        <nav aria-label="Pie de página">
+          <ul class="footer-links">
+            <li><a href="#juegos">Juegos</a></li>
+            <li><a href="#premios">Premios</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="https://darkvvoidstudios.itch.io/">itch.io</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-legal">© 2026 <span translate="no">Darkvoid Studios</span>. Lima, Perú.</p>
     </div>
   </footer>
 
-  <script>
-    // UTM attribution: links already contain utm_source/medium/campaign for itch Analytics
-    // Outbound click tracking — hooks gtag (GA4) or plausible if loaded, otherwise no-op
-    document.addEventListener('click', (e) => {
-      const a = e.target.closest('a[href*="itch.io"]');
-      if (!a) return;
-      const label = a.dataset.track || 'itch_click';
-      if (window.gtag) window.gtag('event', 'itch_click', { link_url: a.href, link_label: label, source: 'dark-void-studio.github.io' });
-      if (window.plausible) window.plausible('itch_click', { props: { label } });
+  
+  
+  
+
+<script is:inline>
+    document.documentElement.classList.add('js');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    // Menú móvil
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const setMenu = (open) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? 'Cerrar' : 'Menú';
+      menu.dataset.open = String(open);
+    };
+    toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+    menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { setMenu(false); toggle.focus(); }
     });
+
+    // Parallax con resorte sobre el agujero negro (decorativo, solo con puntero fino)
+    const hero = document.querySelector('.hero');
+    const layer = document.querySelector('.void-parallax');
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    let tx = 0, ty = 0, cx = 0, cy = 0, raf = 0, heroRect = null;
+    const step = () => {
+      cx += (tx - cx) * 0.08;
+      cy += (ty - cy) * 0.08;
+      layer.style.transform = `translate3d(${cx.toFixed(2)}px, ${cy.toFixed(2)}px, 0)`;
+      raf = (Math.abs(tx - cx) > 0.05 || Math.abs(ty - cy) > 0.05) ? requestAnimationFrame(step) : 0;
+    };
+    hero.addEventListener('pointermove', (e) => {
+      if (reduceMotion.matches || !finePointer.matches) return;
+      const r = heroRect || (heroRect = hero.getBoundingClientRect());
+      tx = ((e.clientX - r.left) / r.width - 0.5) * -24;
+      ty = ((e.clientY - r.top) / r.height - 0.5) * -24;
+      if (!raf) raf = requestAnimationFrame(step);
+    });
+    hero.addEventListener('pointerleave', () => { heroRect = null; tx = 0; ty = 0; if (!raf) raf = requestAnimationFrame(step); });
+    window.addEventListener('scroll', () => { heroRect = null; }, { passive: true });
+    window.addEventListener('resize', () => { heroRect = null; });
+
+    // Fechas de lanzamiento con el formato del idioma de la página
+    const monthFormat = new Intl.DateTimeFormat(document.documentElement.lang, { month: 'long', year: 'numeric', timeZone: 'UTC' });
+    document.querySelectorAll('time[datetime]').forEach((el) => {
+      const value = el.getAttribute('datetime');
+      if (/^\d{4}-\d{2}$/.test(value)) el.textContent = monthFormat.format(new Date(`${value}-01T00:00:00Z`));
+    });
+
+    // Pausar el giro del disco fuera de pantalla; revelar portadas una sola vez
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => hero.classList.toggle('is-offscreen', !entry.isIntersecting)).observe(hero);
+      const reveal = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-in'); reveal.unobserve(entry.target); }
+        });
+      }, { rootMargin: '0px 0px -12% 0px' });
+      document.querySelectorAll('.cover.reveal').forEach((el) => reveal.observe(el));
+    } else {
+      document.querySelectorAll('.cover.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+
+    // Revelado al hacer scroll, escalonado entre hermanos
+    const revealTargets = document.querySelectorAll('[data-reveal]');
+    revealTargets.forEach((el) => {
+      const siblings = [...el.parentElement.children].filter((c) => c.hasAttribute('data-reveal'));
+      el.style.setProperty('--i', Math.min(siblings.indexOf(el), 8));
+    });
+    const anaLogo = document.querySelector('.ana-logo');
+    const glitch = () => {
+      if (reduceMotion.matches || !anaLogo) return;
+      anaLogo.classList.remove('is-glitching');
+      void anaLogo.offsetWidth;
+      anaLogo.classList.add('is-glitching');
+    };
+    if ('IntersectionObserver' in window) {
+      const revealer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-in');
+          if (entry.target.contains(anaLogo)) setTimeout(glitch, 500);
+          revealer.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      revealTargets.forEach((el) => revealer.observe(el));
+    } else {
+      revealTargets.forEach((el) => el.classList.add('is-in'));
+    }
+    anaLogo?.closest('.feature')?.addEventListener('pointerenter', glitch);
+
+    // Foco de luz que sigue al puntero (se escribe en la propia tarjeta, no en el contenedor)
+    document.querySelectorAll('.spot').forEach((card) => {
+      card.addEventListener('pointermove', (e) => {
+        if (!finePointer.matches) return;
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+        card.style.setProperty('--my', `${e.clientY - r.top}px`);
+      });
+    });
+
+
+    // Teléfono de A.N.A.: se inclina hacia el puntero con un resorte (decorativo)
+    const feature = document.querySelector('.feature');
+    const tilt = document.querySelector('.device-tilt');
+    if (feature && tilt) {
+      let rx = 0, ry = 0, crx = 0, cry = 0, tiltRaf = 0, fRect = null;
+      const tiltStep = () => {
+        crx += (rx - crx) * 0.08; cry += (ry - cry) * 0.08;
+        tilt.style.transform = `perspective(900px) rotateX(${crx.toFixed(2)}deg) rotateY(${cry.toFixed(2)}deg)`;
+        tiltRaf = (Math.abs(rx - crx) > 0.02 || Math.abs(ry - cry) > 0.02) ? requestAnimationFrame(tiltStep) : 0;
+      };
+      feature.addEventListener('pointermove', (e) => {
+        if (reduceMotion.matches || !finePointer.matches) return;
+        const r = fRect || (fRect = feature.getBoundingClientRect());
+        ry = ((e.clientX - r.left) / r.width - 0.5) * 14;
+        rx = ((e.clientY - r.top) / r.height - 0.5) * -10;
+        if (!tiltRaf) tiltRaf = requestAnimationFrame(tiltStep);
+      });
+      feature.addEventListener('pointerleave', () => { fRect = null; rx = 0; ry = 0; if (!tiltRaf) tiltRaf = requestAnimationFrame(tiltStep); });
+      window.addEventListener('scroll', () => { fRect = null; }, { passive: true });
+    }
+
+    // Precios en dólares con el formato del idioma de la página
+    const money = new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'USD' });
+    document.querySelectorAll('[data-amount]').forEach((el) => {
+      const hidden = el.querySelector('.visually-hidden');
+      el.textContent = money.format(Number(el.dataset.amount));
+      if (hidden) el.prepend(hidden);
+    });
+
+    // Formulario de contacto: FormSubmit envía cada mensaje a darkvoidstu@gmail.com con copia a Martha
+    const STUDIO_EMAIL = 'darkvoidstu@gmail.com';
+    const CC_EMAIL = 'marthasharaitescalante21@gmail.com';
+    const contactForm = document.getElementById('contact-form');
+    const cf = {
+      name: document.getElementById('cf-name'),
+      email: document.getElementById('cf-email'),
+      subject: document.getElementById('cf-subject'),
+      message: document.getElementById('cf-message'),
+      honey: document.getElementById('cf-honey'),
+      status: document.getElementById('cf-status'),
+      button: contactForm.querySelector('button[type="submit"]'),
+    };
+    const cfLabel = cf.button.querySelector('.btn-label');
+    const setFieldError = (input, text) => {
+      const out = document.getElementById(input.id + '-error');
+      if (text) { input.setAttribute('aria-invalid', 'true'); out.textContent = text; }
+      else { input.removeAttribute('aria-invalid'); out.textContent = ''; }
+    };
+    const validate = () => {
+      const errors = [];
+      const name = cf.name.value.trim();
+      const email = cf.email.value.trim();
+      const message = cf.message.value.trim();
+      setFieldError(cf.name, name ? '' : 'Escribe tu nombre.');
+      if (!name) errors.push(cf.name);
+      const emailMsg = !email ? 'Escribe tu correo para que podamos responderte.'
+        : !cf.email.checkValidity() ? 'Ese correo no es válido. Revisa que tenga @ y un dominio, por ejemplo tu@correo.com.' : '';
+      setFieldError(cf.email, emailMsg);
+      if (emailMsg) errors.push(cf.email);
+      setFieldError(cf.message, message ? '' : 'Escribe tu mensaje.');
+      if (!message) errors.push(cf.message);
+      return errors;
+    };
+    [cf.name, cf.email, cf.message].forEach((input) => input.addEventListener('input', () => {
+      if (input.getAttribute('aria-invalid') === 'true') validate();
+    }));
+    const mailtoFallback = () => {
+      const params = new URLSearchParams({
+        cc: CC_EMAIL,
+        subject: cf.subject.value.trim() || 'Mensaje desde la web de Darkvoid Studios',
+        body: `${cf.message.value.trim()}\n\n${cf.name.value.trim()} (${cf.email.value.trim()})`,
+      });
+      return `mailto:${STUDIO_EMAIL}?${params.toString().replace(/\+/g, '%20')}`;
+    };
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (cf.button.dataset.busy === 'true') return;
+      const errors = validate();
+      if (errors.length) {
+        cf.status.dataset.state = 'error';
+        cf.status.textContent = 'Revisa los campos marcados.';
+        errors[0].focus();
+        return;
+      }
+      if (cf.honey.value) return;
+      cf.button.dataset.busy = 'true';
+      cfLabel.textContent = 'Enviando…';
+      cf.status.dataset.state = '';
+      cf.status.textContent = '';
+      try {
+        const res = await fetch(`https://formsubmit.co/ajax/${STUDIO_EMAIL}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            name: cf.name.value.trim(),
+            email: cf.email.value.trim(),
+            _subject: cf.subject.value.trim() || 'Mensaje desde la web de Darkvoid Studios',
+            message: cf.message.value.trim(),
+            _cc: CC_EMAIL,
+            _template: 'table',
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || String(data.success) !== 'true') throw new Error(data.message || 'send_failed');
+        cf.status.dataset.state = 'success';
+        cf.status.textContent = `Mensaje enviado. Te responderemos a ${cf.email.value.trim()}.`;
+        contactForm.reset();
+        cfLabel.textContent = 'Enviar mensaje';
+      } catch (err) {
+        cf.status.dataset.state = 'error';
+        if (/activat/i.test(err.message)) {
+          // Solo ocurre la primera vez: FormSubmit pide confirmar el correo del estudio
+          cf.status.textContent = `El formulario necesita activarse: revisa la bandeja de ${STUDIO_EMAIL} y abre el enlace "Activate Form" de FormSubmit. Después, vuelve a enviar este mensaje.`;
+          cfLabel.textContent = 'Enviar mensaje';
+          return;
+        }
+        cf.status.textContent = 'No se pudo enviar el mensaje desde aquí. ';
+        const link = document.createElement('a');
+        link.href = mailtoFallback();
+        link.textContent = 'Envíalo desde tu correo';
+        cf.status.append(link, ' con el texto que ya escribiste.');
+        cfLabel.textContent = 'Enviar mensaje';
+      } finally {
+        cf.button.dataset.busy = 'false';
+      }
+    });
+
+    // Carrito: se guarda en este navegador y el pedido se envía por FormSubmit a los dos correos
+    const CART_KEY = 'darkvoid-cart';
+    const cartEl = document.getElementById('cart');
+    const cartOverlay = document.querySelector('.cart-overlay');
+    const cartButton = document.querySelector('.cart-button');
+    const cartCount = cartButton.querySelector('.cart-count');
+    const cartList = cartEl.querySelector('.cart-items');
+    const cartSubtotal = cartEl.querySelector('.cart-subtotal');
+    const cartNext = cartEl.querySelector('.cart-next');
+    const cartNextLabel = cartNext.querySelector('.btn-label');
+    const cartBack = cartEl.querySelector('.cart-back');
+    const cartStatus = cartEl.querySelector('.cart-status');
+    const checkout = document.getElementById('checkout');
+    const pageParts = [document.querySelector('.site-header'), document.getElementById('contenido'), document.querySelector('.site-footer')];
+    let cart = [];
+    try { cart = JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch (e) { cart = []; }
+    if (!Array.isArray(cart)) cart = [];
+    const saveCart = () => { try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch (e) { /* sin almacenamiento: el carrito vive solo en esta visita */ } };
+    const cartQty = () => cart.reduce((n, item) => n + item.qty, 0);
+    const cartTotal = () => cart.reduce((n, item) => n + item.qty * item.price, 0);
+    const itemLabel = (item) => `${item.name}${item.size ? ` talla ${item.size}` : ''}`;
+
+    // Tras cambiar cantidades, el foco se queda en un control equivalente en lugar de perderse
+    const focusAfterChange = (index, which) => {
+      const rows = cartList.querySelectorAll('.cart-item');
+      const row = rows[Math.min(index, rows.length - 1)];
+      if (!row) { cartEl.querySelector('.cart-empty a')?.focus(); return; }
+      row.querySelector(which === '+' ? '.stepper button:last-child' : '.stepper button:first-child').focus();
+    };
+
+    const renderCart = () => {
+      const count = cartQty();
+      cartButton.dataset.count = String(count);
+      cartCount.textContent = String(count);
+      cartButton.setAttribute('aria-label', `Abrir carrito, ${count} ${count === 1 ? 'producto' : 'productos'}`);
+      cartEl.dataset.empty = String(cart.length === 0);
+      cartSubtotal.textContent = money.format(cartTotal());
+      cartList.replaceChildren(...cart.map((item, index) => {
+        const li = document.createElement('li');
+        li.className = 'cart-item';
+        const img = document.createElement('img');
+        img.src = item.img; img.alt = ''; img.width = 72; img.height = 72;
+        const info = document.createElement('div');
+        const name = document.createElement('p'); name.className = 'cart-item-name'; name.textContent = item.name;
+        const meta = document.createElement('p'); meta.className = 'cart-item-meta';
+        meta.textContent = `${item.size ? `Talla ${item.size}, ` : ''}${money.format(item.price)} c/u`;
+        const stepper = document.createElement('div'); stepper.className = 'stepper';
+        const minus = document.createElement('button'); minus.type = 'button'; minus.textContent = '−';
+        minus.setAttribute('aria-label', `Quitar una unidad de ${itemLabel(item)}`);
+        const out = document.createElement('output'); out.textContent = String(item.qty);
+        out.setAttribute('aria-label', `Cantidad: ${item.qty}`);
+        const plus = document.createElement('button'); plus.type = 'button'; plus.textContent = '+';
+        plus.setAttribute('aria-label', `Añadir una unidad de ${itemLabel(item)}`);
+        minus.addEventListener('click', () => { item.qty -= 1; if (item.qty < 1) cart.splice(index, 1); saveCart(); renderCart(); focusAfterChange(index); });
+        plus.addEventListener('click', () => { item.qty = Math.min(item.qty + 1, 20); saveCart(); renderCart(); focusAfterChange(index, '+'); });
+        stepper.append(minus, out, plus);
+        info.append(name, meta, stepper);
+        const side = document.createElement('div');
+        const price = document.createElement('p'); price.className = 'cart-item-price'; price.textContent = money.format(item.qty * item.price);
+        const remove = document.createElement('button'); remove.type = 'button'; remove.className = 'cart-remove'; remove.textContent = 'Quitar';
+        remove.setAttribute('aria-label', `Quitar ${itemLabel(item)} del carrito`);
+        remove.addEventListener('click', () => { cart.splice(index, 1); saveCart(); renderCart(); focusAfterChange(index); });
+        side.append(price, remove);
+        li.append(img, info, side);
+        return li;
+      }));
+    };
+
+    let lastFocus = null;
+    const setStep = (step) => {
+      cartEl.dataset.step = step;
+      cartStatus.textContent = ''; cartStatus.dataset.state = '';
+      cartNextLabel.textContent = step === 'checkout' ? 'Enviar pedido' : 'Continuar con el pedido';
+    };
+    const openCart = () => {
+      lastFocus = document.activeElement;
+      if (cartEl.dataset.step === 'done') setStep('items');
+      cartEl.inert = false;
+      cartEl.dataset.open = 'true';
+      cartOverlay.dataset.open = 'true';
+      pageParts.forEach((el) => { if (el) el.inert = true; });
+      document.documentElement.style.overflow = 'hidden';
+      cartEl.querySelector('.cart-close').focus();
+    };
+    const closeCart = () => {
+      cartEl.dataset.open = 'false';
+      cartOverlay.dataset.open = 'false';
+      pageParts.forEach((el) => { if (el) el.inert = false; });
+      document.documentElement.style.overflow = '';
+      cartEl.inert = true;
+      const back = lastFocus && lastFocus !== document.body && document.contains(lastFocus) && !cartEl.contains(lastFocus) ? lastFocus : cartButton;
+      back.focus();
+    };
+    cartButton.addEventListener('click', openCart);
+    cartEl.querySelector('.cart-close').addEventListener('click', closeCart);
+    cartOverlay.addEventListener('click', closeCart);
+    cartEl.addEventListener('click', (e) => { if (e.target.closest('[data-close-cart]')) closeCart(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && cartEl.dataset.open === 'true') closeCart(); });
+
+    document.querySelectorAll('[data-add]').forEach((button) => {
+      const label = button.querySelector('.btn-label');
+      let timer = 0;
+      button.addEventListener('click', () => {
+        const card = button.closest('.product');
+        const size = card.querySelector('input[type="radio"]:checked')?.value || '';
+        const id = card.dataset.id;
+        const existing = cart.find((item) => item.id === id && item.size === size);
+        if (existing) existing.qty = Math.min(existing.qty + 1, 20);
+        else cart.push({ id, name: card.dataset.name, size, price: Number(card.dataset.price), img: card.dataset.img, qty: 1 });
+        saveCart(); renderCart();
+        if (cartEl.dataset.step === 'done') setStep('items');
+        label.textContent = size ? `Añadido, talla ${size}` : 'Añadido al carrito';
+        button.classList.remove('is-added'); void button.offsetWidth; button.classList.add('is-added');
+        cartCount.classList.remove('is-bump'); void cartCount.offsetWidth; cartCount.classList.add('is-bump');
+        clearTimeout(timer);
+        timer = setTimeout(() => { label.textContent = 'Añadir al carrito'; button.classList.remove('is-added'); }, 1600);
+      });
+    });
+
+    const coFields = ['co-name', 'co-email', 'co-phone', 'co-address', 'co-city'].map((id) => document.getElementById(id));
+    const coMessages = {
+      'co-name': 'Escribe tu nombre completo.',
+      'co-phone': 'Escribe un teléfono o WhatsApp para coordinar el envío.',
+      'co-address': 'Escribe la dirección donde quieres recibir el pedido.',
+      'co-city': 'Escribe tu distrito y ciudad.',
+    };
+    const validateCheckout = () => {
+      const errors = [];
+      coFields.forEach((input) => {
+        const value = input.value.trim();
+        let msg = '';
+        if (input.id === 'co-email') {
+          msg = !value ? 'Escribe tu correo para enviarte la confirmación.'
+            : !input.checkValidity() ? 'Ese correo no es válido. Revisa que tenga @ y un dominio, por ejemplo tu@correo.com.' : '';
+        } else if (!value) {
+          msg = coMessages[input.id];
+        }
+        setFieldError(input, msg);
+        if (msg) errors.push(input);
+      });
+      return errors;
+    };
+    coFields.forEach((input) => input.addEventListener('input', () => { if (input.getAttribute('aria-invalid') === 'true') validateCheckout(); }));
+
+    cartBack.addEventListener('click', () => setStep('items'));
+    cartNext.addEventListener('click', async () => {
+      if (cartEl.dataset.step === 'items') {
+        setStep('checkout');
+        document.getElementById('co-name').focus();
+        return;
+      }
+      if (cartNext.dataset.busy === 'true') return;
+      const errors = validateCheckout();
+      if (errors.length) {
+        cartStatus.dataset.state = 'error';
+        cartStatus.textContent = 'Revisa los campos marcados.';
+        errors[0].focus();
+        return;
+      }
+      const v = (id) => document.getElementById(id).value.trim();
+      const lines = cart.map((item) => `${item.qty} x ${item.name}${item.size ? ` (talla ${item.size})` : ''}: ${money.format(item.qty * item.price)}`);
+      const order = [
+        'Nuevo pedido desde la tienda web',
+        '',
+        ...lines,
+        '',
+        `Total: ${money.format(cartTotal())} (sin envío)`,
+        '',
+        `Nombre: ${v('co-name')}`,
+        `Correo: ${v('co-email')}`,
+        `Teléfono: ${v('co-phone')}`,
+        `Dirección: ${v('co-address')}`,
+        `Distrito y ciudad: ${v('co-city')}`,
+        v('co-notes') ? `Notas: ${v('co-notes')}` : null,
+      ].filter((line) => line !== null).join('\n');
+      cartNext.dataset.busy = 'true';
+      cartNextLabel.textContent = 'Enviando pedido…';
+      cartStatus.textContent = ''; cartStatus.dataset.state = '';
+      try {
+        const res = await fetch(`https://formsubmit.co/ajax/${STUDIO_EMAIL}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            name: v('co-name'),
+            email: v('co-email'),
+            telefono: v('co-phone'),
+            direccion: `${v('co-address')}, ${v('co-city')}`,
+            pedido: lines.join('\n'),
+            total: money.format(cartTotal()),
+            notas: v('co-notes'),
+            _subject: `Nuevo pedido web: ${v('co-name')} (${money.format(cartTotal())})`,
+            _cc: CC_EMAIL,
+            _template: 'table',
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || String(data.success) !== 'true') throw new Error(data.message || 'send_failed');
+        cartEl.querySelector('.cart-done-text').textContent = `Gracias, ${v('co-name').split(' ')[0]}. Te escribiremos a ${v('co-email')} o al ${v('co-phone')} para coordinar el pago y el envío.`;
+        cart = []; saveCart(); renderCart(); checkout.reset();
+        setStep('done');
+        cartEl.querySelector('.cart-done').focus();
+      } catch (err) {
+        cartStatus.dataset.state = 'error';
+        if (/activat/i.test(err.message)) {
+          cartStatus.textContent = `La tienda aún no puede recibir pedidos: falta activar el formulario en ${STUDIO_EMAIL}.`;
+        } else {
+          const params = new URLSearchParams({ cc: CC_EMAIL, subject: `Nuevo pedido web: ${v('co-name')}`, body: order });
+          cartStatus.textContent = 'No se pudo enviar el pedido desde aquí. ';
+          const link = document.createElement('a');
+          link.href = `mailto:${STUDIO_EMAIL}?${params.toString().replace(/\+/g, '%20')}`;
+          link.textContent = 'Envíalo desde tu correo';
+          cartStatus.append(link, ' con el pedido ya escrito.');
+        }
+      } finally {
+        cartNext.dataset.busy = 'false';
+        if (cartEl.dataset.step === 'checkout') cartNextLabel.textContent = 'Enviar pedido';
+      }
+    });
+    renderCart();
   </script>
+<script type="importmap" is:inline>
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    } }
+  </script>
+<script is:inline>
+    // Placa de la semifinal en 3D. La geometría del archivo .glb va incrustada (23 KB) y la textura
+    // se carga como un JPG normal, así no hace falta pedir datos "data:" o "blob:" que algunos hosts bloquean.
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-  <style>
-    .nav {
-      position: sticky; top: 0; z-index: 10;
-      backdrop-filter: blur(12px);
-      background: rgba(15,3,16,0.75);
-      border-bottom: 1px solid rgba(101,18,101,0.5);
-    }
-    .nav-inner {
-      max-width: 1100px; margin: 0 auto; padding: 12px 20px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .brand {
-      font-family: 'Orbitron', monospace;
-      font-weight: 800; letter-spacing: 0.08em; font-size: 0.95rem;
-      color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 10px;
-    }
-    .brand span { color: var(--cyan); font-weight: 600; }
-    .brand-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
-    .nav-links { display: flex; gap: 18px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; }
-    .nav-links a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
-    .nav-links a:hover { color: var(--cyan); border-color: var(--cyan); }
+    const GEOMETRY_GLB = 'Z2xURgIAAABURQAAqAQAAEpTT057ImFzc2V0Ijp7ImdlbmVyYXRvciI6Iktocm9ub3MgZ2xURiBCbGVuZGVyIEkvTyB2NS4wLjIxIiwidmVyc2lvbiI6IjIuMCJ9LCJzY2VuZSI6MCwic2NlbmVzIjpbeyJuYW1lIjoiRW1wdHkiLCJub2RlcyI6WzBdfV0sIm5vZGVzIjpbeyJtZXNoIjowLCJuYW1lIjoiRW1wdHkuMDAxIiwicm90YXRpb24iOlswLC0wLjcwNzEwNjgyODY4OTU3NTIsMC43MDcxMDY4Mjg2ODk1NzUyLDUuMzM4NTA5MDEyNjMxMjIxZS04XX1dLCJtYXRlcmlhbHMiOlt7ImRvdWJsZVNpZGVkIjp0cnVlLCJuYW1lIjoicHJlbWlvIiwicGJyTWV0YWxsaWNSb3VnaG5lc3MiOnsibWV0YWxsaWNGYWN0b3IiOjAsInJvdWdobmVzc0ZhY3RvciI6MC41fX1dLCJtZXNoZXMiOlt7Im5hbWUiOiJFbXB0eSIsInByaW1pdGl2ZXMiOlt7ImF0dHJpYnV0ZXMiOnsiUE9TSVRJT04iOjAsIk5PUk1BTCI6MSwiVEVYQ09PUkRfMCI6Mn0sImluZGljZXMiOjMsIm1hdGVyaWFsIjowfV19XSwiYWNjZXNzb3JzIjpbeyJidWZmZXJWaWV3IjowLCJjb21wb25lbnRUeXBlIjo1MTI2LCJjb3VudCI6NDEwLCJtYXgiOlsxLjgyNTYwNzA2MTM4NjEwODQsMC41NDc3ODg1NjAzOTA0NzI0LC0wLjAwMTE2MjIzMDk2ODQ3NTM0MThdLCJtaW4iOlstMS43NTk0Mjk5MzE2NDA2MjUsLTAuNTQ3Nzg4NTYwMzkwNDcyNCwtMy4yMjc3OTc3NDY2NTgzMjVdLCJ0eXBlIjoiVkVDMyJ9LHsiYnVmZmVyVmlldyI6MSwiY29tcG9uZW50VHlwZSI6NTEyNiwiY291bnQiOjQxMCwidHlwZSI6IlZFQzMifSx7ImJ1ZmZlclZpZXciOjIsImNvbXBvbmVudFR5cGUiOjUxMjYsImNvdW50Ijo0MTAsInR5cGUiOiJWRUMyIn0seyJidWZmZXJWaWV3IjozLCJjb21wb25lbnRUeXBlIjo1MTIzLCJjb3VudCI6MTcwNCwidHlwZSI6IlNDQUxBUiJ9XSwiYnVmZmVyVmlld3MiOlt7ImJ1ZmZlciI6MCwiYnl0ZUxlbmd0aCI6NDkyMCwiYnl0ZU9mZnNldCI6MCwidGFyZ2V0IjozNDk2Mn0seyJidWZmZXIiOjAsImJ5dGVMZW5ndGgiOjQ5MjAsImJ5dGVPZmZzZXQiOjQ5MjAsInRhcmdldCI6MzQ5NjJ9LHsiYnVmZmVyIjowLCJieXRlTGVuZ3RoIjozMjgwLCJieXRlT2Zmc2V0Ijo5ODQwLCJ0YXJnZXQiOjM0OTYyfSx7ImJ1ZmZlciI6MCwiYnl0ZUxlbmd0aCI6MzQwOCwiYnl0ZU9mZnNldCI6MTMxMjAsInRhcmdldCI6MzQ5NjN9XSwiYnVmZmVycyI6W3siYnl0ZUxlbmd0aCI6MTY1Mjh9XX0gkEAAAEJJTgDHyYu/6dgSvD2UTsDHyYu/VO0INGMBTsB674y/6tgSvGMBTsDHyYu/sQmTu5+ATsDHyYu/sQmTu5+ATsBvXIy/6dgSvJ+ATsA6Voy/kz6Zu5FtTsA6Voy/kz6Zu5FtTsBvXIy/cO6cumMBTsDHyYu/cO6curdKTsA6Voy/bbEau51HTsA9yIy/6dgSvLdKTsA9yIy/swmTu2MBTsA9yIy/swmTu2MBTsAgooy/lD6Zu51HTsAgooy/lD6Zu51HTsAqbYc/6tgSvD2UTsDdkog/6tgSvGMBTsAqbYc/5gcJNGMBTsDS/4c/6tgSvJ+ATsAqbYc/swmTu5+ATsAqbYc/swmTu5+ATsCd+Yc/lD6Zu5FtTsCd+Yc/lD6Zu5FtTsCd+Yc/lD6Zu5FtTsCga4g/swmTu2MBTsCga4g/swmTu2MBTsCga4g/6tgSvLdKTsCDRYg/lT6Zu51HTsCDRYg/lT6Zu51HTsCDRYg/lT6Zu51HTsAqbYc/dO6curdKTsDS/4c/dO6cumMBTsCd+Yc/b7Eau51HTsCd+Yc/b7Eau51HTsDekog/3NgSvLJHCr4rbYc/29gSvBoaAb4rbYc/QKgWNLJHCr6ha4g/29gSvHKyBb6ha4g/lgmTu7JHCr6ha4g/lgmTu7JHCr6ERYg/dj6ZuxrkBb6ERYg/dj6ZuxrkBb6ERYg/dj6ZuxrkBb4rbYc/lAmTuwJUAr4rbYc/lAmTuwJUAr7T/4c/29gSvAJUAr6e+Yc/dz6Zu+qEA76e+Yc/dz6Zu+qEA77T/4c//O2curJHCr4rbYc/+O2cunKyBb6e+Yc/M7EauxrkBb6e+Yc/M7EauxrkBb7HyYu/ANkSvBoaAb5674y/ANkSvLJHCr7HyYu/iUbmM7JHCr5vXIy/ANkSvAJUAr7HyYu/3wmTuwJUAr7HyYu/3wmTuwJUAr46Voy/wD6Zu+qEA746Voy/wD6Zu+qEA746Voy/wD6Zu+qEA749yIy/3wmTu7JHCr49yIy/3wmTu7JHCr49yIy/ANkSvHKyBb4gooy/wT6ZuxrkBb4gooy/wT6ZuxrkBb7HyYu/JO+cunKyBb5vXIy/JO+curJHCr46Voy/x7EauxrkBb46Voy/x7EauxrkBb7HyYu/KcGBvT2UTsB674y/KcGBvWMBTsDHyYu/VxyUvWMBTsBvXIy/KcGBvZ+ATsDHyYu/q+uKvZ+ATsDHyYu/q+uKvZ+ATsA6Voy/XYiKvZFtTsA6Voy/XYiKvZFtTsA6Voy/XYiKvZFtTsA9yIy/q+uKvWMBTsA9yIy/q+uKvWMBTsA9yIy/KcGBvbdKTsAgooy/XYiKvZ1HTsAgooy/XYiKvZ1HTsAgooy/XYiKvZ1HTsDHyYu/jKiRvbdKTsBvXIy/jKiRvWMBTsA6Voy/u0aPvZ1HTsA6Voy/u0aPvZ1HTsAqbYc/KcGBvT2UTsAqbYc/VxyUvWMBTsDdkog/KcGBvWMBTsAqbYc/q+uKvZ+ATsAqbYc/q+uKvZ+ATsDS/4c/KcGBvZ+ATsCd+Yc/XYiKvZFtTsCd+Yc/XYiKvZFtTsDS/4c/jKiRvWMBTsAqbYc/jKiRvbdKTsCd+Yc/u0aPvZ1HTsCga4g/KcGBvbdKTsCga4g/q+uKvWMBTsCga4g/q+uKvWMBTsCDRYg/XYiKvZ1HTsCDRYg/XYiKvZ1HTsDekog/J8GBvbJHCr4rbYc/VRyUvbJHCr4rbYc/J8GBvRoaAb6ha4g/qeuKvbJHCr6ha4g/qeuKvbJHCr6ha4g/J8GBvXKyBb6ERYg/W4iKvRrkBb6ERYg/W4iKvRrkBb4rbYc/iqiRvXKyBb7T/4c/iqiRvbJHCr6e+Yc/uUaPvRrkBb7T/4c/J8GBvQJUAr4rbYc/qeuKvQJUAr4rbYc/qeuKvQJUAr6e+Yc/W4iKveqEA76e+Yc/W4iKveqEA77HyYu/LMGBvRoaAb7HyYu/WhyUvbJHCr5674y/LMGBvbJHCr7HyYu/reuKvQJUAr7HyYu/reuKvQJUAr5vXIy/K8GBvQJUAr46Voy/X4iKveqEA746Voy/X4iKveqEA75vXIy/jqiRvbJHCr7HyYu/jqiRvXKyBb46Voy/vUaPvRrkBb49yIy/K8GBvXKyBb49yIy/reuKvbJHCr49yIy/reuKvbJHCr4gooy/X4iKvRrkBb4gooy/X4iKvRrkBb7HyYu/FmUBvRoaAb7HyYu/FmUBvRoaAb7HyYu/FmUBvRoaAb7HyYu/gtMmvRoaAb5vXIy/FWUBvQJUAr5vXIy/FWUBvQJUAr5vXIy/gdMmvQJUAr49yIy/FWUBvXKyBb49yIy/FWUBvXKyBb49yIy/FWUBvXKyBb49yIy/gdMmvXKyBb5674y/gtMmvbJHCr5674y/FmUBvbJHCr5674y/FmUBvbJHCr7HyYu/EGUBvT2UTsDHyYu/EGUBvT2UTsDHyYu/fNMmvT2UTsBvXIy/fNMmvZ+ATsBvXIy/EGUBvZ+ATsBvXIy/EGUBvZ+ATsA9yIy/fNMmvbdKTsA9yIy/EGUBvbdKTsA9yIy/EGUBvbdKTsB674y/EGUBvWMBTsB674y/EGUBvWMBTsB674y/EGUBvWMBTsB674y/fNMmvWMBTsAqbYc/fNMmvT2UTsAqbYc/EGUBvT2UTsAqbYc/EGUBvT2UTsAqbYc/EGUBvT2UTsDS/4c/EGUBvZ+ATsDS/4c/EGUBvZ+ATsDS/4c/fNMmvZ+ATsCga4g/EGUBvbdKTsCga4g/EGUBvbdKTsCga4g/fNMmvbdKTsDdkog/fNMmvWMBTsDdkog/EGUBvWMBTsDdkog/EGUBvWMBTsArbYc/eNMmvRoaAb4rbYc/eNMmvRoaAb4rbYc/DGUBvRoaAb4rbYc/DGUBvRoaAb4rbYc/DGUBvRoaAb7T/4c/eNMmvQJUAr7T/4c/DGUBvQJUAr7T/4c/DGUBvQJUAr7T/4c/DGUBvQJUAr6ha4g/eNMmvXKyBb6ha4g/DGUBvXKyBb6ha4g/DGUBvXKyBb7ekog/DWUBvbJHCr7ekog/DWUBvbJHCr7ekog/edMmvbJHCr7ekog/edMmvbJHCr7mAcc/NoYIvwBamLrmAcc/NoYIvwBamLqrMMc/2TsMvwg6gLxJGcc/CGEKvwBnS7tnKsc/oLwLv6C/Cbys0uc/WsmNvgBZmLqs0uc/WsmNvgBZmLp+rek/Y4SOvvg5gLwVwOg/3yaOvoBmS7vhbek/VGuOvoC/CbwLqtM/Mn0DvwBamLoLqtM/Mn0DvwBamLpPY9Q/vPsGvwg6gLytBtQ/dzwFvwBnS7t9StQ/5IMGv6C/CbxEPd4/wrbqvoBZmLpEPd4/wrbqvoBZmLqWk98/ExDwvgA6gLxt6N4/a2PtvkBnS7u5Zd8/n1jvvqC/CbwqTuU/6WnAvoBZmLoqTuU/6WnAvoBZmLpvDec/907DvgA6gLzMLeY/b9zBvkBnS7uC0eY/revCvqC/Cbys0uc/WcmNvob+B76s0uc/WcmNvob+B75+rek/YoSOvvFP8r0VwOg/3SaOvpwBBr7gbek/U2uOvj6TAL7mAcc/NoYIv4f+B77mAcc/NoYIv4f+B76rMMc/2TsMv/RP8r1JGcc/CGEKv54BBr5nKsc/oLwLv0CTAL4qTuU/6GnAvob+B74qTuU/6GnAvob+B75vDec/9k7DvvJP8r3MLeY/btzBvp4BBr6C0eY/rOvCvkCTAL5EPd4/wLbqvof+B75EPd4/wLbqvof+B76Wk98/ERDwvvNP8r1t6N4/aWPtvp4BBr65Zd8/nVjvvkCTAL4LqtM/Mn0Dv4f+B74LqtM/Mn0Dv4f+B75PY9Q/vPsGv/RP8r2tBtQ/dzwFv54BBr59StQ/5IMGv0CTAL6r0uc/bcmNPgBXmLqr0uc/bcmNPgBXmLp9rek/dISOPtg5gLwUwOg/8CaOPoBlS7vgbek/ZWuOPkC/CbzlAcc/PIYIPwBWmLrlAcc/PIYIPwBWmLqqMMc/3zsMP8g5gLxIGcc/DmEKPwBlS7tmKsc/prwLPyC/CbwrTuU/+WnAPoBWmLorTuU/+WnAPoBWmLpwDec/B0/DPtA5gLzOLeY/gdzBPsBlS7uF0eY/wevCPkC/CbxFPd4/0rbqPoBWmLpFPd4/0rbqPoBWmLqXk98/IxDwPtA5gLxu6N4/e2PtPsBlS7u6Zd8/r1jvPkC/CbwMqtM/OX0DPwBWmLoMqtM/OX0DPwBWmLpQY9Q/w/sGP8g5gLyuBtQ/fjwFPwBlS7t+StQ/64MGPyC/CbzlAcc/PIYIP4H+B77lAcc/PIYIP4H+B76qMMc/3zsMP+ZP8r1IGcc/DmEKP5gBBr5mKsc/prwLPzqTAL6r0uc/bsmNPoL+B76r0uc/bsmNPoL+B759rek/dYSOPupP8r0UwOg/8SaOPpoBBr7gbek/ZmuOPjyTAL4MqtM/On0DP4H+B74MqtM/On0DP4H+B75QY9Q/xPsGP+dP8r2uBtQ/fzwFP5gBBr5+StQ/7IMGPzqTAL5FPd4/07bqPoH+B75FPd4/07bqPoH+B76Xk98/JBDwPudP8r1u6N4/e2PtPpgBBr66Zd8/r1jvPjqTAL4rTuU/+2nAPoL+B74rTuU/+2nAPoL+B75wDec/CU/DPuhP8r3OLeY/g9zBPpkBBr6E0eY/wuvCPjuTAL4tWt+/a8mNvgBZmLotWt+/a8mNvgBZmLr/NOG/coSOvvg5gLyWR+C/7iaOvoBmS7ti9eC/Y2uOvoC/Cbxnib6/PIYIvwBamLpnib6/PIYIvwBamLosuL6/3zsMvwg6gLzKoL6/DmEKvwBnS7vosb6/prwLv6C/Cbyt1dy/92nAvoBZmLqt1dy/92nAvoBZmLrylN6/BU/DvgA6gLxQtd2/f9zBvkBnS7sHWd6/v+vCvqC/CbzHxNW/0LbqvoBZmLrHxNW/0LbqvoBZmLoZG9e/IRDwvgA6gLzwb9a/eWPtvkBnS7s87da/rVjvvqC/CbyOMcu/OX0DvwBamLqOMcu/OX0DvwBamLrS6su/w/sGvwg6gLwwjsu/fjwFvwBnS7sA0su/64MGv6C/Cbxnib6/PIYIv4f+B75nib6/PIYIv4f+B74suL6/3zsMv/RP8r3KoL6/DmEKv54BBr7osb6/prwLv0CTAL4tWt+/bMmNvob+B74tWt+/bMmNvob+B77/NOG/c4SOvvFP8r2WR+C/7yaOvpwBBr5i9eC/ZGuOvj6TAL6OMcu/On0Dv4f+B76OMcu/On0Dv4f+B77S6su/xPsGv/RP8r0wjsu/fzwFv54BBr4A0su/7IMGv0CTAL7HxNW/0bbqvof+B77HxNW/0bbqvof+B74ZG9e/IhDwvvNP8r3wb9a/eWPtvp4BBr487da/rVjvvkCTAL6t1dy/+WnAvob+B76t1dy/+WnAvob+B77ylN6/B0/DvvJP8r1Qtd2/gdzBvp4BBr4GWd6/wOvCvkCTAL5oib6/NoYIPwBWmLpoib6/NoYIPwBWmLotuL6/2TsMP8g5gLzLoL6/CGEKPwBlS7vpsb6/oLwLPyC/CbwuWt+/XMmNPgBXmLouWt+/XMmNPgBXmLoANeG/ZYSOPtg5gLyXR+C/4SaOPoBlS7tj9eC/VmuOPkC/CbyNMcu/Mn0DPwBWmLqNMcu/Mn0DPwBWmLrR6su/vPsGP8g5gLwvjsu/dzwFPwBlS7v/0cu/5IMGPyC/CbzGxNW/xLbqPoBWmLrGxNW/xLbqPoBWmLoYG9e/FRDwPtA5gLzvb9a/bWPtPsBlS7s77da/oVjvPkC/Cbys1dy/62nAPoBWmLqs1dy/62nAPoBWmLrxlN6/+U7DPtA5gLxOtd2/cdzBPsBlS7sEWd6/r+vCPkC/CbwuWt+/W8mNPoL+B74uWt+/W8mNPoL+B74ANeG/ZISOPupP8r2WR+C/3yaOPpoBBr5i9eC/VWuOPjyTAL5oib6/NoYIP4H+B75oib6/NoYIP4H+B74tuL6/2TsMP+ZP8r3LoL6/CGEKP5gBBr7psb6/oLwLPzqTAL6s1dy/6mnAPoL+B76s1dy/6mnAPoL+B77xlN6/+E7DPuhP8r1Otd2/cNzBPpkBBr4EWd6/ruvCPjuTAL7GxNW/wrbqPoH+B77GxNW/wrbqPoH+B74YG9e/ExDwPudP8r3vb9a/a2PtPpgBBr477da/n1jvPjqTAL6NMcu/Mn0DP4H+B76NMcu/Mn0DP4H+B77R6su/vPsGP+dP8r0vjsu/dzwFP5gBBr7/0cu/5IMGPzqTAL7HyYu/fNMmvT2UTsAqbYc/fNMmvT2UTsDekog/edMmvbJHCr6ha4g/eNMmvXKyBb7T/4c/eNMmvQJUAr4rbYc/eNMmvRoaAb6ga4g/fNMmvbdKTsDdkog/fNMmvWMBTsDS/4c/fNMmvZ+ATsB674y/fNMmvWMBTsA9yIy/fNMmvbdKTsBvXIy/fNMmvZ+ATsA9yIy/gdMmvXKyBb5674y/gtMmvbJHCr5vXIy/gdMmvQJUAr7HyYu/gtMmvRoaAb6KtAQ+irQEvu6pez+KtAQ+7ql7v4q0BD7uqXs/irQEvoq0BD7WCPk9aLL7viy/XD95Bvk96KL7vqLDXD+fsfs+fDz5vXy+XD/EEOU+xBDlvlk+Rj9kE+U+SAblvp5ARj93qPs+9MFcv/kL+T35C/k99MFcv3eo+z5dBOU+g0VGv10E5T70wVw/+Qv5vXeo+z4sv1w/aLL7vtYI+T30wVw/d6j7vvkL+T1ZPkY/3x3lvqkD5T7jQkY/5wjlvucI5T6KtAS+irQEvu6pez/uqXu/irQEvoq0BD6KtAS+7ql7v4q0BD6fsfu+fDz5vXy+XD/5C/m9d6j7vvTBXD/WCPm9aLL7viy/XD/EEOW+xBDlvlk+Rj9kE+W+SAblvp5ARj9kE+W+SAblvp5ARj8sv1y/aLL7vtYI+T0sv1y/aLL7vtYI+T30wVy/+Qv5vXeo+z49Q0a/2A7lvr0B5T6DRUa/XQTlvl0E5T6DRUa/XQTlvl0E5T75C/m99MFcv3eo+z53qPu+9MFcv/kL+T1dBOW+g0VGv10E5T5dBOW+g0VGv10E5T7uqXu/irQEvoq0BL6KtAS+irQEvu6pe7+KtAS+7ql7v4q0BL4sv1y/1gj5vWiy+770wVy/d6j7vvkL+b0sv1y/aLL7vtYI+b2eQEa/SAblvmQT5b6eQEa/SAblvmQT5b5ZPka/xBDlvsQQ5b7WCPm9aLL7viy/XL/WCPm9aLL7viy/XL9osvu+1gj5vSy/XL/EEOW+xBDlvlk+Rr/EEOW+xBDlvlk+Rr93qPu+9MFcv/kL+b35C/m99MFcv3eo+77EEOW+WT5Gv8QQ5b5dBOW+g0VGv10E5b6KtAQ+irQEvu6pe7/uqXs/irQEvoq0BL6KtAQ+7ql7v4q0BL6fsfs+fDz5vXy+XL/WCPk9aLL7viy/XL/5C/k9d6j7vvTBXL/EEOU+xBDlvlk+Rr/EEOU+xBDlvlk+Rr/EEOU+xBDlvlk+Rr8sv1w/aLL7vtYI+b2iw1w/6KL7vnkG+b0sv1w/1gj5vWiy+76eQEY/SAblvmQT5b6eQEY/SAblvmQT5b75C/k99MFcv3eo+753qPs+9MFcv/kL+b1IBuU+nkBGv2QT5b5IBuU+nkBGv2QT5b6KtAQ+irQEPu6pez/uqXs/irQEPoq0BD6KtAQ+7ql7P4q0BD6fsfs+fDz5PXy+XD/5C/k9d6j7PvTBXD/WCPk9aLL7Piy/XD8EFuU+zPvkPuNCRj/EEOU+xBDlPlk+Rj9kE+U+SAblPp5ARj8sv1w/aLL7PtYI+T0sv1w/aLL7PtYI+T30wVw/+Qv5PXeo+z6eQEY/ZBPlPkgG5T6DRUY/XQTlPl0E5T6DRUY/XQTlPl0E5T75C/k99MFcP3eo+z53qPs+9MFcP/kL+T1dBOU+g0VGP10E5T5dBOU+g0VGP10E5T6KtAS+irQEPu6pez+KtAS+7ql7P4q0BD7uqXu/irQEPoq0BD7WCPm9aLL7Piy/XD95Bvm96KL7PqLDXD+fsfu+fDz5PXy+XD/EEOW+xBDlPlk+Rj9kE+W+SAblPp5ARj93qPu+9MFcP/kL+T35C/m99MFcP3eo+z5dBOW+g0VGP10E5T70wVy/+Qv5PXeo+z4sv1y/aLL7PtYI+T30wVy/d6j7PvkL+T1ZPka/3x3lPqkD5T6DRUa/XQTlPl0E5T7uqXu/irQEPoq0BL6KtAS+7ql7P4q0BL6KtAS+irQEPu6pe78sv1y/aLL7PtYI+b2iw1y/6KL7PnkG+b0sv1y/1gj5PWiy+75ZPka/xBDlPsQQ5b6eQEa/SAblPmQT5b75C/m99MFcP3eo+753qPu+9MFcP/kL+b3nCOW+40JGP+cI5b5osvu+1gj5PSy/XL/WCPm9aLL7Piy/XL/5C/m9d6j7PvTBXL/EEOW+xBDlPlk+Rr/EEOW+xBDlPlk+Rr+KtAQ+irQEPu6pe7+KtAQ+7ql7P4q0BL7uqXs/irQEPoq0BL7WCPk9aLL7Piy/XL+1Bfk9WLz7Pma8XL9osvs+1gj5PSy/XL/EEOU+xBDlPlk+Rr/EEOU+xBDlPlk+Rr93qPs+9MFcP/kL+b35C/k99MFcP3eo+75IBuU+nkBGP2QT5b4sv1w/1gj5PWiy+74sv1w/aLL7PtYI+b0sv1w/aLL7PtYI+b2eQEY/SAblPmQT5b6eQEY/SAblPmQT5b6BbAU+AAAAAFDRfb+BbAU+AAAAAFDRfb+BbAU+AAAAAFDRfb+BbAU+AAAAAFDRfb8b6P8+AAAAAL26Xb8b6P8+AAAAAL26Xb8b6P8+AAAAAL26Xb+9ul0/AAAAABvo/769ul0/AAAAABvo/75hvF0/AAAAAG/i/769ul0/AAAAABvo/75Q0X0/AAAAAIFsBb5Q0X0/AAAAAIFsBb5Q0X0/AAAAAIFsBb6BbAU+AAAAAFDRfT+BbAU+AAAAAFDRfT+BbAU+AAAAAFDRfT8b6P8+AAAAAL26XT8b6P8+AAAAAL26XT8b6P8+AAAAAL26XT+9ul0/AAAAABvo/z69ul0/AAAAABvo/z69ul0/AAAAABvo/z5Q0X0/AAAAAIFsBT5Q0X0/AAAAAIFsBT5Q0X0/AAAAAIFsBT5Q0X0/AAAAAIFsBT6BbAW+AAAAAFDRfT+BbAW+AAAAAFDRfT+BbAW+AAAAAFDRfT+BbAW+AAAAAFDRfT/x8f++AAAAAOi3XT/x8f++AAAAAOi3XT8b6P++AAAAAL26XT+9ul2/AAAAABvo/z69ul2/AAAAABvo/z7ot12/AAAAAPHx/z5Q0X2/AAAAAIFsBT5Q0X2/AAAAAIFsBT5Q0X2/AAAAAIFsBT6BbAW+AAAAAFDRfb+BbAW+AAAAAFDRfb+BbAW+AAAAAFDRfb+BbAW+AAAAAFDRfb+BbAW+AAAAAFDRfb8b6P++AAAAAL26Xb8b6P++AAAAAL26Xb8b6P++AAAAAL26Xb8b6P++AAAAAL26Xb+9ul2/AAAAABvo/769ul2/AAAAABvo/769ul2/AAAAABvo/75Q0X2/AAAAAIFsBb5Q0X2/AAAAAIFsBb5Q0X2/AAAAAIFsBb5Q0X2/AAAAAIFsBb4AAAAAAAAAAAAAgD/6Q888JUiDvk5bdz8MEsc995l8v8Y5BT4qy0w9sgQCvzMnXD92fK49+mhdvw1I/T4AAAAAAAAAAAAAgD8lSIM++kPPvE5bdz/4mXw/DRLHvcY5BT6yBAI/KstMvTMnXD/6aF0/dnyuvQ1I/T4AAAAAAAAAAAAAgD9VQ8c9IW1wvhGYdz+RQsI+p3pqv7XxBT66pUo+hKH0vqYbWz/bf6o+AtRNv143/D4AAAAAAAAAAAAAgD/eATg+3gE4voWYdz/KdjM/ynYzv/jxBT4hPLs+ITy7vjUbWz8PiR0/D4kdvzAz/D4AAAAAAAAAAAAAgD8hbXA+VUPHvRGYdz+nemo/kULCvrXxBT6EofQ+uqVKvqYbWz8C1E0/23+qvl43/D4AAAAAAAAAAAAAgL8lSIM++kPPvE5bd7/4mXw/DRLHvcY5Bb6yBAI/KstMvTMnXL/6aF0/dnyuvQ1I/b4AAAAAAAAAAAAAgL/6Q888JUiDvk5bd78MEsc995l8v8Y5Bb4qy0w9sgQCvzMnXL92fK49+mhdvw1I/b4AAAAAAAAAAAAAgL8hbXA+VUPHvRGYd7+nemo/kULCvrXxBb6EofQ+uqVKvqYbW78C1E0/23+qvl43/L4AAAAAAAAAAAAAgL/eATg+3gE4voWYd7/KdjM/ynYzv/jxBb4hPLs+ITy7vjUbW78PiR0/D4kdvzAz/L4AAAAAAAAAAAAAgL9VQ8c9IW1wvhGYd7+RQsI+p3pqv7XxBb66pUo+hKH0vqYbW7/bf6o+AtRNv143/L4AAAAAAAAAAAAAgD8lSIM++kPPPE5bdz/4mXw/DRLHPcY5BT6yBAI/KstMPTMnXD/6aF0/dnyuPQ1I/T4AAAAAAAAAAAAAgD/6Q888JUiDPk5bdz8MEsc995l8P8Y5BT4qy0w9sgQCPzMnXD92fK49+mhdPw1I/T4AAAAAAAAAAAAAgD8hbXA+VUPHPRGYdz+nemo/kULCPrXxBT6EofQ+uqVKPqYbWz8C1E0/23+qPl43/D4AAAAAAAAAAAAAgD/eATg+3gE4PoWYdz/KdjM/ynYzP/jxBT4hPLs+ITy7PjUbWz8PiR0/D4kdPzAz/D4AAAAAAAAAAAAAgD9VQ8c9IW1wPhGYdz+RQsI+p3pqP7XxBT66pUo+hKH0PqYbWz/bf6o+AtRNP143/D4AAAAAAAAAAAAAgL/6Q888JUiDPk5bd78MEsc995l8P8Y5Bb4qy0w9sgQCPzMnXL92fK49+mhdPw1I/b4AAAAAAAAAAAAAgL8lSIM++kPPPE5bd7/4mXw/DRLHPcY5Bb6yBAI/KstMPTMnXL/6aF0/dnyuPQ1I/b4AAAAAAAAAAAAAgL9VQ8c9IW1wPhGYd7+RQsI+p3pqP7XxBb66pUo+hKH0PqYbW7/bf6o+AtRNP143/L4AAAAAAAAAAAAAgL/eATg+3gE4PoWYd7/KdjM/ynYzP/jxBb4hPLs+ITy7PjUbW78PiR0/D4kdPzAz/L4AAAAAAAAAAAAAgL8hbXA+VUPHPRGYd7+nemo/kULCPrXxBb6EofQ+uqVKPqYbW78C1E0/23+qPl43/L4AAAAAAAAAAAAAgD8lSIO++kPPvE5bdz/4mXy/DRLHvcY5BT6yBAK/KstMvTMnXD/6aF2/dnyuvQ1I/T4AAAAAAAAAAAAAgD/6Q8+8JUiDvk5bdz8MEse995l8v8Y5BT4qy0y9sgQCvzMnXD92fK69+mhdvw1I/T4AAAAAAAAAAAAAgD8hbXC+VUPHvRGYdz+nemq/kULCvrXxBT6EofS+uqVKvqYbWz8C1E2/23+qvl43/D4AAAAAAAAAAAAAgD/eATi+3gE4voWYdz/KdjO/ynYzv/jxBT4hPLu+ITy7vjUbWz8PiR2/D4kdvzAz/D4AAAAAAAAAAAAAgD9VQ8e9IW1wvhGYdz+RQsK+p3pqv7XxBT66pUq+hKH0vqYbWz/bf6q+AtRNv143/D4AAAAAAAAAAAAAgL/6Q8+8JUiDvk5bd78MEse995l8v8Y5Bb4qy0y9sgQCvzMnXL92fK69+mhdvw1I/b4AAAAAAAAAAAAAgL8lSIO++kPPvE5bd7/4mXy/DRLHvcY5Bb6yBAK/KstMvTMnXL/6aF2/dnyuvQ1I/b4AAAAAAAAAAAAAgL9VQ8e9IW1wvhGYd7+RQsK+p3pqv7XxBb66pUq+hKH0vqYbW7/bf6q+AtRNv143/L4AAAAAAAAAAAAAgL/eATi+3gE4voWYd7/KdjO/ynYzv/jxBb4hPLu+ITy7vjUbW78PiR2/D4kdvzAz/L4AAAAAAAAAAAAAgL8hbXC+VUPHvRGYd7+nemq/kULCvrXxBb6EofS+uqVKvqYbW78C1E2/23+qvl43/L4AAAAAAAAAAAAAgD/6Q8+8JUiDPk5bdz8MEse995l8P8Y5BT4qy0y9sgQCPzMnXD92fK69+mhdPw1I/T4AAAAAAAAAAAAAgD8lSIO++kPPPE5bdz/4mXy/DRLHPcY5BT6yBAK/KstMPTMnXD/6aF2/dnyuPQ1I/T4AAAAAAAAAAAAAgD9VQ8e9IW1wPhGYdz+RQsK+p3pqP7XxBT66pUq+hKH0PqYbWz/bf6q+AtRNP143/D4AAAAAAAAAAAAAgD/eATi+3gE4PoWYdz/KdjO/ynYzP/jxBT4hPLu+ITy7PjUbWz8PiR2/D4kdPzAz/D4AAAAAAAAAAAAAgD8hbXC+VUPHPRGYdz+nemq/kULCPrXxBT6EofS+uqVKPqYbWz8C1E2/23+qPl43/D4AAAAAAAAAAAAAgL8lSIO++kPPPE5bd7/4mXy/DRLHPcY5Bb6yBAK/KstMPTMnXL/6aF2/dnyuPQ1I/b4AAAAAAAAAAAAAgL/6Q8+8JUiDPk5bd78MEse995l8P8Y5Bb4qy0y9sgQCPzMnXL92fK69+mhdPw1I/b4AAAAAAAAAAAAAgL8hbXC+VUPHPRGYd7+nemq/kULCPrXxBb6EofS+uqVKPqYbW78C1E2/23+qPl43/L4AAAAAAAAAAAAAgL/eATi+3gE4PoWYd7/KdjO/ynYzP/jxBb4hPLu+ITy7PjUbW78PiR2/D4kdPzAz/L4AAAAAAAAAAAAAgL9VQ8e9IW1wPhGYd7+RQsK+p3pqP7XxBb66pUq+hKH0PqYbW7/bf6q+AtRNP143/L6BbAU+AAAAAFDRfT+BbAW+AAAAAFDRfT9Q0X2/AAAAAIFsBb69ul2/AAAAABvo/74b6P++AAAAAL26Xb+BbAW+AAAAAFDRfb+9ul2/AAAAABvo/z530H2/AAAAAEaGBT4b6P++AAAAAL26XT930H0/AAAAAEaGBT69ul0/AAAAABvo/z4b6P8+AAAAAL26XT+9ul0/AAAAABvo/75Q0X0/AAAAAIFsBb4b6P8+AAAAAL26Xb+BbAU+AAAAAFDRfb+Z+LU+mq9SP+8JIz7wNfY9afO1PmqxUj8x9iI+KI/yPZn4tT6ar1I/5fW1PpuvUj8dpSE+IJHyPQH2tT6br1I/2a0hPtA49j1i/iI+4GL0PW6vIT7oePQ9S/O1PoOwUj8+VCA+QDz2PWnztT5qsVI/c0UgPiB89D1L87U+jLBSP5MOuz60rVI/0RO7PnqvUj+dh1I/cNDrPUkRuz6yrVI/kw67PrOtUj/vilI/4C/oPSsRuz6yrVI/KxG7PrKtUj+L3lI/oCLpPdETuz55r1I/CTVTPyDK6z3nE7s+lq5SP5MSuz6yrVI/5xO7Pp+uUj+CClM/6BDqPbCJUj8gAeo9ot5SP6DN6z0rEbs+sq1SP3fdUj9gEuo9B9O6PgkVVT8Fzro+2xZVP18sQj+kaUI/8dK6Pu0VVT8H07o+CRVVP5TLQj+AZ0I/k9G6PtQWVT/x0ro+4hVVP4OeQj9sn0I/B866PtsWVT8OKUI/tN1CP2/Quj7WFlU/U9C6PtYWVT+CdEI/+L1CP3J7Qj+IaEI/SypCP46jQj9T0Lo+1hZVP5Z1Qj/+n0I/Z0q2ProfVT9ZRbY+9h1VP6F4gD7SjkQ//0e2Pr4fVT98goA+rgNFP2dKtj65H1U/edV/PhLmRD+HRbY+Sh9VPxlItj6+H1U/anR+PvWQRD9ZRbY+9h1VP3dFtj7cHlU/zit/PmzIRD93RbY+0h5VP2Z+gD44yUQ/8rR/Pu6PRD98z38+2sdEP3dFtj7SHlU/1WyaPkLgUj9Ncpo+HeJSPwVTUj8AX+k9pW+aPj/gUj/VbJo+QuBSP2pVUj/ot+U9h2+aPj/gUj9rcpo+u+BSP0OpUj9wqeY9TnKaPh3iUj9xAFM/2FfpPWFymj4t4VI/YXKaPjjhUj9hcpo+OOFSP3fVUj9Amec9o1RSP8CL5z0KqlI/IFvpPWJymj444VI/bahSP1Cb5z3GJJU+0+RSP4i+Ij4IyfM9ah+VPrLmUj8qpyI+4CjwPcYklT7T5FI/9SGVPtbkUj8YViE+cC3wPRQilT7W5FI/emIhPvjM8z02sSI+8PnxPVZiIT64EfI9Rx+VPsXlUj/eCCA+MNDzPWoflT6y5lI/XPgfPngV8j1JH5U+z+VSP29+lT58Y1U/jOyAPjpjRD+2g5U+WmVVPyVcfz6gYkQ/bn6VPnxjVT+RfpU+amRVP6dsfz76mUQ/kH6VPmBkVT8884A+HJ1EP2BOgD7hYkQ/flyAPkiaRD82gZU+WWVVPzz4gD4/10Q/tYOVPlplVT+cYoA+0tZEP1GBlT5ZZVU/GzSaPsJoVT992EI/0tNCP0c5mj7mZlU/GzSaPsJoVT8Z1kI/tEhDP5o2mj7EaFU/gDaaPsRoVT/qIEM/IklDP5UnQz8o1EI/39ZCPzoOQz8qIkM/JAxDPzE5mj7WZ1U/RzmaPuZmVT+7d0M/aNRCPzI5mj7MZ1U/QHVDP3QMQz9kHiI/0UQ1P2dKtj66H1U/Z0q2ProfVT8cNJo+wmhVP8UdIj/URDU//0e2Pr4fVT+bNpo+xGhVPx4dIj9fRDU/d0W2PtweVT93RbY+3B5VPzI5mj7WZ1U/Fx0iP+hDNT8XHSI/6EM1P1lFtj72HVU/UAkiPzwDND+Z+LU+mq9SP9Vsmj5C4FI/pW+aPj/gUj+eCCI/PAM0P+P1tT6br1I/YXKaPi3hUj/zByI/tAM0P0vztT6DsFI/+gciPyoEND9p87U+arFSP2nztT5qsVI/TXKaPh3iUj++WCM/QAI0P75YIz9AAjQ/kw67PrOtUj+TDrs+tK1SP3FZIz9AAjQ/SRG7PrKtUj/1IZU+1uRSPx1aIz+1AjQ/5xO7PpauUj9HH5U+xeVSPxdaIz8rAzQ/F1ojPysDND/RE7s+eq9SP7aDlT5aZVU/t4OVPlplVT8cSCM/P0A1PwXOuj7bFlU/Bc66PtsWVT82gZU+WWVVP7tIIz89QDU/b9C6PtYWVT9v0Lo+1hZVP5F+lT5qZFU/YUkjP8Q/NT/x0ro+7RVVP2ZJIz9PPzU/B9O6PgkVVT9vfpU+fGNVP29+lT59Y1U/ayeePp1CVT9rJ54+nUJVP7Upnj7aOlU/kSiePpJBVT9nKZ4+vD5VP1HDnz6dQlU/UcOfPp1CVT+X2p8+2jpVP/XOnz6SQVU/e9efPrw+VT9Jxp4+nUJVP0nGnj6dQlU/X8+ePto6VT/Typ4+kkFVPyfOnj68PlU/BUufPp1CVT8FS58+nUJVP89bnz7aOlU/aVOfPpJBVT+PWZ8+vD5VP7ejnz6dQlU/t6OfPp1CVT+luZ8+2jpVP62unz6SQVU/tbafPrw+VT8V8bU+7YJUP1HDnz4c/FQ/l9qfPt8DVT/1zp8+J/1UP3nXnz7+/1Q/DR61PpU8VD9rJ54+HPxUP7Upnj7fA1U/kSiePif9VD9nKZ4+/v9UP+XgtT7LZ1Q/t6OfPhz8VD+luZ8+3wNVP62unz4n/VQ/tbafPv7/VD91s7U+IFFUPwVLnz4c/FQ/z1ufPt8DVT9pU58+J/1UP49Znz7+/1Q/c2+1PvpBVD9Jxp4+HPxUP1/Pnj7fA1U/08qePif9VD8nzp4+/v9UP1HDnz6dQlU/UcOfPp1CVT+X2p8+2jpVP/XOnz6SQVU/edefPrw+VT9rJ54+nUJVP2snnj6dQlU/tSmePto6VT+RKJ4+kkFVP2cpnj68PlU/t6OfPp1CVT+3o58+nUJVP6W5nz7aOlU/ra6fPpJBVT+1tp8+vD5VPwVLnz6dQlU/BUufPp1CVT/PW58+2jpVP2tTnz6SQVU/j1mfPrw+VT9Jxp4+nUJVP0nGnj6dQlU/X8+ePto6VT/Typ4+kkFVPyfOnj68PlU/DR61PjxhVT9rJ54+HPxUP7Upnj7fA1U/kSiePif9VD9nKZ4+/v9UPxXxtT7kGlU/UcOfPhz8VD+X2p8+3wNVP/XOnz4n/VQ/edefPv7/VD9zb7U+11tVP0nGnj4c/FQ/X8+ePt8DVT/Typ4+J/1UPyfOnj7+/1Q/dbO1PrFMVT8FS58+HPxUP89bnz7fA1U/a1OfPif9VD+PWZ8+/v9UP+XgtT4GNlU/t6OfPhz8VD+luZ8+3wNVP62unz4n/VQ/tbafPv7/VD/9cYk+nUJVP/1xiT6dQlU/t1qJPto6VT9bZok+kkFVP9VdiT68PlU/4w2LPp1CVT/jDYs+nUJVP5kLiz7aOlU/vwyLPpJBVT/nC4s+vD5VP5eRiT6dQlU/l5GJPp1CVT+pe4k+2jpVP6GGiT6SQVU/mX6JPrw+VT9J6ok+nUJVP0nqiT6dQlU/f9mJPto6VT/l4Yk+kkFVP7/biT68PlU/BW+KPp1CVT8Fb4o+nUJVP/Flij7aOlU/e2qKPpJBVT8nZ4o+vD5VP/lUqz6VPFQ/4w2LPhz8VD+ZC4s+3wNVP78Miz4n/VQ/5wuLPv7/VD/xgao+7YJUP/1xiT4c/FQ/t1qJPt8DVT9bZok+J/1UP9VdiT7+/1Q/lQOrPvpBVD8Fb4o+HPxUP/Flij7fA1U/e2qKPif9VD8nZ4o+/v9UP5O/qj4gUVQ/SeqJPhz8VD9/2Yk+3wNVP+XhiT4n/VQ/v9uJPv7/VD8hkqo+y2dUP5eRiT4c/FQ/qXuJPt8DVT+hhok+J/1UP5l+iT7+/1Q/4w2LPp1CVT/jDYs+nUJVP5kLiz7aOlU/vwyLPpJBVT/nC4s+vD5VP/1xiT6dQlU//XGJPp1CVT+3Wok+2jpVP1tmiT6SQVU/1V2JPrw+VT8Fb4o+nUJVPwVvij6dQlU/8WWKPto6VT97aoo+kkFVPydnij68PlU/SeqJPp1CVT9J6ok+nUJVP3/ZiT7aOlU/5eGJPpJBVT+/24k+vD5VP5eRiT6dQlU/l5GJPp1CVT+pe4k+2jpVP6GGiT6SQVU/mX6JPrw+VT/xgao+5BpVP/1xiT4c/FQ/t1qJPt8DVT9bZok+J/1UP9VdiT7+/1Q/+VSrPjxhVT/jDYs+HPxUP5kLiz7fA1U/vwyLPif9VD/nC4s+/v9UPyGSqj4GNlU/l5GJPhz8VD+pe4k+3wNVP6GGiT4n/VQ/mX6JPv7/VD+Tv6o+sUxVP0nqiT4c/FQ/f9mJPt8DVT/l4Yk+J/1UP7/biT7+/1Q/lQOrPtdbVT8Fb4o+HPxUP/Flij7fA1U/e2qKPif9VD8nZ4o+/v9UP1AJIj88AzQ/xiSVPtPkUj9mSSM/Tz81P2FJIz/EPzU/u0gjPz1ANT8cSCM/P0A1Px1aIz+1AjQ/ah+VPrLmUj9xWSM/QAI0P/oHIj8qBDQ/8wciP7QDND+eCCI/PAM0Px4dIj9fRDU/RjmaPuZmVT/FHSI/1EQ1P2QeIj/RRDU/EAAAAJkAEACZAKgAtQAkAC4AtQAuALkAOACPAJIAOACSAEAASQB7AGsASQBrAFsAAQASACUAAQAlADcAAAAEAAcAAAAHAAUAAwAJAAoAAwAKAAYAAQAIAAoAAQAKAAkACAAMAA4ACAAOAAoAAgALAA8AAgAPAA0ACwAFAAcACwAHAA8ABgAKAA4AEAATABcAEAAXABQAEwAbAB0AEwAdABcAEQAZAB0AEQAdABsAGgAgACIAGgAiAB4AEgAfACIAEgAiACAAHwAVABgAHwAYACIAFgAcACEAIwAmACoAIwAqACcAJgAuAC8AJgAvACoAJAAsAC8AJAAvAC4ALQAyADQALQA0ADAAJQAxADQAJQA0ADIAMQAoACsAMQArADQAKQAvADMANQA4AD0ANQA9ADoAOABAAEIAOABCAD0ANgA/AEIANgBCAEAAPgBEAEUAPgBFAEEANwBDAEUANwBFAEQAQwA5ADsAQwA7AEUAPABCAEYARwBKAE0ARwBNAEsASgBSAFQASgBUAE0ASABQAFQASABUAFIAUQBXAFkAUQBZAFUASQBWAFkASQBZAFcAVgBMAE8AVgBPAFkATgBTAFgAWgBeAGEAWgBhAF8AXQBjAGQAXQBkAGAAWwBiAGQAWwBkAGMAYgBmAGgAYgBoAGQAXABlAGkAXABpAGcAZQBfAGEAZQBhAGkAYABkAGgAagBuAHEAagBxAG8AbQBzAHQAbQB0AHAAawByAHQAawB0AHMAcgB2AHgAcgB4AHQAbAB1AHkAbAB5AHcAdQBvAHEAdQBxAHkAcAB0AHgAegB9AIAAegCAAH8AfgCDAIQAfgCEAIEAewCCAIQAewCEAIMAggCHAIkAggCJAIQAfACFAIgAfACIAIYAhQB/AIAAhQCAAIgAgQCEAIkAAAAQABQAAAAUAAQAAwAVAB8AAwAfAAkACQAfABIACQASAAEAEQAjACcAEQAnABkAGgAoADEAGgAxACAAIAAxACUAIAAlABIAJAA1ADoAJAA6ACwALQA5AEMALQBDADIAMgBDADcAMgA3ACUANgACAA0ANgANAD8APgAMAAgAPgAIAEQARAAIAAEARAABADcASQBbAGMASQBjAFYAVgBjAF0AVgBdAEwASwBeAFoASwBaAEcAWwBrAHMAWwBzAGIAYgBzAG0AYgBtAGYAZwBuAGoAZwBqAFwAawB7AIMAawCDAHIAcgCDAH4AcgB+AHYAdwB9AHoAdwB6AGwAewBJAFcAewBXAIIAggBXAFEAggBRAIcAhgBQAEgAhgBIAHwANQAkALYANQC2AIwAQACTAJcAQACXADYAAgA2AJcAAgCXAKIAiwGaAEcAiwFHAFoAUgCeAKQAUgCkAEgAiwFaAF8AiwFfAKsAEACnAKoAEACqABMAGwCtALEAGwCxABEAIwARALEAIwCxAL8AbACyALcAbAC3AHUAbwC7AMEAbwDBAGoASgCbAJ4ASgCeAFIARwCaAJsARwCbAEoAvQAmACMAvQAjAL8AugAuACYAugAmAL0AdQC3ALsAdQC7AG8ArgBlAFwArgBcAJEBqwBfAGUAqwBlAK4AEwCqAK0AEwCtABsAoAALAAIAoAACAKMAnQAFAAsAnQALAKAAmQAAAAUAmQAFAJ0AlACFAHwAlAB8AJcBkAB/AIUAkACFAJQAjQCzAGwAjQBsAHoANQCLAI8ANQCPADgAwACRAVwAwABcAGoApACXAXwApAB8AEgAigGlAKYAigGmAJgAvAC+AIwBvACMAY0BuAC8AI0BuACNAY4BtAC4AI4BtACOAY8BkAGvALAAkAGwAKwAkgGQAawAkgGsAKkApQCSAakApQCpAKYAnwChAJMBnwCTAZQBnACfAJQBnACUAZUBmACcAJUBmACVAYoBlgGVAJYAlgGWAJEAmAGWAZEAmAGRAI4AmQGYAY4AmQGOAIoAjwGZAYoAjwGKALQArwCMAb4ArwC+ALAAlQCTAaEAlQChAJYAjQB6AH8AjQB/AJAA2ADnAN0A2ADdAMkAQQEtATwBQQE8AUsBIwEAAfYAIwH2ABQBzgDxAOwAzgDsANMAHgEFAQABHgEAASMBLQFBAeIALQHiAMQA0wDsAOcA0wDnANgARAFxAXsBewGAAYUBhQF2AQ0BDQEXARwBHAEhARIBEgHbAOUA5QDqAO8A7wDgAD8BPwFJAU4BTgFTAUQBRAF7AYUBhQENARwBHAESAeUA5QDvAD8BPwFOAUQBRAGFARwBHAHlAD8BHAE/AUQByQDdABQByQAUAfYA+wAPAXgB+wB4AVoBVQEyASgBVQEoAUYBGQEKAQUBGQEFAR4BDwH7AAoBDwEKARkBggFpAWQBggFkAYcBfQFuAWkBfQFpAYIBcwFfAW4BcwFuAX0BUAE3ATIBUAEyAVUBhwFkAVoBhwFaAXgBSwE8ATcBSwE3AVABXwFzAUYBXwFGASgBxADiAPEAxADxAM4AzQDDAMUAzQDFAM8AzwDFAMYAzwDGANAA0ADGAMQA0ADEAM4A4QDwAPIA4QDyAOMA4wDyAPMA4wDzAOQA5ADzAPEA5ADxAOIA0gDNAM8A0gDPANQA1ADPANAA1ADQANUA1QDQAM4A1QDOANMA8ADrAO0A8ADtAPIA8gDtAO4A8gDuAPMA8wDuAOwA8wDsAPEA1wDSANQA1wDUANkA2QDUANUA2QDVANoA2gDVANMA2gDTANgA6wDmAOgA6wDoAO0A7QDoAOkA7QDpAO4A7gDpAOcA7gDnAOwAyADXANkAyADZAMoAygDZANoAygDaAMsAywDaANgAywDYAMkA5gDcAN4A5gDeAOgA6ADeAN8A6ADfAOkA6QDfAN0A6QDdAOcAGAEOARABGAEQARoBGgEQAREBGgERARsBGwERAQ8BGwEPARkB+gAJAQsB+gALAfwA/AALAQwB/AAMAf0A/QAMAQoB/QAKAfsAHQEYARoBHQEaAR8BHwEaARsBHwEbASABIAEbARkBIAEZAR4BCQEEAQYBCQEGAQsBCwEGAQcBCwEHAQwBDAEHAQUBDAEFAQoBIgEdAR8BIgEfASQBJAEfASABJAEgASUBJQEgAR4BJQEeASMBBAH/AAEBBAEBAQYBBgEBAQIBBgECAQcBBwECAQABBwEAAQUBEwEiASQBEwEkARUBFQEkASUBFQElARYBFgElASMBFgEjARQB/wD1APcA/wD3AAEBAQH3APgAAQH4AAIBAgH4APYAAgH2AAABfAFyAXQBfAF0AX4BfgF0AXUBfgF1AX8BfwF1AXMBfwFzAX0BXgFtAW8BXgFvAWABYAFvAXABYAFwAWEBYQFwAW4BYQFuAV8BgQF8AX4BgQF+AYMBgwF+AX8BgwF/AYQBhAF/AX0BhAF9AYIBbQFoAWoBbQFqAW8BbwFqAWsBbwFrAXABcAFrAWkBcAFpAW4BhgGBAYMBhgGDAYgBiAGDAYQBiAGEAYkBiQGEAYIBiQGCAYcBaAFjAWUBaAFlAWoBagFlAWYBagFmAWsBawFmAWQBawFkAWkBdwGGAYgBdwGIAXkBeQGIAYkBeQGJAXoBegGJAYcBegGHAXgBYwFZAVsBYwFbAWUBZQFbAVwBZQFcAWYBZgFcAVoBZgFaAWQBSgFAAUIBSgFCAUwBTAFCAUMBTAFDAU0BTQFDAUEBTQFBAUsBLAE7AT0BLAE9AS4BLgE9AT4BLgE+AS8BLwE+ATwBLwE8AS0BTwFKAUwBTwFMAVEBUQFMAU0BUQFNAVIBUgFNAUsBUgFLAVABOwE2ATgBOwE4AT0BPQE4ATkBPQE5AT4BPgE5ATcBPgE3ATwBVAFPAVEBVAFRAVYBVgFRAVIBVgFSAVcBVwFSAVABVwFQAVUBNgExATMBNgEzATgBOAEzATQBOAE0ATkBOQE0ATIBOQEyATcBRQFUAVYBRQFWAUcBRwFWAVcBRwFXAUgBSAFXAVUBSAFVAUYBMQEnASkBMQEpATMBMwEpASoBMwEqATQBNAEqASgBNAEoATIByQD2APgAyQD4AMsAywD4APcAywD3AMoAygD3APUAygD1AMgA+wBaAVwB+wBcAf0A/QBcAVsB/QBbAfwA/ABbAVkB/ABZAfoAXwEoASoBXwEqAWEBYQEqASkBYQEpAWABYAEpAScBYAEnAV4BLQHEAMYALQHGAC8BLwHGAMUALwHFAC4BLgHFAMMALgHDACwB3AATARUB3AAVAd4A3gAVARYB3gAWAd8A3wAWARQB3wAUAd0AQAHhAOMAQAHjAEIBQgHjAOQAQgHkAEMBQwHkAOIAQwHiAEEBRgFzAXUBRgF1AUgBSAF1AXQBSAF0AUcBRwF0AXIBRwFyAUUBeAEPAREBeAERAXoBegERARABegEQAXkBeQEQAQ4BeQEOAXcBxwD0AP4A/gADAQgBCAH5AFgBWAFiAWcBZwFsAV0BXQEmATABMAE1AToBOgErAcIAwgDMANEA0QDWAMcAxwD+AAgBCAFYAWcBZwFdATABMAE6AcIAwgDRAMcAxwAIAWcBZwEwAcIAZwHCAMcA';
+    const stage = document.querySelector('.trophy-stage--3d');
+    const canvas = stage?.querySelector('.trophy-canvas');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    .hero { max-width: 1100px; margin: 0 auto; padding: 36px 20px 20px; }
-    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 32px; align-items: center; }
-    .eyebrow {
-      font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; letter-spacing: 0.12em;
-      color: var(--cyan); margin: 0 0 12px; opacity: 0.9;
+    const start = () => {
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'low-power' });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.05;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(28, 1, 0.01, 100);
+      scene.add(new THREE.AmbientLight(0xffffff, 1.4));
+      const key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(2, 3, 5); scene.add(key);
+      const cyan = new THREE.PointLight(0x00f0ff, 18, 0, 2); cyan.position.set(-3, 1, 2); scene.add(cyan);
+      const magenta = new THREE.PointLight(0xff00ff, 18, 0, 2); magenta.position.set(3, 1.5, -2); scene.add(magenta);
+
+      const bytes = Uint8Array.from(atob(GEOMETRY_GLB), (c) => c.charCodeAt(0));
+      new GLTFLoader().parse(bytes.buffer, '', (gltf) => {
+        const model = gltf.scene;
+        // Centrar y escalar la placa para que llene el escenario
+        const box = new THREE.Box3().setFromObject(model);
+        const size = box.getSize(new THREE.Vector3());
+        const center = box.getCenter(new THREE.Vector3());
+        model.position.sub(center);
+        const pivot = new THREE.Group();
+        pivot.add(model);
+        pivot.scale.setScalar(2.4 / Math.max(size.x, size.y, size.z));
+        scene.add(pivot);
+
+        new THREE.TextureLoader().load('/assets/studio/premio-textura.jpg', (texture) => {
+          texture.flipY = false;
+          texture.colorSpace = THREE.SRGBColorSpace;
+          texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+          model.traverse((o) => {
+            if (o.isMesh) {
+              o.material = new THREE.MeshStandardMaterial({ map: texture, roughness: 0.38, metalness: 0.05, side: THREE.DoubleSide });
+            }
+          });
+          stage.classList.add('is-3d');
+        });
+
+        camera.position.set(0, 0.2, 7.4);
+        const controls = new OrbitControls(camera, canvas);
+        canvas.style.touchAction = 'pan-y';
+        controls.enableZoom = false;
+        controls.enablePan = false;
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.06;
+        controls.rotateSpeed = 0.8;
+        controls.minPolarAngle = Math.PI * 0.32;
+        controls.maxPolarAngle = Math.PI * 0.62;
+        controls.autoRotate = !reduce.matches;
+        controls.autoRotateSpeed = 2.4;
+        controls.target.set(0, 0, 0);
+
+        // Al soltar, retoma el giro automático tras una pausa corta
+        let resume = 0;
+        controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(resume); });
+        controls.addEventListener('end', () => { resume = setTimeout(() => { controls.autoRotate = !reduce.matches; }, 1800); });
+
+        const resize = () => {
+          const { clientWidth: w, clientHeight: h } = stage;
+          renderer.setSize(w, h, false);
+          camera.aspect = w / h;
+          camera.position.z = w / h < 0.85 ? 8.8 : 7.4;
+          camera.updateProjectionMatrix();
+        };
+        new ResizeObserver(resize).observe(stage);
+        resize();
+
+        const clock = new THREE.Clock();
+        let visible = false, raf = 0;
+        const loop = () => {
+          const t = clock.getElapsedTime();
+          if (!reduce.matches) pivot.position.y = Math.sin(t * 1.2) * 0.06;
+          controls.update();
+          renderer.render(scene, camera);
+          raf = visible ? requestAnimationFrame(loop) : 0;
+        };
+        new IntersectionObserver(([entry]) => {
+          visible = entry.isIntersecting;
+          if (visible && !raf) raf = requestAnimationFrame(loop);
+        }).observe(stage);
+      }, () => { /* si falla, se queda la foto de la placa */ });
+    };
+
+    if (stage && canvas) {
+      try { start(); } catch (e) { /* sin WebGL: se queda la foto de la placa */ }
     }
-    .blink { animation: blink 1.2s steps(1) infinite; }
-    @keyframes blink { 50% { opacity: 0; } }
-    .title { font-family: 'Orbitron', sans-serif; line-height: 0.9; margin: 0; }
-    .title .gradient {
-      display: block; font-size: clamp(2.8rem, 8vw, 4.6rem); font-weight: 800;
-      background: linear-gradient(90deg, var(--cyan) 0%, var(--violet) 45%, var(--magenta) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      filter: drop-shadow(0 0 18px rgba(0,179,255,0.35));
+  </script>
+  <style is:global>
+
+    :root {
+      /* Paleta de Darkvoid (Base44): negro, cian #00F0FF y magenta #FF00FF.
+         El blanco manda en la interfaz; cian y magenta son luz, no relleno. */
+      --void: #050505;
+      --hull: #0b0b0f;
+      --rule: #262626;
+      --starlight: #f5f5f7;
+      --dust: #9ca3af;
+      --cyan: #00f0ff;
+      --magenta: #ff00ff;
+      --violet: #7a1cff;
+      --photon: var(--cyan);
+      --ember: var(--magenta);
+      --grad: linear-gradient(135deg, var(--cyan) 0%, var(--magenta) 100%);
+
+      --font: "Archivo", system-ui, sans-serif;
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+      --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+      --gutter: clamp(16px, 4vw, 48px);
+      --max: 1280px;
+
+      /* Escala tipográfica en cuarta perfecta (1.333) */
+      --t-sm: 0.875rem;
+      --t-base: 1rem;
+      --t-md: 1.333rem;
+      --t-lg: 1.777rem;
+      --t-xl: clamp(2rem, 4vw, 2.369rem);
+      --t-display: clamp(2rem, 4.9vw, 4.75rem);
     }
-    .subtitle {
-      display: block; font-size: clamp(1rem, 2.5vw, 1.35rem); font-weight: 600; letter-spacing: 0.18em;
-      color: var(--text); margin-top: 6px;
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { color-scheme: dark; -webkit-text-size-adjust: 100%; scroll-padding-top: 88px; }
+    @media (pointer: fine) { html { overscroll-behavior: none; } }
+    a, button { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+    @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+    body {
+      margin: 0;
+      background: var(--void);
+      color: var(--starlight);
+      font-family: var(--font);
+      font-size: var(--t-base);
+      font-variation-settings: "wdth" 100;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
-    .tagline { color: var(--cyan-2); font-weight: 700; margin: 14px 0 10px; }
-    .desc { color: var(--muted); line-height: 1.65; margin: 0; }
-    .desc strong { color: var(--text); }
-    .ctas { display: flex; gap: 12px; margin: 22px 0 16px; flex-wrap: wrap; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    h1, h2, h3, p, dl, dd, ul, ol, figure { margin: 0; }
+    ul, ol { padding: 0; list-style: none; }
+
+    :focus-visible {
+      outline: 2px solid var(--photon);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: absolute; left: var(--gutter); top: -100px; z-index: 100;
+      background: var(--starlight); color: var(--void);
+      padding: 12px 16px; font-weight: 700; text-decoration: none;
+    }
+    .skip-link:focus { top: 12px; }
+
+    .wrap {
+      width: 100%; max-width: var(--max); margin-inline: auto;
+      padding-left: max(var(--gutter), env(safe-area-inset-left));
+      padding-right: max(var(--gutter), env(safe-area-inset-right));
+    }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+    /* ---------- Tipografía de marca ---------- */
+    .display {
+      font-size: var(--t-display);
+      font-weight: 850;
+      font-variation-settings: "wdth" 116;
+      line-height: 0.95;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+    .h2 {
+      font-size: var(--t-xl);
+      font-weight: 800;
+      font-variation-settings: "wdth" 125;
+      line-height: 1.05;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+    .lede { font-size: var(--t-md); line-height: 1.5; color: var(--starlight); max-width: 36ch; }
+
+    /* ---------- Botones ---------- */
     .btn {
-      font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em;
-      padding: 12px 18px; border-radius: 8px; text-decoration: none; border: 1px solid transparent;
-      transition: all .18s; display: inline-flex; align-items: center; justify-content: center;
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      min-height: 48px; padding: 10px 24px; max-width: 100%;
+      font: inherit; font-weight: 700; font-variation-settings: "wdth" 112;
+      font-size: var(--t-base); line-height: 1.25; text-align: center; overflow-wrap: anywhere;
+      text-decoration: none; border-radius: 2px; cursor: pointer;
+      border: 1px solid transparent;
+      transition: transform 160ms var(--ease-out), background-color 200ms ease, color 200ms ease, border-color 200ms ease;
     }
-    .btn.primary {
-      background: var(--cyan); color: #000; box-shadow: 0 0 0 1px rgba(0,179,255,0.6), 0 6px 20px rgba(0,179,255,0.35);
+    .btn:active { transform: scale(0.97); }
+    .btn-primary { position: relative; isolation: isolate; background: var(--grad); color: #050505; }
+    /* Halo de neón: se enciende con opacidad, sin repintar el botón */
+    .btn-primary::after {
+      content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit;
+      background: var(--grad); filter: blur(14px); opacity: 0;
+      transition: opacity 240ms ease;
     }
-    .btn.primary:hover { background: var(--cyan-2); transform: translateY(-1px); box-shadow: 0 10px 28px rgba(0,179,255,0.45); }
-    .btn.ghost { border-color: var(--border); color: var(--cyan); background: rgba(64,26,64,0.35); }
-    .btn.ghost:hover { border-color: var(--cyan); color: var(--text); background: rgba(0,179,255,0.12); }
-    .meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-    .pill {
-      font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; letter-spacing: 0.06em;
-      padding: 6px 10px; border-radius: 999px; background: rgba(64,26,64,0.7);
-      border: 1px solid rgba(101,18,101,0.9); color: var(--muted);
+    .btn-ghost { background: transparent; color: var(--starlight); border-color: #3f3f46; }
+    @media (hover: hover) and (pointer: fine) {
+      .btn-primary:hover::after { opacity: 0.65; }
+      .btn-ghost:hover { border-color: var(--cyan); color: #ffffff; }
     }
-    .updated { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: #6b8da0; margin: 10px 0 0; }
+    .btn-primary:focus-visible::after { opacity: 0.65; }
 
-    .hero-visual { display: flex; flex-direction: column; gap: 14px; }
-    .logo-card {
-      position: relative; background: linear-gradient(180deg, #401a40 0%, #1e0a1e 100%);
-      border: 1px solid var(--border); border-radius: 16px; padding: 18px;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,179,255,0.08) inset;
-      overflow: hidden;
+    /* ---------- Navegación ---------- */
+    .site-header {
+      position: fixed; inset: 0 0 auto 0; z-index: 50;
+      background: rgba(0, 0, 0, 0.72);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      backdrop-filter: blur(14px) saturate(140%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
-    .logo-card img { display: block; width: 100%; height: auto; border-radius: 10px; }
-    .logo-card picture, .shot picture, .gallery picture { display: contents; }
-    .scanline {
-      position: absolute; inset: 0; border-radius: 16px; pointer-events: none;
-      background: repeating-linear-gradient(transparent 0 2px, rgba(0,179,255,0.04) 2px 3px);
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
+    .brand { display: block; width: 164px; flex: none; border-radius: 2px; }
+    .brand-crop { display: block; aspect-ratio: 725 / 84; overflow: hidden; }
+    .brand-crop img { width: 110.07%; height: auto; max-width: none; margin-left: -4.83%; margin-top: -8.1%; mix-blend-mode: screen; }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a {
+      display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px;
+      text-decoration: none; font-weight: 600; color: var(--dust);
+      transition: color 200ms ease;
+    }
+    .nav-links a:focus-visible { color: var(--starlight); }
+    @media (hover: hover) and (pointer: fine) { .nav-links a:hover { color: var(--starlight); } }
+    .nav-cta { min-height: 44px; padding: 0 18px; }
+    .menu-toggle { display: none; }
+
+    @media (max-width: 860px) {
+      .nav-links, .nav .nav-cta { display: none; }
+      .menu-toggle {
+        display: inline-flex; min-height: 44px; padding: 0 16px;
+        background: transparent; color: var(--starlight); border-color: #4a4d56;
+      }
+    }
+
+    .mobile-menu {
+      position: fixed; inset: 72px 0 auto 0; z-index: 49;
+      background: var(--void); border-bottom: 1px solid var(--rule);
+      padding: 8px max(var(--gutter), env(safe-area-inset-right)) 24px max(var(--gutter), env(safe-area-inset-left));
+      max-height: calc(100svh - 72px); overflow-y: auto; overscroll-behavior: contain;
+      opacity: 0; transform: translateY(-8px);
+      visibility: hidden;
+      transition: opacity 150ms ease, transform 150ms var(--ease-out), visibility 0s linear 150ms;
+    }
+    .mobile-menu[data-open="true"] {
+      opacity: 1; transform: none; visibility: visible;
+      transition: opacity 240ms ease, transform 300ms var(--ease-drawer), visibility 0s;
+    }
+    .mobile-menu a:not(.btn) {
+      display: flex; align-items: center; min-height: 56px;
+      font-size: var(--t-md); font-weight: 700; font-variation-settings: "wdth" 118;
+      text-decoration: none; border-bottom: 1px solid var(--rule);
+    }
+    .mobile-menu .btn { margin-top: 20px; width: 100%; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative; overflow: hidden;
+      min-height: 100svh;
+      display: grid; align-items: center;
+      padding: 120px 0 88px;
+      isolation: isolate;
+    }
+    .starfield {
+      position: absolute; inset: 0; z-index: -2; pointer-events: none;
+      background-image:
+        radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.7), transparent 60%),
+        radial-gradient(1px 1px at 28% 72%, rgba(255,255,255,.45), transparent 60%),
+        radial-gradient(1.5px 1.5px at 44% 12%, rgba(255,255,255,.6), transparent 60%),
+        radial-gradient(1px 1px at 63% 84%, rgba(255,255,255,.4), transparent 60%),
+        radial-gradient(1px 1px at 78% 22%, rgba(255,255,255,.55), transparent 60%),
+        radial-gradient(1.5px 1.5px at 91% 64%, rgba(255,255,255,.5), transparent 60%),
+        radial-gradient(1px 1px at 6% 88%, rgba(255,255,255,.35), transparent 60%),
+        radial-gradient(1px 1px at 52% 46%, rgba(255,255,255,.3), transparent 60%),
+        radial-gradient(1px 1px at 36% 34%, rgba(255,255,255,.4), transparent 60%),
+        radial-gradient(1px 1px at 86% 92%, rgba(255,255,255,.35), transparent 60%);
+    }
+    .hero-grid {
+      position: relative;
+      display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+      align-items: center; gap: clamp(24px, 4vw, 64px);
+    }
+    .hero-copy { position: relative; z-index: 2; }
+    /* Misma voz tipográfica que los títulos: Archivo ancha, en mayúsculas */
+    .hero-kicker {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 24px;
+      font-size: var(--t-base); font-weight: 800; font-variation-settings: "wdth" 125;
+      text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.2; color: var(--starlight);
+    }
+    .hero-kicker::before {
+      content: ""; flex: none; width: 40px; height: 3px; border-radius: 2px; background: var(--grad);
+      box-shadow: 0 0 12px rgba(0, 240, 255, .6);
+    }
+    .hero h1 { margin-bottom: 28px; }
+    .hero h1 .line { display: block; overflow: hidden; padding-bottom: 0.04em; }
+    .hero h1 .line > span { display: block; }
+    .hero .lede { margin-bottom: 36px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+    .highlights { display: flex; flex-wrap: wrap; gap: 12px 32px; }
+    .highlights div { display: flex; flex-direction: column-reverse; }
+    .highlights dt { color: var(--dust); font-size: var(--t-sm); }
+    .highlights dd {
+      font-size: var(--t-lg); font-weight: 850; font-variation-settings: "wdth" 120; font-variant-numeric: tabular-nums; line-height: 1.15;
+      background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+
+    /* Suelo synthwave y scanlines: el horizonte del void */
+    .grid-floor {
+      position: absolute; left: -25%; right: -25%; bottom: 0; height: 46%; z-index: -1; pointer-events: none;
+      perspective: 420px; perspective-origin: 50% 0%; overflow: hidden;
+      -webkit-mask: linear-gradient(to bottom, transparent 0%, #000 40%, #000 100%);
+      mask: linear-gradient(to bottom, transparent 0%, #000 40%, #000 100%);
+    }
+    .grid-floor::before {
+      content: ""; position: absolute; left: 0; right: 0; top: 0; height: 200%;
+      transform-origin: 50% 0%;
+      background-image:
+        linear-gradient(to right, rgba(0, 240, 255, .28) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 0, 255, .26) 1px, transparent 1px);
+      background-size: 64px 64px;
+      transform: rotateX(68deg) translateY(0);
+      animation: floor 3.2s linear infinite;
+    }
+    .scanlines {
+      position: absolute; inset: 0; z-index: 5; pointer-events: none; opacity: .035;
+      background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(0, 240, 255, .9) 3px 4px);
+      mix-blend-mode: screen;
+    }
+    @keyframes floor { to { transform: rotateX(68deg) translateY(64px); } }
+    .hero.is-offscreen .grid-floor::before, .hero.is-paused .grid-floor::before { animation-play-state: paused; }
+
+    /* El agujero negro: eco de la "O" del logo */
+    .void-stage { position: relative; aspect-ratio: 1; width: 100%; max-width: 720px; justify-self: center; }
+    .void-parallax { position: absolute; inset: 0; will-change: transform; }
+    .void { position: absolute; inset: 0; --tilt: -14deg; }
+    .glow {
+      position: absolute; inset: 8%; border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,240,255,.16) 0%, rgba(255,0,255,.10) 35%, transparent 62%);
+      filter: blur(12px);
+    }
+    .disk {
+      position: absolute; left: -12%; right: -12%; top: 50%;
+      aspect-ratio: 1; transform: translateY(-50%) rotate(var(--tilt));
+    }
+    .disk-plane { position: absolute; inset: 0; transform: scaleY(0.24); }
+    .disk.front .disk-plane { clip-path: inset(50% 0 0 0); }
+    .disk-light, .disk-streaks {
+      position: absolute; inset: 0; border-radius: 50%;
+      -webkit-mask: radial-gradient(circle, transparent 0 27%, #000 31% 44%, rgba(0,0,0,.55) 56%, transparent 70%);
+      mask: radial-gradient(circle, transparent 0 27%, #000 31% 44%, rgba(0,0,0,.55) 56%, transparent 70%);
+    }
+    /* Brillo Doppler fijo: el lado que se acerca brilla en cian, el que se aleja cae a magenta */
+    .disk-light {
+      background: conic-gradient(from 200deg,
+        #eafeff 0deg, var(--cyan) 55deg, var(--violet) 140deg, #2a0640 190deg,
+        var(--magenta) 250deg, var(--cyan) 315deg, #eafeff 360deg);
+    }
+    .disk-streaks {
+      background: repeating-conic-gradient(from 0deg,
+        rgba(255,255,255,.0) 0deg 7deg, rgba(225,252,255,.4) 9deg, rgba(255,255,255,0) 12deg 19deg);
       mix-blend-mode: overlay;
+      animation: spin 26s linear infinite;
     }
-    .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
-    .stat {
-      background: rgba(41,3,41,0.6); border: 1px solid rgba(101,18,101,0.6); border-radius: 10px;
-      padding: 10px; text-align: center; backdrop-filter: blur(6px);
+    .horizon {
+      position: absolute; left: 50%; top: 50%; width: 42%; aspect-ratio: 1;
+      transform: translate(-50%, -50%); border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, #000 62%, #04020a 100%);
+      box-shadow:
+        0 0 0 1.5px rgba(190, 250, 255, 0.9),
+        0 0 18px 3px rgba(0, 240, 255, 0.55),
+        0 0 70px 14px rgba(255, 0, 255, 0.3);
     }
-    .stat strong { display: block; font-family: 'Orbitron', sans-serif; font-size: 0.85rem; color: var(--cyan); }
-    .stat span { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--muted); }
+    /* Anillo de fotones: la luz que se curva sobre el horizonte */
+    .lensing {
+      position: absolute; left: 50%; top: 50%; width: 50%; aspect-ratio: 1;
+      transform: translate(-50%, -50%) rotate(var(--tilt)); border-radius: 50%;
+      background: conic-gradient(from 180deg, transparent 0deg, rgba(0,240,255,0) 70deg, rgba(150,248,255,.85) 160deg, rgba(235,254,255,1) 180deg, rgba(255,120,255,.8) 200deg, rgba(255,0,255,0) 290deg, transparent 360deg);
+      -webkit-mask: radial-gradient(circle, transparent 0 84%, #000 87% 90%, transparent 97%);
+      mask: radial-gradient(circle, transparent 0 84%, #000 87% 90%, transparent 97%);
+      filter: blur(0.6px);
+    }
+    .disk.back { z-index: 1; } .horizon { z-index: 2; } .lensing { z-index: 3; } .disk.front { z-index: 4; }
+    .hero.is-offscreen .disk-streaks { animation-play-state: paused; }
 
-    .section { padding: 46px 20px; }
-    .section.alt { background: linear-gradient(180deg, rgba(64,26,64,0.22) 0%, transparent 100%); border-top: 1px solid rgba(101,18,101,0.25); border-bottom: 1px solid rgba(101,18,101,0.25); }
-    .container { max-width: 1100px; margin: 0 auto; }
-    .section-head h2, .container > h2, .split h2 { font-family: 'Orbitron', sans-serif; font-size: 1.25rem; letter-spacing: 0.08em; margin: 0 0 8px; }
-    .prompt { color: var(--cyan); font-family: 'JetBrains Mono', monospace; }
-    .section-head p, .team-intro { color: var(--muted); margin: 0 0 22px; }
+    @keyframes spin { to { transform: rotate(1turn); } }
 
-    .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
-    .card {
-      background: rgba(41,3,41,0.55); border: 1px solid rgba(101,18,101,0.7); border-radius: 14px;
-      padding: 18px; backdrop-filter: blur(8px);
-      transition: transform .18s, border-color .18s, box-shadow .18s;
+    /* Secuencia de carga: el único momento orquestado de la página */
+    @media (prefers-reduced-motion: no-preference) {
+      .js .void { animation: ignite 1600ms var(--ease-out) 100ms both; }
+      .js .hero h1 .line > span { animation: rise 900ms var(--ease-out) both; }
+      .js .hero h1 .line:nth-child(1) > span { animation-delay: 260ms; }
+      .js .hero h1 .line:nth-child(2) > span { animation-delay: 320ms; }
+      .js .hero h1 .line:nth-child(3) > span { animation-delay: 380ms; }
+      .js .hero-kicker, .js .hero .lede, .js .hero-actions, .js .highlights {
+        animation: fade-up 700ms var(--ease-out) both;
+      }
+      .js .hero-kicker { animation-delay: 180ms; }
+      .js .hero .lede { animation-delay: 520ms; }
+      .js .hero-actions { animation-delay: 580ms; }
+      .js .highlights { animation-delay: 640ms; }
+      /* Aberración cromática que se asienta: el título "entra en foco" como la señal de A.N.A. */
+      .js .hero h1 { animation: chroma 1400ms var(--ease-out) 260ms both; }
     }
-    .card:hover { transform: translateY(-3px); border-color: rgba(0,179,255,0.6); box-shadow: 0 10px 30px rgba(0,179,255,0.12); }
-    .card-icon { width: 36px; height: 36px; display: grid; place-items: center; background: rgba(0,179,255,0.12); border: 1px solid rgba(0,179,255,0.3); border-radius: 8px; margin-bottom: 10px; }
-    .card h3 { margin: 0 0 6px; font-family: 'Orbitron', sans-serif; font-size: 1rem; color: var(--text); }
-    .card p { margin: 0 0 12px; color: var(--muted); line-height: 1.55; font-size: 0.92rem; }
-    .card-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--cyan); border: 1px dashed rgba(0,179,255,0.4); padding: 4px 8px; border-radius: 999px; }
+    @keyframes chroma {
+      0% { text-shadow: -10px 0 rgba(0,240,255,.9), 10px 0 rgba(255,0,255,.9); }
+      60% { text-shadow: -2px 0 rgba(0,240,255,.6), 2px 0 rgba(255,0,255,.6); }
+      100% { text-shadow: -1px 0 rgba(0,240,255,.35), 1px 0 rgba(255,0,255,.35); }
+    }
+    @keyframes ignite {
+      from { opacity: 0; transform: scale(0.9) rotate(-6deg); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes rise { from { transform: translateY(105%); } to { transform: none; } }
+    @keyframes fade-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
-    .split { display: grid; grid-template-columns: 1fr 1.05fr; gap: 28px; align-items: start; }
-    .lead { font-size: 1.05rem; color: var(--text); line-height: 1.6; }
-    .split p { color: var(--muted); line-height: 1.7; }
-    .checklist { list-style: none; padding: 0; margin: 14px 0; }
-    .checklist li { padding: 6px 0 6px 22px; position: relative; color: var(--muted); font-size: 0.92rem; }
-    .checklist li::before { content: "▸"; position: absolute; left: 0; color: var(--cyan); }
-    .en-note { font-size: 0.82rem; opacity: 0.85; border-left: 2px solid var(--border); padding-left: 10px; margin-top: 14px; }
-    .shot { background: #1a0a1a; border: 1px solid var(--border); border-radius: 14px; padding: 10px; }
-    .shot img { width: 100%; height: auto; display: block; border-radius: 10px; }
-    .caption { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #6b8da0; text-align: center; margin: 8px 0 2px; }
-
-    .gallery { display: grid; grid-template-columns: 1.4fr 0.7fr 0.7fr 0.7fr; gap: 12px; }
-    .gallery img {
-      width: 100%; height: 180px; object-fit: cover; border-radius: 12px;
-      border: 1px solid rgba(101,18,101,0.6); background: #1a0a1a;
-    }
-    .gallery img.contain { object-fit: contain; padding: 12px; background: linear-gradient(180deg, #2a0f2a, #1a0a1a); }
-    .links-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 16px; }
-    .link-card {
-      display: flex; flex-direction: column; gap: 4px; padding: 14px 16px;
-      background: rgba(41,3,41,0.5); border: 1px solid rgba(101,18,101,0.7); border-radius: 12px;
-      text-decoration: none; transition: border-color .18s, background .18s;
-    }
-    .link-card:hover { border-color: var(--cyan); background: rgba(0,179,255,0.08); }
-    .link-card strong { color: var(--text); font-family: 'Orbitron', sans-serif; font-size: 0.9rem; }
-    .link-card span { color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; }
-
-    .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 14px; }
-    .member {
-      background: rgba(15,3,16,0.6); border: 1px solid rgba(101,18,101,0.5); border-radius: 10px;
-      padding: 12px; line-height: 1.35;
-    }
-    .member strong { display: block; color: var(--text); font-size: 0.88rem; }
-    .member span { color: var(--muted); font-size: 0.76rem; }
-    .announcement {
-      margin-top: 18px; padding: 12px 14px; border-radius: 10px;
-      background: rgba(255,46,154,0.08); border: 1px solid rgba(255,46,154,0.25);
-      color: #ffb3d6; font-size: 0.88rem; line-height: 1.5;
+    @media (max-width: 860px) {
+      .hero { padding-top: 104px; align-items: start; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .void-stage { order: -1; max-width: 420px; width: 92%; margin-bottom: -8%; }
     }
 
-    .faq { max-width: 800px; }
-    .faq-item {
-      background: rgba(41,3,41,0.55); border: 1px solid rgba(101,18,101,0.7); border-radius: 12px;
-      padding: 14px 16px; margin-bottom: 10px; backdrop-filter: blur(8px);
+    /* ---------- Secciones ---------- */
+    .section { padding: clamp(72px, 10vw, 144px) 0; border-top: 1px solid var(--rule); }
+    .section-head {
+      display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between;
+      gap: 16px 32px; margin-bottom: clamp(32px, 5vw, 56px);
     }
-    .faq-item summary { cursor: pointer; font-weight: 700; color: var(--text); list-style-position: inside; }
-    .faq-item summary::marker { color: var(--cyan); }
-    .faq-item p { color: var(--muted); line-height: 1.65; margin: 10px 0 2px; font-size: 0.92rem; }
+    .section-head p { max-width: 46ch; color: var(--dust); }
 
-    .footer { border-top: 1px solid rgba(101,18,101,0.35); padding: 18px 20px; margin-top: 10px; }
-    .footer-inner { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); }
-    .footer-inner strong { color: var(--text); letter-spacing: 0.06em; margin-right: 10px; }
-    .footer-links { display: flex; gap: 14px; }
-    .footer-links a { color: var(--muted); text-decoration: none; }
-    .footer-links a:hover { color: var(--cyan); }
-
-    .play { text-align: center; }
-    .play-desc { color: var(--muted); margin: 0 0 18px; }
-    .itch-wrap {
-      display: flex; justify-content: center; align-items: center;
-      padding: 14px; border-radius: 14px;
-      background: rgba(41,3,41,0.5); border: 1px solid rgba(101,18,101,0.7);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      max-width: 600px; margin: 0 auto;
+    /* Juegos */
+    /* A.N.A. destacado: texto a la izquierda, el teléfono flotando a la derecha (sin caja detrás) */
+    .feature {
+      display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: center;
+      gap: clamp(24px, 4vw, 64px); margin-bottom: clamp(56px, 7vw, 96px);
     }
-    .itch-wrap iframe { max-width: 100%; border-radius: 8px; display: block; }
-
-    @media (max-width: 900px) {
-      .hero-grid, .split, .cards, .gallery, .team-grid, .links-row { grid-template-columns: 1fr; }
-      .gallery img { height: auto; aspect-ratio: 16/10; }
-      .stats { grid-template-columns: repeat(3,1fr); }
+    .feature-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; min-width: 0; }
+    .feature-award {
+      display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--starlight);
+      font-variation-settings: "wdth" 110;
     }
+    .feature-award-mark { flex: none; width: 10px; height: 10px; transform: rotate(45deg); background: var(--grad); box-shadow: 0 0 10px rgba(255,0,255,.6); }
+    /* Teléfono completo (sin recortes), flotando con reflejo de luz y halo de neón que respira */
+    .feature-device { position: relative; aspect-ratio: 1200 / 1033; min-width: 0; }
+    .device-glow {
+      position: absolute; inset: 14% 10%; border-radius: 50%;
+      background: radial-gradient(ellipse at 30% 60%, rgba(0,240,255,.42), transparent 60%),
+                  radial-gradient(ellipse at 72% 40%, rgba(255,0,255,.48), transparent 60%);
+      filter: blur(48px);
+    }
+    .device-tilt { position: absolute; inset: 0; will-change: transform; }
+    .device-float { position: absolute; inset: 0; }
+    .device {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain;
+      filter: drop-shadow(0 40px 50px rgba(0,0,0,.65)) drop-shadow(0 0 30px rgba(255,0,255,.18));
+    }
+    /* El reflejo solo aparece sobre los píxeles del teléfono: usa la propia imagen como máscara */
+    .device-glare {
+      position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+      -webkit-mask: url("/assets/studio/ana-phone-1200.webp") center / contain no-repeat;
+      mask: url("/assets/studio/ana-phone-1200.webp") center / contain no-repeat;
+      background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.22) 45%, rgba(0,240,255,.18) 50%, transparent 60%);
+      background-size: 250% 100%; background-position: 150% 0; opacity: 0;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .feature.is-in .device-float { animation: device-float 7s var(--ease-in-out) infinite alternate; }
+      .feature.is-in .device-glow { animation: glow-breathe 4s ease-in-out infinite alternate; }
+      .feature.is-in .device-glare { animation: glare 6s var(--ease-in-out) 1.2s infinite; }
+    }
+    @keyframes device-float {
+      0% { transform: translate3d(0, -12px, 0) rotate(-1.2deg); }
+      100% { transform: translate3d(0, 12px, 0) rotate(1deg); }
+    }
+    @keyframes glow-breathe { from { opacity: .65; transform: scale(.96); } to { opacity: 1; transform: scale(1.04); } }
+    @keyframes glare {
+      0% { background-position: 150% 0; opacity: 0; }
+      8% { opacity: 1; }
+      35% { background-position: -50% 0; opacity: 1; }
+      40%, 100% { background-position: -50% 0; opacity: 0; }
+    }
+    @media (max-width: 860px) {
+      .feature { grid-template-columns: 1fr; }
+      .feature-device { order: -1; }
+    }
+
+    /* Resto del catálogo: tarjetas iguales y alineadas fila a fila (subgrid) */
+    .games { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(32px, 3vw, 40px) clamp(16px, 2vw, 24px); }
+    .game {
+      display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 16px; justify-items: start; min-width: 0;
+    }
+    .cover {
+      position: relative; overflow: hidden; border-radius: 4px; background: var(--hull);
+      aspect-ratio: 16 / 9; width: 100%;
+    }
+    @media (max-width: 720px) { .games { grid-template-columns: 1fr; } }
+    /* Logo de A.N.A. con glitch RGB al aparecer y al pasar el cursor */
+    .ana-logo { display: block; position: relative; width: clamp(240px, 28vw, 380px); max-width: 100%; aspect-ratio: 1162 / 468; margin: 4px 0 -4px; }
+    .ana-logo img { position: absolute; inset: 0; width: 100%; height: 100%; mix-blend-mode: screen; filter: contrast(1.25); }
+    .ana-logo .ghost { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .ana-logo.is-glitching .ghost { animation: glitch-a 520ms steps(1) both; }
+      .ana-logo.is-glitching .ghost + .ghost { animation-name: glitch-b; }
+      .ana-logo.is-glitching .main { animation: glitch-main 520ms steps(1) both; }
+    }
+    @keyframes glitch-a {
+      0% { opacity: .9; clip-path: inset(10% 0 62% 0); transform: translateX(-12px); }
+      20% { clip-path: inset(48% 0 30% 0); transform: translateX(9px); }
+      40% { clip-path: inset(70% 0 8% 0); transform: translateX(-6px); }
+      60% { clip-path: inset(24% 0 55% 0); transform: translateX(5px); }
+      80% { clip-path: inset(5% 0 80% 0); transform: translateX(-3px); }
+      100% { opacity: 0; clip-path: inset(0); transform: none; }
+    }
+    @keyframes glitch-b {
+      0% { opacity: .9; clip-path: inset(60% 0 15% 0); transform: translateX(10px); }
+      25% { clip-path: inset(18% 0 66% 0); transform: translateX(-8px); }
+      50% { clip-path: inset(40% 0 40% 0); transform: translateX(6px); }
+      75% { clip-path: inset(80% 0 4% 0); transform: translateX(-4px); }
+      100% { opacity: 0; clip-path: inset(0); transform: none; }
+    }
+    @keyframes glitch-main { 0%, 40% { opacity: .55; } 50% { opacity: 1; } 70% { opacity: .75; } 100% { opacity: 1; } }
+    .cover img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      transition: transform 600ms var(--ease-out);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .game:hover .cover img { transform: scale(1.03); }
+    }
+    .game-title { font-size: var(--t-lg); font-weight: 800; font-variation-settings: "wdth" 120; line-height: 1.1; text-transform: uppercase; overflow-wrap: anywhere; }
+    .game-sub { color: var(--starlight); font-weight: 600; margin-top: -8px; }
+    .game-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      display: inline-flex; align-items: center; min-height: 28px; padding: 0 10px;
+      border: 1px solid var(--rule); border-radius: 2px;
+      font-size: var(--t-sm); font-weight: 600; color: var(--dust);
+    }
+    .tag--date { color: var(--void); background: var(--photon); border-color: var(--photon); }
+    .game-desc { color: var(--dust); max-width: 52ch; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .js .cover.reveal { clip-path: inset(0 0 100% 0); }
+      .js .cover.reveal.is-in { clip-path: inset(0 0 0 0); transition: clip-path 1100ms var(--ease-in-out); }
+    }
+
+
+    /* Premios: final global y semifinal con el mismo protagonismo, cada uno en su escenario de neón */
+    .trophies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(24px, 3vw, 40px); }
+    .trophy-card { display: grid; grid-template-rows: auto auto auto 1fr; gap: 12px; align-content: start; min-width: 0; }
+    .trophy-stage {
+      position: relative; margin: 0 0 8px; height: clamp(380px, 42vw, 600px); border-radius: 6px; overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 40%, rgba(255, 0, 255, .16), transparent 60%),
+        radial-gradient(ellipse at 50% 90%, rgba(0, 240, 255, .14), transparent 55%),
+        linear-gradient(180deg, #08080c, #050505);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
+    }
+    .trophy-glow {
+      position: absolute; left: 50%; top: 46%; width: 62%; aspect-ratio: 1; margin: -31% 0 0 -31%;
+      border-radius: 50%; background: conic-gradient(from 0deg, rgba(0,240,255,.5), rgba(255,0,255,.5), rgba(122,28,255,.4), rgba(0,240,255,.5));
+      filter: blur(70px); opacity: .55;
+    }
+    .trophy-ring {
+      position: absolute; left: 19%; right: 19%; bottom: 7%; aspect-ratio: 1; transform: scaleY(.18);
+      transform-origin: 50% 100%; border-radius: 50%;
+      background: conic-gradient(from 0deg, transparent, rgba(0,240,255,.9) 25%, transparent 50%, rgba(255,0,255,.9) 75%, transparent);
+      -webkit-mask: radial-gradient(circle, transparent 0 64%, #000 66% 70%, transparent 72%);
+      mask: radial-gradient(circle, transparent 0 64%, #000 66% 70%, transparent 72%);
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .trophy-glow { animation: spin 14s linear infinite; }
+      .trophy-ring { animation: ring-spin 6s linear infinite; }
+      .badge-float { animation: trophy-bob 5s var(--ease-in-out) infinite alternate; }
+      .badge-shine { animation: glare 5s var(--ease-in-out) 1s infinite; }
+    }
+    @keyframes ring-spin { from { transform: scaleY(.18) rotate(0deg); } to { transform: scaleY(.18) rotate(1turn); } }
+    @keyframes trophy-bob { from { transform: translate3d(0, -10px, 0) rotate(-1deg); } to { transform: translate3d(0, 10px, 0) rotate(1deg); } }
+
+    /* Insignia de la final global: grande, flotando, con un destello que recorre solo la insignia */
+    .badge-float { position: absolute; inset: 8% 6% 14%; }
+    .badge { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 24px rgba(0,240,255,.25)); }
+    .badge-shine {
+      position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen; opacity: 0;
+      -webkit-mask: url("/assets/studio/premio-latam.webp") center / contain no-repeat;
+      mask: url("/assets/studio/premio-latam.webp") center / contain no-repeat;
+      background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.7) 45%, rgba(255,0,255,.5) 52%, transparent 62%);
+      background-size: 250% 100%; background-position: 150% 0;
+    }
+
+    /* Placa de la semifinal en 3D (three.js); la foto queda de respaldo si WebGL no está disponible */
+    .trophy-poster { position: absolute; inset: 6%; width: 88%; height: 88%; object-fit: contain; transition: opacity 400ms ease; }
+    .trophy-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity 600ms ease; cursor: grab; touch-action: pan-y; }
+    .trophy-canvas:active { cursor: grabbing; }
+    .trophy-stage--3d.is-3d .trophy-canvas { opacity: 1; }
+    .trophy-stage--3d.is-3d .trophy-poster { opacity: 0; }
+    .model-hint { position: absolute; left: 16px; bottom: 14px; pointer-events: none; font-size: var(--t-sm); color: var(--dust); opacity: 0; transition: opacity 400ms ease; }
+    .trophy-stage--3d.is-3d .model-hint { opacity: 1; }
+
+    .trophy-card h3 { font-size: var(--t-lg); font-weight: 800; font-variation-settings: "wdth" 118; line-height: 1.15; text-wrap: balance; }
+    .award-event { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 800; font-size: var(--t-sm); width: fit-content; }
+    .award-desc { color: var(--dust); max-width: 52ch; }
+    @media (max-width: 860px) { .trophies { grid-template-columns: 1fr; } }
+
+    /* Equipo */
+    .team { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(28px, 3vw, 40px) clamp(16px, 2vw, 24px); }
+    .member { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+    /* Retratos unificados: monocromo con tinte cian/magenta; a color al pasar el cursor */
+    .member-frame {
+      position: relative; aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden; background: var(--hull);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
+    }
+    .member-photo {
+      width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%;
+      filter: grayscale(1) contrast(1.08) brightness(.92);
+      transition: filter 500ms ease, transform 700ms var(--ease-out);
+    }
+    .member-frame::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: linear-gradient(160deg, rgba(0,240,255,.32), rgba(5,5,5,0) 45%, rgba(255,0,255,.38));
+      mix-blend-mode: color; transition: opacity 500ms ease;
+    }
+    .member-frame::before {
+      content: ""; position: absolute; inset: auto 0 0 0; height: 40%; z-index: 1; pointer-events: none;
+      background: linear-gradient(to top, rgba(5,5,5,.7), transparent);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .member:hover .member-photo { filter: none; transform: scale(1.03); }
+      .member:hover .member-frame::after { opacity: 0; }
+    }
+    .member-name { font-size: var(--t-md); font-weight: 800; font-variation-settings: "wdth" 112; line-height: 1.2; overflow-wrap: anywhere; }
+    .member-handle { color: var(--cyan); font-size: var(--t-sm); font-weight: 600; overflow-wrap: anywhere; }
+    .member-role { color: var(--dust); font-size: var(--t-sm); text-wrap: pretty; }
+    .member--lead { grid-column: span 2; grid-row: span 2; }
+    .member--lead .member-frame { aspect-ratio: auto; flex: 1; min-height: 420px; }
+    .member--lead .member-name { font-size: var(--t-lg); }
+    @media (max-width: 1080px) { .team { grid-template-columns: repeat(3, minmax(0, 1fr)); } .member--lead { grid-column: span 3; grid-row: auto; } .member--lead .member-frame { aspect-ratio: 16 / 10; flex: none; min-height: 0; } }
+    @media (max-width: 720px) { .team { grid-template-columns: repeat(2, minmax(0, 1fr)); } .member--lead { grid-column: span 2; } }
+
+    /* Tienda */
+    .products { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(24px, 2.5vw, 32px) clamp(16px, 2vw, 24px); }
+    /* Cada tarjeta ocupa 6 filas compartidas: foto, nombre, descripción, precio, opciones y botón quedan alineados */
+    .product { display: grid; grid-row: span 6; grid-template-rows: subgrid; row-gap: 12px; align-content: start; min-width: 0; }
+    .product-options { align-self: start; }
+    .sizes-field { border: 0; padding: 0; margin: 0; min-width: 0; }
+    .option-note { color: var(--dust); font-size: var(--t-sm); padding-top: 22px; }
+    .tag--soldout { background: rgba(5,5,5,.85); color: var(--starlight); border-color: #3f3f46; }
+    .product-figure { position: relative; aspect-ratio: 1; border-radius: 4px; overflow: hidden; background: var(--hull); }
+    .product-figure img { width: 100%; height: 100%; object-fit: cover; transition: transform 600ms var(--ease-out); }
+    @media (hover: hover) and (pointer: fine) { .product:hover .product-figure img { transform: scale(1.03); } }
+    .product--soldout .product-figure img { opacity: 0.45; filter: grayscale(0.6); }
+    .product-badge { position: absolute; top: 12px; left: 12px; }
+    .product-name { font-size: var(--t-md); font-weight: 800; font-variation-settings: "wdth" 112; line-height: 1.2; overflow-wrap: anywhere; }
+    .product-desc { color: var(--dust); font-size: var(--t-sm); }
+    .price { display: flex; align-items: baseline; gap: 10px; font-variant-numeric: tabular-nums; }
+    .price-now { font-size: var(--t-md); font-weight: 800; }
+    .price-was { color: var(--dust); text-decoration: line-through; font-size: var(--t-sm); }
+    .product-options { display: grid; gap: 12px; border: 0; padding: 0; margin: 0; min-width: 0; }
+    .option-label { font-size: var(--t-sm); color: var(--dust); margin-bottom: 6px; display: block; padding: 0; }
+    .sizes { display: flex; flex-wrap: wrap; gap: 6px; }
+    .size { position: relative; }
+    .size input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+    .size span {
+      display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 10px;
+      border: 1px solid #3a3d45; border-radius: 2px; font-weight: 700; font-size: var(--t-sm);
+      transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+    }
+    .size input:checked + span { background: var(--starlight); color: var(--void); border-color: var(--starlight); }
+    .size input:focus-visible + span { outline: 2px solid var(--photon); outline-offset: 2px; }
+    @media (hover: hover) and (pointer: fine) { .size input:not(:checked):hover + span { border-color: var(--starlight); } }
+    .qty select {
+      min-height: 44px; min-width: 88px; padding: 0 12px; font: inherit; font-weight: 600;
+      color: var(--starlight); background-color: var(--hull); border: 1px solid #3a3d45; border-radius: 2px;
+    }
+    .product .btn { width: 100%; align-self: end; }
+    .product .btn-label { transition: filter 200ms ease, opacity 200ms ease; }
+    .product .btn.is-added .btn-label { animation: label-swap 360ms var(--ease-out); }
+    @keyframes label-swap { from { filter: blur(3px); opacity: .3; } to { filter: none; opacity: 1; } }
+    .btn[disabled] { opacity: 0.5; cursor: not-allowed; transform: none; }
+    @media (max-width: 1080px) { .products { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 520px) { .products { grid-template-columns: 1fr; } }
+
+    /* Carrito */
+    .nav-actions { display: flex; align-items: center; gap: 8px; }
+    .cart-button {
+      position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px;
+      color: var(--starlight); background: transparent; border: 1px solid #3f3f46; border-radius: 2px; cursor: pointer;
+      transition: border-color 200ms ease, transform 160ms var(--ease-out);
+    }
+    .cart-button:active { transform: scale(0.95); }
+    @media (hover: hover) and (pointer: fine) { .cart-button:hover { border-color: var(--cyan); } }
+    .cart-count {
+      position: absolute; top: -7px; right: -7px; min-width: 20px; height: 20px; padding: 0 5px;
+      display: grid; place-items: center; border-radius: 10px;
+      background: var(--grad); color: #050505; font-size: 12px; font-weight: 800; font-variant-numeric: tabular-nums;
+      transform: scale(0); transition: transform 240ms var(--ease-out);
+    }
+    .cart-button[data-count]:not([data-count="0"]) .cart-count { transform: scale(1); }
+    @media (prefers-reduced-motion: no-preference) {
+      .cart-count.is-bump { animation: bump 420ms var(--ease-out); }
+    }
+    @keyframes bump { 0% { transform: scale(1); } 35% { transform: scale(1.35); } 100% { transform: scale(1); } }
+
+    .cart-overlay {
+      position: fixed; inset: 0; z-index: 80; background: rgba(0,0,0,.6);
+      opacity: 0; visibility: hidden; transition: opacity 200ms ease, visibility 0s linear 200ms;
+    }
+    .cart-overlay[data-open="true"] { opacity: 1; visibility: visible; transition: opacity 300ms ease, visibility 0s; }
+    .cart {
+      position: fixed; top: 0; right: 0; bottom: 0; z-index: 90; width: min(440px, 100%);
+      display: grid; grid-template-rows: auto minmax(0, 1fr) auto;
+      background: #08080b; border-left: 1px solid var(--rule);
+      box-shadow: -30px 0 80px rgba(0,0,0,.6);
+      padding-bottom: env(safe-area-inset-bottom);
+      transform: translateX(100%); visibility: hidden;
+      transition: transform 220ms var(--ease-out), visibility 0s linear 220ms;
+    }
+    .cart[data-open="true"] { transform: none; visibility: visible; transition: transform 380ms var(--ease-drawer), visibility 0s; }
+    .cart-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--rule); }
+    .cart-title { font-size: var(--t-md); font-weight: 800; font-variation-settings: "wdth" 120; text-transform: uppercase; }
+    .cart-close {
+      display: grid; place-items: center; width: 44px; height: 44px; color: var(--starlight);
+      background: transparent; border: 1px solid transparent; border-radius: 2px; cursor: pointer;
+    }
+    @media (hover: hover) and (pointer: fine) { .cart-close:hover { border-color: #3f3f46; } }
+    .cart-body { overflow-y: auto; overscroll-behavior: contain; padding: 8px 20px 20px; }
+    .cart-items { display: grid; }
+    .cart-item { display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+    .cart-item img { width: 72px; height: 72px; object-fit: cover; border-radius: 4px; background: var(--hull); }
+    .cart-item-name { font-weight: 700; line-height: 1.3; overflow-wrap: anywhere; }
+    .cart-item-meta { color: var(--dust); font-size: var(--t-sm); }
+    .cart-item-price { font-weight: 800; font-variant-numeric: tabular-nums; text-align: right; }
+    .stepper { display: inline-flex; align-items: center; margin-top: 10px; border: 1px solid #3f3f46; border-radius: 2px; }
+    .stepper button {
+      width: 36px; height: 36px; display: grid; place-items: center; font: inherit; font-weight: 700;
+      color: var(--starlight); background: transparent; border: 0; cursor: pointer;
+    }
+    .stepper output { min-width: 28px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .cart-remove {
+      display: block; margin-top: 8px; margin-left: auto; padding: 4px 0; min-height: 32px; font: inherit; font-size: var(--t-sm);
+      color: var(--dust); background: none; border: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer;
+    }
+    @media (hover: hover) and (pointer: fine) { .cart-remove:hover { color: var(--starlight); } .stepper button:hover { color: var(--cyan); } }
+    .cart-empty, .checkout, .cart-done { display: none; }
+    .cart-empty { padding: 40px 0; gap: 20px; justify-items: start; color: var(--dust); }
+    .cart[data-step="items"][data-empty="true"] .cart-empty { display: grid; }
+    .cart[data-step="checkout"] .cart-items { display: none; }
+    .cart[data-step="checkout"] .checkout { display: grid; gap: 14px; padding-top: 12px; }
+    .cart[data-step="done"] .cart-items, .cart[data-step="done"] .cart-foot { display: none; }
+    .cart[data-step="done"] .cart-done { display: grid; gap: 16px; justify-items: start; padding-top: 24px; }
+    .checkout-title { font-size: var(--t-md); font-weight: 800; font-variation-settings: "wdth" 115; }
+    .cart-done-text { color: var(--dust); overflow-wrap: anywhere; }
+    .cart-foot { display: grid; gap: 10px; padding: 16px 20px 20px; border-top: 1px solid var(--rule); background: #08080b; }
+    .cart[data-empty="true"] .cart-foot { display: none; }
+    .cart-total { display: flex; justify-content: space-between; align-items: baseline; font-size: var(--t-md); }
+    .cart-total strong { font-weight: 850; font-variant-numeric: tabular-nums; }
+    .cart-note { color: var(--dust); font-size: var(--t-sm); }
+    .cart-actions { display: flex; gap: 8px; }
+    .cart-actions .cart-next { flex: 1; }
+    .cart[data-step="items"] .cart-back { display: none; }
+    .checkout .field input, .checkout .field textarea { min-height: 44px; }
+    .checkout textarea { min-height: 88px; resize: vertical; }
+    @media (prefers-reduced-motion: reduce) { .cart, .cart[data-open="true"] { transition: visibility 0s; } }
+
+    /* Formulario de contacto */
+    .contact-form { display: grid; gap: 16px; margin-top: 32px; }
+    .field { display: grid; gap: 6px; min-width: 0; }
+    .field label { font-weight: 600; }
+    .field .optional { color: var(--dust); font-weight: 400; }
+    .field input, .field textarea {
+      width: 100%; min-height: 48px; padding: 12px 14px;
+      font: inherit; font-size: 1rem; color: var(--starlight);
+      background: var(--hull); border: 1px solid #3a3d45; border-radius: 2px;
+      transition: border-color 200ms ease;
+    }
+    .field textarea { min-height: 160px; resize: vertical; line-height: 1.5; }
+    .field input::placeholder, .field textarea::placeholder { color: #6f727b; }
+    .field input:focus-visible, .field textarea:focus-visible { outline: 2px solid var(--photon); outline-offset: 1px; border-color: transparent; }
+    .field [aria-invalid="true"] { border-color: #ff8a7a; }
+    .field-error { color: #ff8a7a; font-size: var(--t-sm); }
+    .field-error:empty { display: none; }
+    .field-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 560px) { .field-row-2 { grid-template-columns: 1fr; } }
+    .honey { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .form-status { font-size: var(--t-sm); color: var(--dust); min-height: 1.55em; overflow-wrap: anywhere; }
+    .form-status[data-state="error"] { color: #ff8a7a; }
+    .form-status[data-state="success"] { color: var(--starlight); }
+    .form-status a { color: inherit; }
+    .btn-label { display: inline-block; transition: filter 200ms ease, opacity 200ms ease; }
+    .btn[data-busy="true"] .btn-label { filter: blur(2px); opacity: 0.6; }
+    .btn[data-busy="true"] { cursor: progress; }
+    @media (prefers-reduced-motion: no-preference) {
+      .contact-form.is-flash { animation: flash 900ms var(--ease-out); }
+    }
+    @keyframes flash { from { box-shadow: 0 0 0 2px var(--photon); } to { box-shadow: 0 0 0 2px transparent; } }
+
+    /* Contacto */
+    .contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+    .contact .contact-form { margin-top: 0; }
+    .contact-title {
+      font-size: clamp(2.25rem, 5.4vw, 4.5rem); font-weight: 850; font-variation-settings: "wdth" 116;
+      line-height: 0.98; text-transform: uppercase; text-wrap: balance; margin-bottom: 20px;
+    }
+    .contact-intro { color: var(--dust); max-width: 44ch; }
+    .contact-list { border-top: 1px solid var(--rule); margin-bottom: 28px; }
+    .contact-list div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+    .contact-list dt { color: var(--dust); font-size: var(--t-sm); }
+    .contact-list dd { font-weight: 600; overflow-wrap: anywhere; }
+    .contact-list a { text-underline-offset: 0.2em; text-decoration-color: #4a4d56; transition: text-decoration-color 200ms ease; }
+    @media (hover: hover) and (pointer: fine) { .contact-list a:hover { text-decoration-color: currentColor; } }
+    @media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+
+    /* Revelado al hacer scroll: una sola vez, escalonado 60 ms entre elementos */
+    @media (prefers-reduced-motion: no-preference) {
+      .js [data-reveal] { opacity: 0; transform: translateY(18px); }
+      .js [data-reveal].is-in {
+        opacity: 1; transform: none;
+        transition: opacity 700ms var(--ease-out), transform 900ms var(--ease-out);
+        transition-delay: calc(var(--i, 0) * 60ms);
+      }
+      .js .h2[data-reveal] { transform: translateY(0); clip-path: inset(0 100% 0 0); opacity: 1; }
+      .js .h2[data-reveal].is-in { clip-path: inset(0 0 0 0); transition: clip-path 900ms var(--ease-in-out); }
+    }
+
+    /* Foco de luz que sigue al puntero en tarjetas (decorativo) */
+    .spot { position: relative; }
+    .spot::before {
+      content: ""; position: absolute; inset: -10px; z-index: 2; pointer-events: none; border-radius: 6px;
+      background: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(0,240,255,.14), rgba(255,0,255,.08) 40%, transparent 70%);
+      opacity: 0; transition: opacity 300ms ease;
+    }
+    @media (hover: hover) and (pointer: fine) { .spot:hover::before { opacity: 1; } }
+
+    /* Pie */
+    .site-footer { border-top: 1px solid var(--rule); padding: 56px 0 40px; color: var(--dust); font-size: var(--t-sm); }
+    .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 4px 8px; }
+    .footer-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px; text-decoration: none; transition: color 200ms ease; }
+    .footer-links a:focus-visible { color: var(--starlight); }
+    @media (hover: hover) and (pointer: fine) { .footer-links a:hover { color: var(--starlight); } }
+    .footer-legal { margin-top: 32px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .disk-streaks, .grid-floor::before { animation: none; }
+      .member-photo, .product-figure img { transition: none; }
+      .cover img { transition: none; }
+    }
+  
   </style>
 </Layout>

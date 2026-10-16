@@ -1,10 +1,10 @@
 ---
-const title = Astro.props.title || "A.N.A. — The Broken Link | Dark Void Studio";
-const description = Astro.props.description || "2.5D narrative beat 'em up — inspirado en anime, cyberpunk y estética synthwave. Sincronizate con A.N.A., una IA que despierta en un mundo de lógica perfecta.";
+const title = Astro.props.title || "Darkvoid Studios — Estudio indie en Lima, Perú";
+const description = Astro.props.description || "Darkvoid Studios es un estudio indie de videojuegos en Lima, Perú. Creadores de A.N.A. — The Broken Link, 2.º mejor juego de Latinoamérica en GameJamPlus 25/26.";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImageURL = new URL("/assets/ana/LTJtgi.png", Astro.site);
-const ogImageWidth = 1828;
-const ogImageHeight = 1573;
+const ogImageURL = new URL("/og-ana.jpg", Astro.site);
+const ogImageWidth = 1280;
+const ogImageHeight = 720;
 ---
 <!doctype html>
 <html lang="es">
@@ -17,11 +17,12 @@ const ogImageHeight = 1573;
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="describedby" href="/llms.txt" type="text/markdown" />
-    <meta name="author" content="Dark Void Studio" />
+    <meta name="author" content="Darkvoid Studios" />
     <meta name="robots" content="index, follow" />
+    <meta name="color-scheme" content="dark" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Lato:wght@400;700;900&family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
@@ -29,24 +30,24 @@ const ogImageHeight = 1573;
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:site_name" content="Dark Void Studio" />
+    <meta property="og:site_name" content="Darkvoid Studios" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL} />
     <meta property="og:image:width" content={String(ogImageWidth)} />
     <meta property="og:image:height" content={String(ogImageHeight)} />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="Logo de A.N.A. — The Broken Link" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="A.N.A. — The Broken Link, de Darkvoid Studios" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
-    <meta name="twitter:image:alt" content="Logo de A.N.A. — The Broken Link" />
+    <meta name="twitter:image:alt" content="A.N.A. — The Broken Link, de Darkvoid Studios" />
 
-    <meta name="theme-color" content="#290329" />
+    <meta name="theme-color" content="#050505" />
 
     <!-- Structured data -->
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -55,9 +56,10 @@ const ogImageHeight = 1573;
         {
           "@type": "Organization",
           "@id": new URL("/#studio", Astro.site).toString(),
-          "name": "Dark Void Studio",
+          "name": "Darkvoid Studios",
           "url": Astro.site?.toString(),
-          "logo": new URL("/assets/ana/Xk_5qt.png", Astro.site).toString(),
+          "logo": new URL("/assets/studio/dark-void-logo.jpg", Astro.site).toString(),
+          "location": { "@type": "Place", "name": "Lima, Perú" },
           "sameAs": [
             "https://darkvvoidstudios.itch.io/",
             "https://darkvvoidstudios.itch.io/ana",
@@ -70,7 +72,7 @@ const ogImageHeight = 1573;
           "@type": "WebSite",
           "@id": new URL("/#website", Astro.site).toString(),
           "url": Astro.site?.toString(),
-          "name": "Dark Void Studio",
+          "name": "Darkvoid Studios",
           "inLanguage": "es",
           "publisher": { "@id": new URL("/#studio", Astro.site).toString() }
         },
@@ -82,11 +84,12 @@ const ogImageHeight = 1573;
           "image": ogImageURL.toString(),
           "url": canonicalURL.toString(),
           "genre": ["Action", "Beat 'em up", "Cyberpunk", "Anime"],
-          "keywords": "25d, anime, cyberpunk, synthwave, beat em up, hack and slash, futuristic, artgame",
+          "keywords": "25d, anime, cyberpunk, synthwave, beat em up, hack and slash, futuristic, artgame, darkvoid studios, dark void studios lima peru, ana the broken link dark void, indie, gamejamplus, segundo lugar mejor juego latam",
           "operatingSystem": "Windows",
           "applicationCategory": "Game",
           "playMode": "SinglePlayer",
           "isAccessibleForFree": true,
+          "award": "2.º mejor juego de Latinoamérica — GameJamPlus 25/26",
           "datePublished": "2026-08-25",
           "dateModified": "2026-08-26",
           "offers": {
@@ -97,7 +100,7 @@ const ogImageHeight = 1573;
             "url": "https://darkvvoidstudios.itch.io/ana"
           },
           "author": [
-            { "@type": "Organization", "name": "Dark Void Studio", "url": "https://darkvvoidstudios.itch.io" },
+            { "@type": "Organization", "name": "Darkvoid Studios", "url": "https://darkvvoidstudios.itch.io" },
             { "@type": "Person", "name": "PeryLoth" }
           ],
           "publisher": { "@id": new URL("/#studio", Astro.site).toString() },
@@ -110,57 +113,8 @@ const ogImageHeight = 1573;
   <body>
     <slot />
     <style is:global>
-      :root {
-        --bg: #0f0310;
-        --bg-2: #290329;
-        --bg-3: #401a40;
-        --border: #651265;
-        --cyan: #00b3ff;
-        --cyan-2: #00e5ff;
-        --magenta: #ff2e9a;
-        --violet: #a855f7;
-        --text: #d9f0ff;
-        --muted: #8fb4c8;
-      }
-      * { box-sizing: border-box; }
-      html, body {
-        margin: 0;
-        width: 100%;
-        min-height: 100%;
-        background: var(--bg);
-        color: var(--text);
-        font-family: 'Lato', system-ui, sans-serif;
-        scroll-behavior: smooth;
-      }
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -2;
-        background:
-          radial-gradient(800px 400px at 20% 10%, rgba(255,46,154,0.15), transparent 60%),
-          radial-gradient(900px 500px at 90% 20%, rgba(0,179,255,0.18), transparent 60%),
-          radial-gradient(700px 600px at 50% 100%, rgba(168,85,247,0.12), transparent 60%),
-          linear-gradient(180deg, #1a0520 0%, #0f0310 100%);
-      }
-      body::after {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        opacity: 0.04;
-        background-image:
-          linear-gradient(var(--border) 1px, transparent 1px),
-          linear-gradient(90deg, var(--border) 1px, transparent 1px);
-        background-size: 40px 40px;
-        pointer-events: none;
-      }
-      a { color: var(--cyan); }
-      ::selection { background: var(--cyan); color: #000; }
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: var(--bg-2); }
-      ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: var(--cyan); }
+      html { color-scheme: dark; }
+      ::selection { background: #00f0ff; color: #050505; }
     </style>
   </body>
 </html>
